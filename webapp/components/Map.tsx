@@ -13,16 +13,29 @@ const MapboxExample = () => {
 
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current,
-      center: [-74.5, 40], // starting position [lng, lat]
-      zoom: 9 // starting zoom
+      maxZoom: 5.99,
+      minZoom: 4,
+      zoom: 5,
+      center: [-75.789, 41.874],
     });
+
+    mapRef.current.on('load', () => {
+
+
+
+    }, []);
   });
+
+
+  
+
 
   return (
     <div
+      id="map"
+      className="map-container"
       style={{ height: '100%' }}
       ref={mapContainerRef}
-      className="map-container"
     />
   );
 };
