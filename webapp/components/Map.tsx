@@ -14,12 +14,32 @@ const MapboxExample = () => {
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current,
       maxZoom: 5.99,
-      minZoom: 4,
-      zoom: 5,
-      center: [-75.789, 41.874],
+      minZoom: 2.5,
+      zoom: 3.5,
+      center: [-98.5, 37.7],
     });
 
     mapRef.current.on('load', () => {
+
+      mapRef.current.addSource('radar', {
+        type: 'image',
+        url: 'https://docs.mapbox.com/mapbox-gl-js/assets/radar.gif',
+        coordinates: [
+          [-131, 53],
+          [-66, 53],
+          [-66, 22],
+          [-131, 22]
+        ]
+      });
+
+      mapRef.current.addLayer({
+        id: 'radar-layer',
+        type: 'raster',
+        source: 'radar',
+        paint: {
+          'raster-fade-duration': 0
+        }
+      });
 
 
 
