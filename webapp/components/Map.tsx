@@ -5,18 +5,16 @@ import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 const MapboxExample = () => {
-  const mapContainerRef = useRef();
   const mapRef = useRef();
 
   useEffect(() => {
     mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN; 
 
     mapRef.current = new mapboxgl.Map({
-      container: mapContainerRef.current,
+      container: "map", 
       maxZoom: 5.99,
       minZoom: 2.5,
-      zoom: 3.5,
-      center: [-98.5, 37.7],
+      bounds: [[-131, 22],[-66, 53]],
     });
 
     mapRef.current.on('load', () => {
@@ -40,22 +38,14 @@ const MapboxExample = () => {
           'raster-fade-duration': 0
         }
       });
-
-
-
     }, []);
   });
-
-
-  
-
 
   return (
     <div
       id="map"
       className="map-container"
       style={{ height: '100%' }}
-      ref={mapContainerRef}
     />
   );
 };
