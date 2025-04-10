@@ -2,13 +2,34 @@
 import { useState } from "react";
 
 export default function FlightLevelSlider() {
-  const flight_levels = ["480", "420", "360", "300", "270", "240", "210", "180", "150", "120", "090", "060", "030", "010", ">180", "<180"];
+  const flight_levels = [
+    "480",
+    "420",
+    "360",
+    "300",
+    "270",
+    "240",
+    "210",
+    "180",
+    "150",
+    "120",
+    "090",
+    "060",
+    "030",
+    "010",
+    ">180",
+    "<180",
+  ];
   const [sliderIndex, setSliderIndex] = useState(8); // Default to 180 (180 is index 7)
 
-  const handleFlightLevelSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFlightLevelSliderChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+  ) => {
     const index = Number(e.target.value);
     setSliderIndex(index);
-    console.log(`FlightLevelSlider moved to flight level: ${flight_levels[index]}`);
+    console.log(
+      `FlightLevelSlider moved to flight level: ${flight_levels[index]}`,
+    );
   };
 
   return (
@@ -43,8 +64,6 @@ export default function FlightLevelSlider() {
             </div>
           ))}
         </div>
-
-
       </div>
     </div>
   );
