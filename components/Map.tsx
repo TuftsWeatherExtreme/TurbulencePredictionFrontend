@@ -18,7 +18,12 @@ if (!process.env.NEXT_PUBLIC_MAPBOX_TOKEN) {
 }
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
-function Map() {
+function Map(props: {
+  flightLevel: number;
+  timeOffset: number;
+  sizeClass: string;
+  sources: boolean[];
+}) {
   const mapRef = useRef<mapboxgl.Map | null>(null);
 
   useEffect(() => {

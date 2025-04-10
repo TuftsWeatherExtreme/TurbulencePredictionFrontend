@@ -1,6 +1,4 @@
 "use client";
-import type { CheckedState } from "@radix-ui/react-checkbox";
-import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -12,10 +10,13 @@ import {
 
 import { ChevronDownIcon } from "lucide-react";
 
-function SourcePicker() {
-	const [isSATVisible, setSATVisible] = useState<CheckedState>(false);
-	const [isRADVisible, setRADVisible] = useState<CheckedState>(true);
-
+function SourcePicker({
+	sources,
+	setSources,
+}: {
+	sources: boolean[];
+	setSources: (value: boolean[]) => void;
+}) {
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
@@ -28,16 +29,16 @@ function SourcePicker() {
 				<DropdownMenuCheckboxItem
 					key="sat"
 					className="capitalize"
-					checked={isSATVisible}
-					onCheckedChange={(value) => setSATVisible(!!value)}
+					checked={sources[0]}
+					onCheckedChange={(value) => setSources([!!value, sources[1]])}
 				>
 					Satellite
 				</DropdownMenuCheckboxItem>
 				<DropdownMenuCheckboxItem
 					key="rad"
 					className="capitalize"
-					checked={isRADVisible}
-					onCheckedChange={(value) => setRADVisible(!!value)}
+					checked={sources[1]}
+					onCheckedChange={(value) => setSources([sources[0], !!value])}
 				>
 					Radar
 				</DropdownMenuCheckboxItem>

@@ -1,16 +1,19 @@
 "use client";
-import { useState } from "react";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 
-function TimeSlider() {
+function TimeSlider({
+  timeOffset,
+  setTimeOffset,
+}: {
+  timeOffset: number;
+  setTimeOffset: (value: number) => void;
+}) {
   const currentTime = new Date().getTime();
   const timestamps = [...Array(9).keys()].map(
     (offset) => new Date(currentTime + offset * 60 * 60 * 1000),
   );
-
-  const [currentTimestamp, setTimestamp] = useState<number[]>([0]);
 
   return (
     <Card>
@@ -22,8 +25,8 @@ function TimeSlider() {
               max={timestamps.length - 1}
               step={1}
               orientation="horizontal"
-              value={currentTimestamp}
-              onValueChange={(value) => setTimestamp(value)}
+              value={[timeOffset]}
+              onValueChange={(value) => setTimeOffset(value[0])}
             />
           </div>
           <div className="flex flex-row justify-between font-mono text-sm">
