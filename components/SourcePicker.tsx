@@ -24,7 +24,7 @@ function SourcePicker() {
 					<ChevronDownIcon />
 				</Button>
 			</DropdownMenuTrigger>
-			<DropdownMenuContent align="start" className="w-full">
+			<DropdownMenuContent align="end" className="w-full">
 				<DropdownMenuCheckboxItem
 					key="sat"
 					className="capitalize"

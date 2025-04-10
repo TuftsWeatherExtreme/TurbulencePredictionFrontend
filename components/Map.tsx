@@ -19,12 +19,11 @@ if (!process.env.NEXT_PUBLIC_MAPBOX_TOKEN) {
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
 function Map() {
-  const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
 
   useEffect(() => {
     // Prevent re-initializing the map
-    if (!mapContainerRef.current || mapRef.current) return;
+    if (mapRef.current) return;
 
     function getPath(source: Source, alt: number = 0, time: number = 0) {
       // return `<PATH TO IMAGE HERE>/${alt}${time}${source.toString()}`
@@ -33,10 +32,14 @@ function Map() {
 
     // Initialize the map
     mapRef.current = new mapboxgl.Map({
-      container: mapContainerRef.current as HTMLDivElement,
-      // style: "mapbox://style/mapbox/standard",
-      projection: "globe",
+      container: "map",
+      style: "mapbox://style/mapbox/standard",
+      projection: "albers",
       bounds: [
+        [-131, 22],
+        [-66, 53],
+      ],
+      maxBounds: [
         [-131, 22],
         [-66, 53],
       ],
@@ -82,11 +85,7 @@ function Map() {
 
   return (
     <>
-      <div
-        id="map"
-        className="map-container w-full h-screen"
-        ref={mapContainerRef}
-      />
+      <div id="map" className="map-container w-screen h-screen" />
     </>
   );
 }
