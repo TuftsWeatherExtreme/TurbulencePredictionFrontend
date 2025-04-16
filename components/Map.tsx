@@ -31,8 +31,7 @@ function Map(props: {
     if (mapRef.current) return;
 
     function getPath(source: Source, alt: number = 0, time: number = 0) {
-      // return `<PATH TO IMAGE HERE>/${alt}${time}${source.toString()}`
-      return "https://docs.mapbox.com/mapbox-gl-js/assets/radar.gif";
+      return `/frames/layer${alt.toLocaleString().padStart(5, "0")}.gif`
     }
 
     // Initialize the map
@@ -58,16 +57,12 @@ function Map(props: {
     mapRef.current.on("load", () => {
       mapRef.current?.addSource("radar", {
         type: "image",
-        url: "https://docs.mapbox.com/mapbox-gl-js/assets/radar.gif",
+        url: getPath("source", props.flightLevel, props.timeOffset),
         coordinates: [
-          // [-131, 22],
-          // [-131, 53],
-          // [-66, 22],
-          // [-66, 53]
-          [-80.425, 46.437],
-          [-71.516, 46.437],
-          [-71.516, 37.936],
-          [-80.425, 37.936],
+          [-131, 22],
+          [-66, 22],
+          [-66, 53],
+          [-131, 53]
         ],
       });
 
@@ -75,7 +70,27 @@ function Map(props: {
         id: "radar-layer",
         type: "raster",
         source: "radar",
-        paint: { "raster-fade-duration": 0 },
+        paint: {
+          "raster-fade-duration": 0,
+          "raster-color": [
+              "interpolate",
+              ["linear"],
+              ["raster-value"],
+              0.0,
+              "rgba(35, 23, 27, 0)",
+              0.2,
+              "rgba(47, 157, 245, 1)",
+              0.4,
+              "rgba(76, 248, 132, 1)",
+              0.6,
+              "rgba(222, 221, 50, 1)",
+              0.8,
+              "rgba(246, 95, 24, 1)",
+              1.0,
+              "rgba(144, 12, 0, 1)",
+          ],
+          "raster-color-range": [0, 1],
+        },
       });
     });
 
