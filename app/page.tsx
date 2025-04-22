@@ -34,7 +34,9 @@ export default function Home() {
       </div>
       <div className="fixed top-0 right-0 p-4 flex flex-row-reverse gap-4">
         <SourcePicker sources={sources} setSources={setSources} />
-        <AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />
+        {sources[0] && (
+          <AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />
+        )}
       </div>
     </div>
   );
