@@ -19,7 +19,6 @@ function FlightLevelSlider({
 	const flightLevels: number[] = [
 		480, 420, 360, 300, 270, 240, 210, 180, 150, 120, 90, 60, 30, 10,
 	];
-	const midpoint = 180;
 
 	return (
 		<Card>
@@ -30,7 +29,7 @@ function FlightLevelSlider({
 			<CardContent>
 				<div className="grid grid-cols-2">
 					<Slider
-						min={-2}
+						min={0}
 						max={flightLevels.length - 1}
 						step={1}
 						orientation="vertical"
@@ -45,8 +44,6 @@ function FlightLevelSlider({
 								</span>
 							);
 						})}
-						<span>&gt;{midpoint}</span>
-						<span>&lt;{midpoint}</span>
 					</div>
 				</div>
 			</CardContent>
