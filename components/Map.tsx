@@ -1,13 +1,19 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Import Mapbox and styles
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
+// Import controls
+import AircraftPicker from "@/components/controls/AircraftPicker";
+import FlightLevelSlider from "@/components/controls/FlightLevelSlider";
+import SourcePicker from "@/components/controls/SourcePicker";
+import TimeSlider from "@/components/controls/TimeSlider";
+
 enum Source {
-  SATELLITE,
-  RADAR,
+  SATELLITE = "sat",
+  RADAR = "rad",
 }
 
 // Check for access token
@@ -18,19 +24,16 @@ if (!process.env.NEXT_PUBLIC_MAPBOX_TOKEN) {
 }
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
-function Map(props: {
-  flightLevel: number;
-  timeOffset: number;
-  sizeClass: string;
-  sources: boolean[];
-}) {
+function Map() {
+  const [flightLevel, setFlightLevel] = useState<number>(0);
+  const [timeOffset, setTimeOffset] = useState<number>(0);
+  const [sizeClass, setSizeClass] = useState<string>("l");
+  const [sources, setSources] = useState<boolean[]>([true, true]);
+
   const mapRef = useRef<mapboxgl.Map | null>(null);
 
-  function getPath(source: Source, alt: number = 0, time: number = 0) {
-    if (source === Source.RADAR) { // pull from the Radar folder
-      return `/frames/radar/layer_${alt.toLocaleString()}_${time.toLocaleString()}.gif`
-    }
-    return `/frames/layer${alt.toLocaleString().padStart(5, "0")}.gif`
+  function getPath(source: Source) {
+    return `/frames/${source.toString()}/frame${timeOffset}/alt${flightLevel.toString().padStart(2, "0")}.gif`
   }
 
   useEffect(() => {
@@ -59,10 +62,11 @@ function Map(props: {
     // Add raster layers
     mapRef.current.on("load", () => {
 
-      // Satellite Data Layers
-      mapRef.current?.addSource("satellite", {
+      // Satellite layers
+
+      mapRef.current.addSource("sat-source", {
         type: "image",
-        url: getPath(Source.SATELLITE, props.flightLevel, props.timeOffset),
+        url: getPath(Source.SATELLITE),
         coordinates: [
           [-131, 22],
           [-66, 22],
@@ -71,10 +75,10 @@ function Map(props: {
         ],
       });
 
-      mapRef.current?.addLayer({
-        id: "satellite-layer",
+      mapRef.current.addLayer({
+        id: "sat-layer",
         type: "raster",
-        source: "satellite",
+        source: "sat-source",
         paint: {
           "raster-fade-duration": 0,
           "raster-color": [
@@ -97,11 +101,12 @@ function Map(props: {
           "raster-color-range": [0, 1],
         },
       });
-      
-      // Nexrad/Radar Data Layers
-      mapRef.current?.addSource("radar", {
+
+      // Radar Layers
+
+      mapRef.current?.addSource("rad-source", {
         type: "image",
-        url: getPath(Source.RADAR, props.flightLevel, props.timeOffset),
+        url: getPath(Source.RADAR),
         coordinates: [
           [-131, 22],
           [-66, 22],
@@ -110,10 +115,10 @@ function Map(props: {
         ],
       });
 
-      mapRef.current?.addLayer({
-        id: "radar-layer",
+      mapRef.current.addLayer({
+        id: "rad-layer",
         type: "raster",
-        source: "radar",
+        source: "rad-source",
         paint: {
           "raster-fade-duration": 0,
           "raster-color": [
@@ -136,7 +141,7 @@ function Map(props: {
           "raster-color-range": [0, 1],
         },
       });
-    
+
     });
 
     // Clean up map
@@ -148,44 +153,49 @@ function Map(props: {
     };
   }, []);
 
-  // update image(s) when flightLevel or timeOffset changes
+  // Handle source changes
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
 
-    const radar_source = map.getSource("radar") as mapboxgl.ImageSource;
-    const new_radar_image_url = getPath(Source.RADAR, props.flightLevel, props.timeOffset);
-    if (radar_source) {
-      radar_source.updateImage({
-        url: new_radar_image_url,
-      });
+    if (map.loaded()) {
+      map.setLayoutProperty("sat-layer", "visibility", sources[0] ? "visible" : "none");
+      map.setLayoutProperty("rad-layer", "visibility", sources[1] ? "visible" : "none");
     }
-    
-    const satellite_source = map.getSource("satellite") as mapboxgl.ImageSource;
-    const new_satellite_image_url = getPath(Source.SATELLITE, props.flightLevel, props.timeOffset);
-    if (satellite_source) {
-      satellite_source.updateImage({
-        url: new_satellite_image_url,
-      });
-    }
-  }, [props.flightLevel, props.timeOffset]);
+  }, [sources]);
 
-  // update image(s) when sources change
+  // Handle altitude/time offset changes
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
-    
-    console.log("change of source", props.sources);
 
-    // TODO: was not able to get this working following guide at
-    // https://docs.mapbox.com/mapbox-gl-js/example/toggle-layers/
-    
-  }, [props.sources]);
+    if (map.loaded()) {
+      if (map.getSource("sat-layer") || map.getSource("sat-source")) {
+        map.getSource("sat-source").updateImage({ url: getPath(Source.SATELLITE) })
+      }
 
+      if (map.getSource("rad-layer") || map.getSource("rad-source")) {
+        map.getSource("rad-source").updateImage({ url: getPath(Source.RADAR) })
+      }
+    }
+  }, [flightLevel, timeOffset])
 
   return (
     <>
-      <div id="map" className="map-container w-screen h-screen" />
+      <div id="map" className="map-container w-screen h-screen absolute" />
+      <div className="fixed left-0 p-4">
+        <FlightLevelSlider
+          flightLevel={flightLevel}
+          setFlightLevel={setFlightLevel}
+        />
+      </div>
+      <div className="fixed bottom-0 mx-auto w-full max-w-xl p-4">
+        <TimeSlider timeOffset={timeOffset} setTimeOffset={setTimeOffset} />
+      </div>
+      <div className="fixed top-0 right-0 p-4 flex flex-row-reverse gap-4">
+        <SourcePicker sources={sources} setSources={setSources} />
+        {/*<AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />*/}
+      </div>
     </>
   );
 }
