@@ -10,6 +10,7 @@ import AircraftPicker from "@/components/controls/AircraftPicker";
 import FlightLevelSlider from "@/components/controls/FlightLevelSlider";
 import SourcePicker from "@/components/controls/SourcePicker";
 import TimeSlider from "@/components/controls/TimeSlider";
+import Legend from "@/components/controls/Legend";
 
 enum Source {
   SATELLITE = "sat",
@@ -163,12 +164,79 @@ function Map() {
       map.setLayoutProperty("rad-layer", "visibility", sources[1] ? "visible" : "none");
 
       const bothVisible = sources[0] && sources[1];
-      const opacity = bothVisible ? 0.5 : 1.0;
+      const opacity = bothVisible ? 0.8 : 1.0;
 
       map.setPaintProperty("sat-layer", "raster-opacity", sources[0] ? opacity : 0);
       map.setPaintProperty("rad-layer", "raster-opacity", sources[1] ? opacity : 0);
     }
   }, [sources]);
+
+  // Handle size class changes
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    var rasterColor;
+    switch (sizeClass) {
+      case "l":
+        rasterColor = [
+            "interpolate",
+            ["linear"],
+            ["raster-value"],
+            0.0,
+            "rgba(35, 23, 27, 0)",
+            0.2,
+            "rgba(222, 221, 50, 1)",
+            0.4,
+            "rgba(246, 95, 24, 1)",
+            0.6,
+            "rgba(144, 12, 0, 1)",
+        ];
+        break;
+
+      case "h":
+        rasterColor = [
+            "interpolate",
+            ["linear"],
+            ["raster-value"],
+            0.0,
+            "rgba(35, 23, 27, 0)",
+            0.2,
+            "rgba(47, 157, 245, 1)",
+            0.4,
+            "rgba(76, 248, 132, 1)",
+            0.6,
+            "rgba(222, 221, 50, 1)",
+            0.8,
+            "rgba(246, 95, 24, 1)",
+            1.0,
+            "rgba(144, 12, 0, 1)",
+        ];
+        break;
+
+      default:
+        rasterColor = [
+            "interpolate",
+            ["linear"],
+            ["raster-value"],
+            0.0,
+            "rgba(35, 23, 27, 0)",
+            0.2,
+            "rgba(76, 248, 132, 1)",
+            0.4,
+            "rgba(222, 221, 50, 1)",
+            0.6,
+            "rgba(246, 95, 24, 1)",
+            0.8,
+            "rgba(144, 12, 0, 1)",
+        ];
+    }
+
+    if (map.loaded()) {
+      map.setPaintProperty("sat-layer", "raster-color", rasterColor);
+      map.setPaintProperty("rad-layer", "raster-color", rasterColor);
+    }
+  }, [sizeClass]);
 
   // Handle altitude/time offset changes
   useEffect(() => {
@@ -200,19 +268,14 @@ function Map() {
       </div>
       <div className="fixed top-0 right-0 p-4 flex flex-row-reverse gap-4">
         <SourcePicker sources={sources} setSources={setSources} />
-        {/*<AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />*/}
+        <AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />
       </div>
-      <div className="fixed bottom-80 right-0 m-4 p-4 bg-white bg-opacity-80 rounded shadow text-sm space-y-1">
-        <div className="font-bold">Risk Probability</div>
-        <div className="flex items-center gap-2"><span className="w-4 h-4" style={{ backgroundColor: "rgba(47, 157, 245, 1)" }} /> Very Low (0.2)</div>
-        <div className="flex items-center gap-2"><span className="w-4 h-4" style={{ backgroundColor: "rgba(76, 248, 132, 1)" }} /> Low (0.4)</div>
-        <div className="flex items-center gap-2"><span className="w-4 h-4" style={{ backgroundColor: "rgba(222, 221, 50, 1)" }} /> Medium (0.6)</div>
-        <div className="flex items-center gap-2"><span className="w-4 h-4" style={{ backgroundColor: "rgba(246, 95, 24, 1)" }} /> High (0.8)</div>
-        <div className="flex items-center gap-2"><span className="w-4 h-4" style={{ backgroundColor: "rgba(144, 12, 0, 1)" }} /> Very High (1.0)</div>
-       </div>
+      <div className="fixed right-0 p-4">
+        <Legend />
+      </div>
     </>
 
-  
+
   );
 }
 
