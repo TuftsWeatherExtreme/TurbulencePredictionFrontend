@@ -44,7 +44,7 @@ function Map() {
     // Initialize the map
     mapRef.current = new mapboxgl.Map({
       container: "map",
-      style: "mapbox://style/mapbox/standard",
+      style: "mapbox://style/mapbox/light-v11",
       projection: "albers",
       bounds: [
         [-131, 22],
