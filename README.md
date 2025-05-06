@@ -52,7 +52,7 @@ pnpm dev
 bun dev
 ```
 
-(may need to install relevarelevantnt packages with `npm install` first)
+(may need to install relevant packages with `npm install` first)
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
