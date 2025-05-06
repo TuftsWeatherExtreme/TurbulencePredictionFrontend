@@ -29,7 +29,7 @@
 ### Aquiring a Mapbox Access Token
 - In order to use Mapbox, you will need to create an account and get an access token.
 - You can do this by going to the [Mapbox website](https://www.mapbox.com/) and signing up for a free account [here](https://www.mapbox.com/signup/).
-- As of setting up our accounts in Spring 2025, if you use an institutional email, you must enter a billing address, but no actual billing method so you will not get accidentally get charged for usage.
+- As of setting up our accounts in Spring 2025, if you use an institutional email, you must enter a billing address, but no actual billing method so you will not accidentally get charged for usage.
 - Once you have signed up, you can create a new access token by going to the [Access Tokens page](https://account.mapbox.com/access-tokens/) and clicking on the "Create a token" button.
 - You can name the token whatever you like, but make sure to select the "Default public token" option.
 - Once you have created the token, you will see a long string of letters and numbers. This is your access token, and you will need to copy it to use in the next step.
