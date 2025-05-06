@@ -53,6 +53,9 @@ pnpm dev
 bun dev
 ```
 
+(may need to install relevent packages with `npm install` first)
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can edit the page by modifying `app/page.tsx`. The page auto-updates as you save the file.
