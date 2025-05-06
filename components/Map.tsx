@@ -234,7 +234,6 @@ function Map() {
 
     if (map.loaded()) {
       map.setPaintProperty("sat-layer", "raster-color", rasterColor);
-      map.setPaintProperty("rad-layer", "raster-color", rasterColor);
     }
   }, [sizeClass]);
 
@@ -268,7 +267,9 @@ function Map() {
       </div>
       <div className="fixed top-0 right-0 p-4 flex flex-row-reverse gap-4">
         <SourcePicker sources={sources} setSources={setSources} />
-        <AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />
+        {sources[0] && ( // Only show aircraft picker if satellite source is selected
+           <AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />
+         )}
       </div>
       <div className="fixed right-0 p-4">
         <Legend />

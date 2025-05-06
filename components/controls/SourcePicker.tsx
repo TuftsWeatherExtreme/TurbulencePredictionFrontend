@@ -18,7 +18,9 @@ function SourcePicker({
 	setSources: (value: boolean[]) => void;
 }) {
 	return (
-		<DropdownMenu>
+		<DropdownMenu 
+      defaultOpen
+    >
 			<DropdownMenuTrigger asChild>
 				<Button variant="outline" size="sm">
 					<span>Sources</span>
