@@ -1,6 +1,5 @@
 # Senior Capstone Project - Frontend
 - This frontend was a collaborative project between teams Sky Blue and Celestial Blue. it was inspired by the [Aviation Weather Center's Graphical Forecasts for Aviation](https://aviationweather.gov/gfa/#turb) website.
-
 - The frontend was built using [Next.js](https://nextjs.org) and TypeScript
 - We also used [Mapbox](https://www.mapbox.com/) for the map functionality and Tailwind CSS for styling
 - In order to run the frontend, you will need to have Node.js and npm installed on your machine, as well as a Mapbox access token
@@ -29,7 +28,7 @@
 ### Acquiring a Mapbox Access Token
 - In order to use Mapbox, you will need to create an account and get an access token.
 - You can do this by going to the [Mapbox website](https://www.mapbox.com/) and signing up for a free account [here](https://www.mapbox.com/signup/).
-- As of setting up our accounts in Spring 2025, if you use an institutional email, you must enter a billing address, but no actual billing method so you will not get accidentally get charged for usage.
+- As of setting up our accounts in Spring 2025, if you use an institutional email, you must enter a billing address, but no actual billing method so you will not accidentally get charged for usage.
 - Once you have signed up, you can create a new access token by going to the [Access Tokens page](https://account.mapbox.com/access-tokens/) and clicking on the "Create a token" button.
 - You can name the token whatever you like, but make sure to select the "Default public token" option.
 - Once you have created the token, you will see a long string of letters and numbers. This is your access token, and you will need to copy it to use in the next step.
@@ -74,6 +73,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 #### Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployment of this Next.js app can be done using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
