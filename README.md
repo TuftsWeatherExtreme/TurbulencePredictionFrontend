@@ -34,7 +34,7 @@
 - Once you have created the token, you will see a long string of letters and numbers. This is your access token, and you will need to copy it to use in the next step.
 - Then you will need to create a `.env` file in the root of the project and add the following line to it:
 ```
-MAPBOX_ACCESS_TOKEN=your_access_token_here
+NEXT_PUBLIC_MAPBOX_TOKEN=your_access_token_here
 ```
 - Make sure to replace `your_access_token_here` with the actual access token you copied from the Mapbox website.
 
