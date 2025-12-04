@@ -7,8 +7,9 @@
 ## Relevant Files and Architectural Overview
 - The main components that make up the frontend are located in the `app/components/controls` directory, and rely on UI components defined in the `app/components/ui` directory.
 - The main components are:
-  - `app/components/controls/FlightLevelSlider.tsx` - this component contains the slider on the left side of the map that allows users to select a flight level / altitude to show predictions for.
-  - `app/components/controls/TimeSlider.tsx` - this component contains the slider on the bottom of the map that allows users to select a time to show predictions for.
+  - `app/components/controls/FlightLevelSlider.tsx` - this component contains the slider on the left side of the map that allows users to select a flight level / altitude to show predictions for. Note that a Flight Level is in hundreds of feet
+  (FLxxx = xxx * 100 ft)
+  - `app/components/controls/TimeSlider.tsx` - this component contains the slider on the bottom of the map that allows users to select a time (in zulu) to show predictions for.
 
   - `app/components/controls/Legend.tsx` - this component contains the legend that correlates the color of the predictions to the intensity of turbulence.
 

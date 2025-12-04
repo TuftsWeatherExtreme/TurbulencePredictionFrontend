@@ -23,7 +23,7 @@ function FlightLevelSlider({
 	return (
 		<Card>
 			<CardHeader>
-				<CardTitle>Flight Level</CardTitle>
+				<CardTitle>Flight Level (&times;100ft)</CardTitle>
 				<CardDescription>Above Mean Sea Level (MSL)</CardDescription>
 			</CardHeader>
 			<CardContent>

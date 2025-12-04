@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 
 function Legend() {
@@ -25,6 +25,7 @@ function Legend() {
     <Card>
       <CardHeader>
         <CardTitle>Legend</CardTitle>
+        <CardDescription>Turbulence Level</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-[16px_1fr] gap-2">

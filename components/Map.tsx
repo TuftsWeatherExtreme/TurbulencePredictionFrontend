@@ -266,10 +266,14 @@ function Map() {
         <TimeSlider timeOffset={timeOffset} setTimeOffset={setTimeOffset} />
       </div>
       <div className="fixed top-0 right-0 p-4 flex flex-row-reverse gap-4">
-        <SourcePicker sources={sources} setSources={setSources} />
+        {/* This only works because satellite and radar sources are set to both true by default */}
+        <AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />
+
+        {/* NOTE: the below code is from last year, to select the source and only show plane size for satellite */}
+        {/* <SourcePicker sources={sources} setSources={setSources} />
         {sources[0] && ( // Only show aircraft picker if satellite source is selected
            <AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />
-         )}
+         )} */}
       </div>
       <div className="fixed right-0 p-4">
         <Legend />
