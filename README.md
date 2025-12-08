@@ -1,6 +1,7 @@
 # Senior Capstone Project - Frontend
 - This frontend was a collaborative project between teams Sky Blue and Celestial Blue. it was inspired by the [Aviation Weather Center's Graphical Forecasts for Aviation](https://aviationweather.gov/gfa/#turb) website.
 - The frontend was built using [Next.js](https://nextjs.org) and TypeScript
+- Tailwind CSS is used for styling
 - We also used [Mapbox](https://www.mapbox.com/) for the map functionality and Tailwind CSS for styling
 - In order to run the frontend, you will need to have Node.js and npm installed on your machine, as well as a Mapbox access token
 
