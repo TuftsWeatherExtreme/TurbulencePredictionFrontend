@@ -12,6 +12,8 @@ import SourcePicker from "@/components/controls/SourcePicker";
 import TimeSlider from "@/components/controls/TimeSlider";
 import Legend from "@/components/controls/Legend";
 
+const DEFAULT_NEXRAD_GEOJSON_URL = "/predictions/preds_2024_12.geojson";
+
 enum Source {
   SATELLITE = "sat",
   RADAR = "rad",
@@ -30,19 +32,18 @@ function Map() {
   const [timeOffset, setTimeOffset] = useState<number>(0);
   const [sizeClass, setSizeClass] = useState<string>("l");
   const [sources, setSources] = useState<boolean[]>([true, true]);
+  const [nexradUrl] = useState<string>(
+    process.env.NEXT_PUBLIC_NEXRAD_GEOJSON_URL ?? DEFAULT_NEXRAD_GEOJSON_URL,
+  );
 
   const mapRef = useRef<mapboxgl.Map | null>(null);
-
-  function getPath(source: Source) {
-    return `/frames/${source.toString()}/frame${timeOffset}/alt${flightLevel.toString().padStart(2, "0")}.gif`
-  }
 
   useEffect(() => {
     // Prevent re-initializing the map
     if (mapRef.current) return;
 
     // Initialize the map
-    mapRef.current = new mapboxgl.Map({
+    const map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://style/mapbox/light-v11",
       projection: "albers",
@@ -55,92 +56,88 @@ function Map() {
         [-66, 53],
       ],
     });
+    mapRef.current = map;
 
     // Disable rotation
-    mapRef.current.dragRotate.disable();
-    mapRef.current.touchZoomRotate.disableRotation();
+    map.dragRotate.disable();
+    map.touchZoomRotate.disableRotation();
 
-    // Add raster layers
-    mapRef.current.on("load", () => {
-
-      // Satellite layers
-
-      mapRef.current.addSource("sat-source", {
-        type: "image",
-        url: getPath(Source.SATELLITE),
-        coordinates: [
-          [-131, 22],
-          [-66, 22],
-          [-66, 53],
-          [-131, 53]
-        ],
+    map.on("load", () => {
+      // NEXRAD predictions (GeoJSON points)
+      map.addSource("nexrad-preds", {
+        type: "geojson",
+        data: nexradUrl,
       });
 
-      mapRef.current.addLayer({
-        id: "sat-layer",
-        type: "raster",
-        source: "sat-source",
+      // NOTE: Mapbox coerces feature.properties values to strings, so we use a
+      // dedicated numeric property exported from Python.
+      const severeProbExpr: any = ["to-number", ["get", "severe_prob"]];
+
+      map.addLayer({
+        id: "nexrad-preds-layer",
+        type: "circle",
+        source: "nexrad-preds",
         paint: {
-          "raster-fade-duration": 0,
-          "raster-color": [
-              "interpolate",
-              ["linear"],
-              ["raster-value"],
-              0.0,
-              "rgba(35, 23, 27, 0)",
-              0.2,
-              "rgba(47, 157, 245, 1)",
-              0.4,
-              "rgba(76, 248, 132, 1)",
-              0.6,
-              "rgba(222, 221, 50, 1)",
-              0.8,
-              "rgba(246, 95, 24, 1)",
-              1.0,
-              "rgba(144, 12, 0, 1)",
+          "circle-opacity": [
+            "interpolate",
+            ["linear"],
+            severeProbExpr,
+            0,
+            0.0,
+            0.2,
+            0.25,
+            1,
+            0.95,
           ],
-          "raster-color-range": [0, 1],
+          "circle-radius": [
+            "interpolate",
+            ["linear"],
+            severeProbExpr,
+            0,
+            2,
+            1,
+            8,
+          ],
+          "circle-color": [
+            "interpolate",
+            ["linear"],
+            severeProbExpr,
+            0,
+            "rgba(47, 157, 245, 0.8)",
+            0.5,
+            "rgba(222, 221, 50, 0.9)",
+            1,
+            "rgba(144, 12, 0, 0.95)",
+          ],
+          "circle-stroke-color": "rgba(0, 0, 0, 0.25)",
+          "circle-stroke-width": 1,
         },
       });
 
-      // Radar Layers
+      map.on("click", "nexrad-preds-layer", (e) => {
+        const feature = e.features?.[0];
+        if (!feature) return;
 
-      mapRef.current?.addSource("rad-source", {
-        type: "image",
-        url: getPath(Source.RADAR),
-        coordinates: [
-          [-131, 22],
-          [-66, 22],
-          [-66, 53],
-          [-131, 53]
-        ],
+        const coordinates = (feature.geometry as any).coordinates?.slice();
+        const props = feature.properties as any;
+        const html = [
+          `<div style="font-size:12px; line-height:1.25;">`,
+          `<div><b>NEXRAD severe</b></div>`,
+          `<div>p(severe): ${props?.severe_prob ? Number(props.severe_prob).toFixed(3) : "?"}</div>`,
+          `<div>pred_class: ${props?.pred_class ?? "?"}</div>`,
+          `<div>flight_level_ft: ${props?.flight_level_ft ?? "?"}</div>`,
+          `<div>pirep_time: ${props?.pirep_time ?? "?"}</div>`,
+          `</div>`,
+        ].join("");
+
+        new mapboxgl.Popup().setLngLat(coordinates).setHTML(html).addTo(map);
       });
 
-      mapRef.current.addLayer({
-        id: "rad-layer",
-        type: "raster",
-        source: "rad-source",
-        paint: {
-          "raster-fade-duration": 0,
-          "raster-color": [
-              "interpolate",
-              ["linear"],
-              ["raster-value"],
-              0.0,
-              "rgba(35, 23, 27, 0)",
-              0.2,
-              "rgba(47, 157, 245, 1)",
-              0.4,
-              "rgba(76, 248, 132, 1)",
-              0.6,
-              "rgba(222, 221, 50, 1)",
-              0.8,
-              "rgba(246, 95, 24, 1)",
-              1.0,
-              "rgba(144, 12, 0, 1)",
-          ],
-          "raster-color-range": [0, 1],
-        },
+      map.on("mouseenter", "nexrad-preds-layer", () => {
+        map.getCanvas().style.cursor = "pointer";
+      });
+      map.on("mouseleave", "nexrad-preds-layer", () => {
+        map.getCanvas().style.cursor = "";
       });
 
     });
@@ -154,104 +151,21 @@ function Map() {
     };
   }, []);
 
-  // Handle source changes
+  // Keep the UI toggles; only radar affects visibility for now (since satellite raster was removed, and satellite predictions are not yet implemented).
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
+    if (!map.loaded()) return;
 
-    if (map.loaded()) {
-      map.setLayoutProperty("sat-layer", "visibility", sources[0] ? "visible" : "none");
-      map.setLayoutProperty("rad-layer", "visibility", sources[1] ? "visible" : "none");
-
-      const bothVisible = sources[0] && sources[1];
-      const opacity = bothVisible ? 0.8 : 1.0;
-
-      map.setPaintProperty("sat-layer", "raster-opacity", sources[0] ? opacity : 0);
-      map.setPaintProperty("rad-layer", "raster-opacity", sources[1] ? opacity : 0);
+    const radarVisible = sources[1];
+    if (map.getLayer("nexrad-preds-layer")) {
+      map.setLayoutProperty(
+        "nexrad-preds-layer",
+        "visibility",
+        radarVisible ? "visible" : "none",
+      );
     }
   }, [sources]);
-
-  // Handle size class changes
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!map) return;
-
-    var rasterColor;
-    switch (sizeClass) {
-      case "l":
-        rasterColor = [
-            "interpolate",
-            ["linear"],
-            ["raster-value"],
-            0.0,
-            "rgba(35, 23, 27, 0)",
-            0.2,
-            "rgba(222, 221, 50, 1)",
-            0.4,
-            "rgba(246, 95, 24, 1)",
-            0.6,
-            "rgba(144, 12, 0, 1)",
-        ];
-        break;
-
-      case "h":
-        rasterColor = [
-            "interpolate",
-            ["linear"],
-            ["raster-value"],
-            0.0,
-            "rgba(35, 23, 27, 0)",
-            0.2,
-            "rgba(47, 157, 245, 1)",
-            0.4,
-            "rgba(76, 248, 132, 1)",
-            0.6,
-            "rgba(222, 221, 50, 1)",
-            0.8,
-            "rgba(246, 95, 24, 1)",
-            1.0,
-            "rgba(144, 12, 0, 1)",
-        ];
-        break;
-
-      default:
-        rasterColor = [
-            "interpolate",
-            ["linear"],
-            ["raster-value"],
-            0.0,
-            "rgba(35, 23, 27, 0)",
-            0.2,
-            "rgba(76, 248, 132, 1)",
-            0.4,
-            "rgba(222, 221, 50, 1)",
-            0.6,
-            "rgba(246, 95, 24, 1)",
-            0.8,
-            "rgba(144, 12, 0, 1)",
-        ];
-    }
-
-    if (map.loaded()) {
-      map.setPaintProperty("sat-layer", "raster-color", rasterColor);
-    }
-  }, [sizeClass]);
-
-  // Handle altitude/time offset changes
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!map) return;
-
-    if (map.loaded()) {
-      if (map.getSource("sat-layer") || map.getSource("sat-source")) {
-        map.getSource("sat-source").updateImage({ url: getPath(Source.SATELLITE) })
-      }
-
-      if (map.getSource("rad-layer") || map.getSource("rad-source")) {
-        map.getSource("rad-source").updateImage({ url: getPath(Source.RADAR) })
-      }
-    }
-  }, [flightLevel, timeOffset])
 
   return (
     <>
@@ -266,14 +180,8 @@ function Map() {
         <TimeSlider timeOffset={timeOffset} setTimeOffset={setTimeOffset} />
       </div>
       <div className="fixed top-0 right-0 p-4 flex flex-row-reverse gap-4">
-        {/* This only works because satellite and radar sources are set to both true by default */}
+        <SourcePicker sources={sources} setSources={setSources} />
         <AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />
-
-        {/* NOTE: the below code is from last year, to select the source and only show plane size for satellite */}
-        {/* <SourcePicker sources={sources} setSources={setSources} />
-        {sources[0] && ( // Only show aircraft picker if satellite source is selected
-           <AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />
-         )} */}
       </div>
       <div className="fixed right-0 p-4">
         <Legend />

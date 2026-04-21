@@ -14,15 +14,22 @@
 
   - `app/components/controls/Legend.tsx` - this component contains the legend that correlates the color of the predictions to the intensity of turbulence.
 
-  - `app/components/controls/SourcePicker.tsx` - this component contains the dropdown menu that allows users to select the source of the data. The options are "Satellite" and "Radar". When a user selects a different source, the map is re-colored to reflect the new source. By default, both sources are selected, meaning the predictions of both models are shown, at 70% capacity.
+  - `app/components/controls/SourcePicker.tsx` - this component contains the dropdown menu that allows users to select the source of the data. The options are "Satellite" and "Radar". When a user selects a different source, the map is re-colored to reflect the new source. By default, both sources are selected, meaning the predictions of both models are shown, blended at 50/50.
 
   - `app/components/controls/AircraftPicker.tsx` - this component contains the dropdown menu that allows users to select the weight of the aircraft type, which is factored into the prediction intensity for satellite data. When a user selects a different aircraft size, the satellite data is re-colored to reflect more or less intense turbulence.
 
 - all these components are combined in the Map component which is at `app/components/Map.tsx`, and this Map component is used in `app/page.tsx`.
 
 #### Displaying Predictions
-- in order to display predictions on the map, we used Mapbox raster tiles, which are `.gif` files stored at `public/frames/{source}/frame{num}/alt{idx}.gif` where `{source}` is the source of the data (either "sat" for satellite or "rad" for radar), `{num}` is the frame number, which represents the index along the time slider, and `{idx}` is the index of the altitude.
-- In the future, ideally the backend could, on a certain time interval, query the model and generate new images to be displayed on the map.
+- The map loads **raster image overlays** (Mapbox `image` + `raster` layers). Tile URLs follow:
+  - `{tileBase}/{source}/frame{num}/alt{idx}.{extension}`
+  - `{source}` is `sat` or `rad`; `{num}` is the time slider index; `{idx}` is the altitude slider index (zero-padded).
+- **Where `tileBase` comes from** (first match wins):
+  1. `NEXT_PUBLIC_TILE_BASE` in `.env` (optional `NEXT_PUBLIC_TILE_EXT`, default `gif`) — use this for a CDN or static host in production.
+  2. Otherwise `public/predictions/latest.json` with `{ "tileBase": "...", "extension": "png" }`.
+  3. Otherwise bundled static demo tiles: `public/frames/...` as `.gif` files.
+- **Development dummy tiles:** If `latest.json` points `tileBase` at `/api/predictions/tiles` and `extension` at `png`, the Next.js route generates solid-color PNGs so time/altitude sliders visibly change (no real model). Remove or override that manifest when using real model outputs.
+- **Production direction:** A scheduled job (e.g. hourly) can write new tiles to object storage and set `NEXT_PUBLIC_TILE_BASE` to that URL prefix; the frontend then needs no redeploy for new images.
 
 
 ## Getting Started
