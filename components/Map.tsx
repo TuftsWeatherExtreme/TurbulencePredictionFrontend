@@ -11,6 +11,7 @@ import FlightLevelSlider from "@/components/controls/FlightLevelSlider";
 import SourcePicker from "@/components/controls/SourcePicker";
 import TimeSlider from "@/components/controls/TimeSlider";
 import Legend from "@/components/controls/Legend";
+import { Button } from "@/components/ui/button";
 
 const DEFAULT_NEXRAD_GEOJSON_URL = "/predictions/preds_2024_12.geojson";
 
@@ -32,9 +33,18 @@ function Map() {
   const [timeOffset, setTimeOffset] = useState<number>(0);
   const [sizeClass, setSizeClass] = useState<string>("l");
   const [sources, setSources] = useState<boolean[]>([true, true]);
+  // Altitude filter toggle
+  const [altFilterEnabled, setAltFilterEnabled] = useState<boolean>(true);
   const [nexradUrl] = useState<string>(
     process.env.NEXT_PUBLIC_NEXRAD_GEOJSON_URL ?? DEFAULT_NEXRAD_GEOJSON_URL,
   );
+
+  // Flight levels shown in the UI (×100 ft). The slider value is the *index* into this array.
+  const flightLevelsFl100: number[] = [
+    480, 420, 360, 300, 270, 240, 210, 180, 150, 120, 90, 60, 30, 10,
+  ];
+  const selectedFl100 = flightLevelsFl100[flightLevel] ?? flightLevelsFl100[0];
+  const selectedAltFt = selectedFl100 * 100;
 
   const mapRef = useRef<mapboxgl.Map | null>(null);
 
@@ -151,6 +161,33 @@ function Map() {
     };
   }, []);
 
+  // Filter points by selected flight level (ALT is stored in feet in GeoJSON).
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const applyFilter = () => {
+      if (!map.getLayer("nexrad-preds-layer")) return;
+      if (!altFilterEnabled) {
+        map.setFilter("nexrad-preds-layer", null);
+        return;
+      }
+      const altExpr: any = ["to-number", ["get", "flight_level_ft"]];
+      const bandFt = 2000;
+      map.setFilter("nexrad-preds-layer", [
+        "all",
+        [">=", altExpr, selectedAltFt - bandFt],
+        ["<=", altExpr, selectedAltFt + bandFt],
+      ]);
+    };
+
+    if (!map.loaded()) {
+      map.once("load", applyFilter);
+      return;
+    }
+
+    applyFilter();
+  }, [selectedAltFt, altFilterEnabled]);
+
   // Keep the UI toggles; only radar affects visibility for now (since satellite raster was removed, and satellite predictions are not yet implemented).
   useEffect(() => {
     const map = mapRef.current;
@@ -175,6 +212,15 @@ function Map() {
           flightLevel={flightLevel}
           setFlightLevel={setFlightLevel}
         />
+        <div className="mt-2 flex justify-center">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setAltFilterEnabled((v) => !v)}
+          >
+            Alt filter: {altFilterEnabled ? "On" : "Off"}
+          </Button>
+        </div>
       </div>
       <div className="fixed bottom-0 mx-auto w-full max-w-xl p-4">
         <TimeSlider timeOffset={timeOffset} setTimeOffset={setTimeOffset} />
