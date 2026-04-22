@@ -3,6 +3,9 @@
 import { Card, CardTitle, CardContent, CardHeader } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 
+const NUM_STEPS = 16;
+const STEP_MINUTES = 30;
+
 function TimeSlider({
   timeOffset,
   setTimeOffset,
@@ -10,10 +13,13 @@ function TimeSlider({
   timeOffset: number;
   setTimeOffset: (value: number) => void;
 }) {
-  const currentTime = new Date().getTime();
-  const timestamps = [...Array(9).keys()].map(
-    (offset) => new Date(currentTime + offset * 60 * 60 * 1000),
-  );
+  // Show labels at every 2-hour mark (every 4 steps)
+  const labelIndices = [0, 4, 8, 12, 15];
+  const formatLabel = (step: number) => {
+    const hours = (step * STEP_MINUTES) / 60;
+    if (step === 0) return "T+0";
+    return `+${hours}h`;
+  };
 
   return (
     <Card>
@@ -22,7 +28,7 @@ function TimeSlider({
           <div className="mx-1.5 h-4">
             <Slider
               min={0}
-              max={timestamps.length - 1}
+              max={NUM_STEPS - 1}
               step={1}
               orientation="horizontal"
               value={[timeOffset]}
@@ -30,19 +36,16 @@ function TimeSlider({
             />
           </div>
           <div className="flex flex-row justify-between font-mono text-sm h-0">
-            {timestamps.map((timestamp, index) => {
-              return (
-                <div key={index} className="w-8 text-center">
-                  {timestamp.getUTCHours().toString().padStart(2, "0")}Z
-                  {index === 0 ? "\n(Now)" : ""}
-                </div>
-              );
-            })}
+            {labelIndices.map((idx) => (
+              <div key={idx} className="w-8 text-center">
+                {formatLabel(idx)}
+              </div>
+            ))}
           </div>
         </div>
       </CardContent>
       <CardHeader className="flex justify-center">
-        <CardTitle>Time (Zulu)</CardTitle>
+        <CardTitle>Forecast Time</CardTitle>
       </CardHeader>
     </Card>
   );

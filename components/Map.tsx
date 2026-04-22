@@ -13,7 +13,15 @@ import TimeSlider from "@/components/controls/TimeSlider";
 import Legend from "@/components/controls/Legend";
 import { Button } from "@/components/ui/button";
 
-const DEFAULT_NEXRAD_GEOJSON_URL = "/predictions/preds_2024_12.geojson";
+// Demo GeoJSON paths — 16 steps at 30-min intervals (8 hours)
+// Place your generated GeoJSONs in public/predictions/radar/ and public/predictions/satellite/
+const NUM_STEPS = 16;
+const RADAR_GEOJSON_PREFIX = "/predictions/radar/prediction_";
+const SATELLITE_GEOJSON_PREFIX = "/predictions/satellite/prediction_";
+
+function getGeoJsonUrl(prefix: string, step: number): string {
+  return `${prefix}${step.toString().padStart(2, "0")}.geojson`;
+}
 
 enum Source {
   SATELLITE = "sat",
@@ -33,13 +41,9 @@ function Map() {
   const [timeOffset, setTimeOffset] = useState<number>(0);
   const [sizeClass, setSizeClass] = useState<string>("l");
   const [sources, setSources] = useState<boolean[]>([true, true]);
-  // Altitude filter toggle
   const [altFilterEnabled, setAltFilterEnabled] = useState<boolean>(true);
-  const [nexradUrl] = useState<string>(
-    process.env.NEXT_PUBLIC_NEXRAD_GEOJSON_URL ?? DEFAULT_NEXRAD_GEOJSON_URL,
-  );
 
-  // Flight levels shown in the UI (×100 ft). The slider value is the *index* into this array.
+  // Flight levels shown in the UI (x100 ft)
   const flightLevelsFl100: number[] = [
     480, 420, 360, 300, 270, 240, 210, 180, 150, 120, 90, 60, 30, 10,
   ];
@@ -48,11 +52,12 @@ function Map() {
 
   const mapRef = useRef<mapboxgl.Map | null>(null);
 
+  // Shared style expression for severe_prob
+  const severeProbExpr: any = ["to-number", ["get", "severe_prob"]];
+
   useEffect(() => {
-    // Prevent re-initializing the map
     if (mapRef.current) return;
 
-    // Initialize the map
     const map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://style/mapbox/light-v11",
@@ -68,20 +73,56 @@ function Map() {
     });
     mapRef.current = map;
 
-    // Disable rotation
     map.dragRotate.disable();
     map.touchZoomRotate.disableRotation();
 
     map.on("load", () => {
-      // NEXRAD predictions (GeoJSON points)
-      map.addSource("nexrad-preds", {
+      // --- Satellite layer (heatmap-style, rendered underneath) ---
+      map.addSource("satellite-preds", {
         type: "geojson",
-        data: nexradUrl,
+        data: getGeoJsonUrl(SATELLITE_GEOJSON_PREFIX, 0),
       });
 
-      // NOTE: Mapbox coerces feature.properties values to strings, so we use a
-      // dedicated numeric property exported from Python.
-      const severeProbExpr: any = ["to-number", ["get", "severe_prob"]];
+      map.addLayer({
+        id: "satellite-preds-layer",
+        type: "circle",
+        source: "satellite-preds",
+        paint: {
+          "circle-opacity": [
+            "interpolate",
+            ["linear"],
+            severeProbExpr,
+            0, 0.0,
+            0.2, 0.15,
+            0.5, 0.4,
+            1, 0.7,
+          ],
+          "circle-radius": [
+            "interpolate",
+            ["linear"],
+            severeProbExpr,
+            0, 6,
+            1, 14,
+          ],
+          "circle-color": [
+            "interpolate",
+            ["linear"],
+            severeProbExpr,
+            0, "rgba(100, 200, 255, 0.6)",
+            0.3, "rgba(255, 255, 100, 0.7)",
+            0.6, "rgba(255, 150, 50, 0.8)",
+            1, "rgba(200, 30, 0, 0.9)",
+          ],
+          "circle-blur": 0.8,
+          "circle-stroke-width": 0,
+        },
+      });
+
+      // --- Radar layer (sharper points, on top) ---
+      map.addSource("nexrad-preds", {
+        type: "geojson",
+        data: getGeoJsonUrl(RADAR_GEOJSON_PREFIX, 0),
+      });
 
       map.addLayer({
         id: "nexrad-preds-layer",
@@ -92,67 +133,75 @@ function Map() {
             "interpolate",
             ["linear"],
             severeProbExpr,
-            0,
-            0.0,
-            0.2,
-            0.25,
-            1,
-            0.95,
+            0, 0.0,
+            0.2, 0.25,
+            1, 0.95,
           ],
           "circle-radius": [
             "interpolate",
             ["linear"],
             severeProbExpr,
-            0,
-            2,
-            1,
-            8,
+            0, 2,
+            1, 8,
           ],
           "circle-color": [
             "interpolate",
             ["linear"],
             severeProbExpr,
-            0,
-            "rgba(47, 157, 245, 0.8)",
-            0.5,
-            "rgba(222, 221, 50, 0.9)",
-            1,
-            "rgba(144, 12, 0, 0.95)",
+            0, "rgba(47, 157, 245, 0.8)",
+            0.5, "rgba(222, 221, 50, 0.9)",
+            1, "rgba(144, 12, 0, 0.95)",
           ],
           "circle-stroke-color": "rgba(0, 0, 0, 0.25)",
           "circle-stroke-width": 1,
         },
       });
 
+      // --- Click handlers ---
       map.on("click", "nexrad-preds-layer", (e) => {
         const feature = e.features?.[0];
         if (!feature) return;
-
         const coordinates = (feature.geometry as any).coordinates?.slice();
         const props = feature.properties as any;
         const html = [
           `<div style="font-size:12px; line-height:1.25;">`,
-          `<div><b>NEXRAD severe</b></div>`,
+          `<div><b>NEXRAD Radar</b></div>`,
           `<div>p(severe): ${props?.severe_prob ? Number(props.severe_prob).toFixed(3) : "?"}</div>`,
           `<div>pred_class: ${props?.pred_class ?? "?"}</div>`,
-          `<div>flight_level_ft: ${props?.flight_level_ft ?? "?"}</div>`,
-          `<div>pirep_time: ${props?.pirep_time ?? "?"}</div>`,
+          `<div>flight_level: ${props?.flight_level_ft ?? "?"} ft</div>`,
+          `<div>time: ${props?.timestamp ?? "?"}</div>`,
           `</div>`,
         ].join("");
-
         new mapboxgl.Popup().setLngLat(coordinates).setHTML(html).addTo(map);
       });
 
-      map.on("mouseenter", "nexrad-preds-layer", () => {
-        map.getCanvas().style.cursor = "pointer";
-      });
-      map.on("mouseleave", "nexrad-preds-layer", () => {
-        map.getCanvas().style.cursor = "";
+      map.on("click", "satellite-preds-layer", (e) => {
+        const feature = e.features?.[0];
+        if (!feature) return;
+        const coordinates = (feature.geometry as any).coordinates?.slice();
+        const props = feature.properties as any;
+        const html = [
+          `<div style="font-size:12px; line-height:1.25;">`,
+          `<div><b>Satellite</b></div>`,
+          `<div>p(severe): ${props?.severe_prob ? Number(props.severe_prob).toFixed(3) : "?"}</div>`,
+          `<div>pred_class: ${props?.pred_class ?? "?"}</div>`,
+          `<div>time: ${props?.timestamp ?? "?"}</div>`,
+          `</div>`,
+        ].join("");
+        new mapboxgl.Popup().setLngLat(coordinates).setHTML(html).addTo(map);
       });
 
+      // Cursor changes
+      for (const layer of ["nexrad-preds-layer", "satellite-preds-layer"]) {
+        map.on("mouseenter", layer, () => {
+          map.getCanvas().style.cursor = "pointer";
+        });
+        map.on("mouseleave", layer, () => {
+          map.getCanvas().style.cursor = "";
+        });
+      }
     });
 
-    // Clean up map
     return () => {
       if (mapRef.current) {
         mapRef.current.remove();
@@ -161,7 +210,31 @@ function Map() {
     };
   }, []);
 
-  // Filter points by selected flight level (ALT is stored in feet in GeoJSON).
+  // --- Update GeoJSON data when time slider changes ---
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !map.loaded()) return;
+
+    const step = Math.min(timeOffset, NUM_STEPS - 1);
+
+    const radarSource = map.getSource("nexrad-preds") as mapboxgl.GeoJSONSource;
+    if (radarSource) {
+      fetch(getGeoJsonUrl(RADAR_GEOJSON_PREFIX, step))
+        .then((res) => res.ok ? res.json() : null)
+        .then((data) => { if (data) radarSource.setData(data); })
+        .catch(() => {});
+    }
+
+    const satSource = map.getSource("satellite-preds") as mapboxgl.GeoJSONSource;
+    if (satSource) {
+      fetch(getGeoJsonUrl(SATELLITE_GEOJSON_PREFIX, step))
+        .then((res) => res.ok ? res.json() : null)
+        .then((data) => { if (data) satSource.setData(data); })
+        .catch(() => {});
+    }
+  }, [timeOffset]);
+
+  // --- Filter radar points by flight level ---
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
@@ -184,17 +257,23 @@ function Map() {
       map.once("load", applyFilter);
       return;
     }
-
     applyFilter();
   }, [selectedAltFt, altFilterEnabled]);
 
-  // Keep the UI toggles; only radar affects visibility for now (since satellite raster was removed, and satellite predictions are not yet implemented).
+  // --- Toggle layer visibility based on source picker ---
   useEffect(() => {
     const map = mapRef.current;
-    if (!map) return;
-    if (!map.loaded()) return;
+    if (!map || !map.loaded()) return;
 
-    const radarVisible = sources[1];
+    const [satVisible, radarVisible] = sources;
+
+    if (map.getLayer("satellite-preds-layer")) {
+      map.setLayoutProperty(
+        "satellite-preds-layer",
+        "visibility",
+        satVisible ? "visible" : "none",
+      );
+    }
     if (map.getLayer("nexrad-preds-layer")) {
       map.setLayoutProperty(
         "nexrad-preds-layer",
@@ -233,8 +312,6 @@ function Map() {
         <Legend />
       </div>
     </>
-
-
   );
 }
 
