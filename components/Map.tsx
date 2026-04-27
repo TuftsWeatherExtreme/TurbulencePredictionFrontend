@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 // Import Mapbox and styles
 import mapboxgl from "mapbox-gl";
@@ -13,14 +13,46 @@ import TimeSlider from "@/components/controls/TimeSlider";
 import Legend from "@/components/controls/Legend";
 import { Button } from "@/components/ui/button";
 
-// Demo GeoJSON paths — 16 steps at 30-min intervals (8 hours)
-// Place your generated GeoJSONs in public/predictions/radar/ and public/predictions/satellite/
+// Two supported modes:
+// 1) Step-based demo files: /predictions/{radar|satellite}/prediction_00..15.geojson
+// 2) Monthly "preds_YYYY_MM" files: /predictions/preds_2024_12.geojson (radar-style schema)
 const NUM_STEPS = 16;
 const RADAR_GEOJSON_PREFIX = "/predictions/radar/prediction_";
 const SATELLITE_GEOJSON_PREFIX = "/predictions/satellite/prediction_";
 
+const RADAR_MONTHLY_GEOJSON = "/predictions/preds_radar_2024_12.geojson";
+const SATELLITE_MONTHLY_GEOJSON = "/predictions/preds_2024_12_satellite.geojson";
+
 function getGeoJsonUrl(prefix: string, step: number): string {
   return `${prefix}${step.toString().padStart(2, "0")}.geojson`;
+}
+
+type FeatureCollection = GeoJSON.FeatureCollection<GeoJSON.Geometry, any>;
+
+function parseTimeMs(t: any): number | null {
+  if (!t) return null;
+  const raw = String(t);
+  // If timestamp string has no timezone, treat it as UTC (our exports are typically UTC).
+  const normalized =
+    /^\d{4}-\d{2}-\d{2}T/.test(raw) && !/[zZ]|[+\-]\d{2}:?\d{2}$/.test(raw)
+      ? `${raw}Z`
+      : raw;
+  const ms = Date.parse(normalized);
+  return Number.isFinite(ms) ? ms : null;
+}
+
+function utcDayKeyFromIso(t: string): string | null {
+  const ms = parseTimeMs(t);
+  if (ms === null) return null;
+  return new Date(ms).toISOString().slice(0, 10); // YYYY-MM-DD
+}
+
+function dayLabelFromDayKey(dayKey: string): string {
+  // YYYY-MM-DD -> MM/DD/YY
+  const mm = dayKey.slice(5, 7);
+  const dd = dayKey.slice(8, 10);
+  const yy = dayKey.slice(2, 4);
+  return `${mm}/${dd}/${yy}`;
 }
 
 enum Source {
@@ -37,11 +69,16 @@ if (!process.env.NEXT_PUBLIC_MAPBOX_TOKEN) {
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
 function Map() {
-  const [flightLevel, setFlightLevel] = useState<number>(0);
+  // Default to a mid/high cruise level so the map isn't empty by default.
+  const [flightLevel, setFlightLevel] = useState<number>(3);
   const [timeOffset, setTimeOffset] = useState<number>(0);
   const [sizeClass, setSizeClass] = useState<string>("l");
   const [sources, setSources] = useState<boolean[]>([true, true]);
   const [altFilterEnabled, setAltFilterEnabled] = useState<boolean>(true);
+  const [useMonthlyFiles, setUseMonthlyFiles] = useState<boolean>(true);
+
+  const [radarMonthly, setRadarMonthly] = useState<FeatureCollection | null>(null);
+  const [satMonthly, setSatMonthly] = useState<FeatureCollection | null>(null);
 
   // Flight levels shown in the UI (x100 ft)
   const flightLevelsFl100: number[] = [
@@ -54,6 +91,30 @@ function Map() {
 
   // Shared style expression for severe_prob
   const severeProbExpr: any = ["to-number", ["get", "severe_prob"]];
+
+  const allDays = useMemo(() => {
+    if (!useMonthlyFiles) return [];
+    const days = new Set<string>();
+    const addFrom = (fc: FeatureCollection | null) => {
+      for (const f of fc?.features ?? []) {
+        const t = (f as any)?.properties?.pirep_time;
+        if (typeof t !== "string") continue;
+        const dayKey = utcDayKeyFromIso(t);
+        if (dayKey) days.add(dayKey);
+      }
+    };
+    addFrom(radarMonthly);
+    addFrom(satMonthly);
+    return Array.from(days).sort();
+  }, [radarMonthly, satMonthly, useMonthlyFiles]);
+
+  const dayLabels = useMemo(() => allDays.map(dayLabelFromDayKey), [allDays]);
+  const selectedDayKey = useMemo(() => {
+    if (!useMonthlyFiles) return null;
+    if (allDays.length === 0) return null;
+    const idx = Math.min(Math.max(timeOffset, 0), allDays.length - 1);
+    return allDays[idx] ?? null;
+  }, [allDays, timeOffset, useMonthlyFiles]);
 
   useEffect(() => {
     if (mapRef.current) return;
@@ -80,7 +141,7 @@ function Map() {
       // --- Satellite layer (heatmap-style, rendered underneath) ---
       map.addSource("satellite-preds", {
         type: "geojson",
-        data: getGeoJsonUrl(SATELLITE_GEOJSON_PREFIX, 0),
+        data: useMonthlyFiles ? SATELLITE_MONTHLY_GEOJSON : getGeoJsonUrl(SATELLITE_GEOJSON_PREFIX, 0),
       });
 
       map.addLayer({
@@ -121,7 +182,7 @@ function Map() {
       // --- Radar layer (sharper points, on top) ---
       map.addSource("nexrad-preds", {
         type: "geojson",
-        data: getGeoJsonUrl(RADAR_GEOJSON_PREFIX, 0),
+        data: useMonthlyFiles ? RADAR_MONTHLY_GEOJSON : getGeoJsonUrl(RADAR_GEOJSON_PREFIX, 0),
       });
 
       map.addLayer({
@@ -163,13 +224,24 @@ function Map() {
         if (!feature) return;
         const coordinates = (feature.geometry as any).coordinates?.slice();
         const props = feature.properties as any;
+        const timeStr = props?.pirep_time ?? props?.timestamp ?? "?";
+        const aircraftClassRaw = String(props?.aircraft_class ?? "").toLowerCase();
+        const aircraftClassLabel =
+          aircraftClassRaw === "l"
+            ? "Light"
+            : aircraftClassRaw === "m"
+              ? "Medium"
+              : aircraftClassRaw === "h"
+                ? "Heavy"
+                : "?";
         const html = [
           `<div style="font-size:12px; line-height:1.25;">`,
           `<div><b>NEXRAD Radar</b></div>`,
           `<div>p(severe): ${props?.severe_prob ? Number(props.severe_prob).toFixed(3) : "?"}</div>`,
           `<div>pred_class: ${props?.pred_class ?? "?"}</div>`,
+          `<div>aircraft: ${aircraftClassLabel}</div>`,
           `<div>flight_level: ${props?.flight_level_ft ?? "?"} ft</div>`,
-          `<div>time: ${props?.timestamp ?? "?"}</div>`,
+          `<div>time: ${timeStr}</div>`,
           `</div>`,
         ].join("");
         new mapboxgl.Popup().setLngLat(coordinates).setHTML(html).addTo(map);
@@ -180,12 +252,23 @@ function Map() {
         if (!feature) return;
         const coordinates = (feature.geometry as any).coordinates?.slice();
         const props = feature.properties as any;
+        const timeStr = props?.pirep_time ?? props?.timestamp ?? "?";
+        const aircraftClassRaw = String(props?.aircraft_class ?? "").toLowerCase();
+        const aircraftClassLabel =
+          aircraftClassRaw === "l"
+            ? "Light"
+            : aircraftClassRaw === "m"
+              ? "Medium"
+              : aircraftClassRaw === "h"
+                ? "Heavy"
+                : "?";
         const html = [
           `<div style="font-size:12px; line-height:1.25;">`,
           `<div><b>Satellite</b></div>`,
           `<div>p(severe): ${props?.severe_prob ? Number(props.severe_prob).toFixed(3) : "?"}</div>`,
           `<div>pred_class: ${props?.pred_class ?? "?"}</div>`,
-          `<div>time: ${props?.timestamp ?? "?"}</div>`,
+          `<div>aircraft: ${aircraftClassLabel}</div>`,
+          `<div>time: ${timeStr}</div>`,
           `</div>`,
         ].join("");
         new mapboxgl.Popup().setLngLat(coordinates).setHTML(html).addTo(map);
@@ -210,47 +293,121 @@ function Map() {
     };
   }, []);
 
+  // --- Load monthly GeoJSONs into memory (for slider filtering) ---
+  useEffect(() => {
+    if (!useMonthlyFiles) return;
+    const load = async () => {
+      try {
+        const [rad, sat] = await Promise.all([
+          fetch(RADAR_MONTHLY_GEOJSON).then((r) => (r.ok ? r.json() : null)),
+          fetch(SATELLITE_MONTHLY_GEOJSON).then((r) => (r.ok ? r.json() : null)),
+        ]);
+        if (rad?.type === "FeatureCollection") setRadarMonthly(rad);
+        if (sat?.type === "FeatureCollection") setSatMonthly(sat);
+      } catch {
+        // ignore
+      }
+    };
+    load();
+  }, [useMonthlyFiles]);
+
   // --- Update GeoJSON data when time slider changes ---
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !map.loaded()) return;
 
-    const step = Math.min(timeOffset, NUM_STEPS - 1);
-
     const radarSource = map.getSource("nexrad-preds") as mapboxgl.GeoJSONSource;
     if (radarSource) {
-      fetch(getGeoJsonUrl(RADAR_GEOJSON_PREFIX, step))
-        .then((res) => res.ok ? res.json() : null)
-        .then((data) => { if (data) radarSource.setData(data); })
-        .catch(() => {});
+      if (useMonthlyFiles) {
+        const dayKey = selectedDayKey;
+        const fc = radarMonthly;
+        if (fc && !dayKey) {
+          // Data not indexed yet (or no valid timestamps) — show everything rather than nothing.
+          radarSource.setData(fc as any);
+        } else if (dayKey && fc) {
+          const filtered: FeatureCollection = {
+            type: "FeatureCollection",
+            features: (fc.features ?? []).filter((f: any) => {
+              const t = f?.properties?.pirep_time;
+              if (typeof t !== "string") return false;
+              return utcDayKeyFromIso(t) === dayKey;
+            }),
+          };
+          radarSource.setData(filtered as any);
+        }
+      } else {
+        const step = Math.min(timeOffset, NUM_STEPS - 1);
+        fetch(getGeoJsonUrl(RADAR_GEOJSON_PREFIX, step))
+          .then((res) => (res.ok ? res.json() : null))
+          .then((data) => {
+            if (data) radarSource.setData(data);
+          })
+          .catch(() => {});
+      }
     }
 
     const satSource = map.getSource("satellite-preds") as mapboxgl.GeoJSONSource;
     if (satSource) {
-      fetch(getGeoJsonUrl(SATELLITE_GEOJSON_PREFIX, step))
-        .then((res) => res.ok ? res.json() : null)
-        .then((data) => { if (data) satSource.setData(data); })
-        .catch(() => {});
+      if (useMonthlyFiles) {
+        const dayKey = selectedDayKey;
+        const fc = satMonthly;
+        if (fc && !dayKey) {
+          satSource.setData(fc as any);
+        } else if (dayKey && fc) {
+          const filtered: FeatureCollection = {
+            type: "FeatureCollection",
+            features: (fc.features ?? []).filter((f: any) => {
+              const t = f?.properties?.pirep_time;
+              if (typeof t !== "string") return false;
+              return utcDayKeyFromIso(t) === dayKey;
+            }),
+          };
+          satSource.setData(filtered as any);
+        }
+      } else {
+        const step = Math.min(timeOffset, NUM_STEPS - 1);
+        fetch(getGeoJsonUrl(SATELLITE_GEOJSON_PREFIX, step))
+          .then((res) => (res.ok ? res.json() : null))
+          .then((data) => {
+            if (data) satSource.setData(data);
+          })
+          .catch(() => {});
+      }
     }
-  }, [timeOffset]);
+  }, [timeOffset, radarMonthly, satMonthly, selectedDayKey, useMonthlyFiles]);
 
-  // --- Filter radar points by flight level ---
+  // --- Filter points by flight level (radar + satellite) ---
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
     const applyFilter = () => {
-      if (!map.getLayer("nexrad-preds-layer")) return;
-      if (!altFilterEnabled) {
-        map.setFilter("nexrad-preds-layer", null);
-        return;
-      }
       const altExpr: any = ["to-number", ["get", "flight_level_ft"]];
       const bandFt = 2000;
-      map.setFilter("nexrad-preds-layer", [
-        "all",
-        [">=", altExpr, selectedAltFt - bandFt],
-        ["<=", altExpr, selectedAltFt + bandFt],
-      ]);
+      const altFilterExpr: any = altFilterEnabled
+        ? [
+            "all",
+            [">=", altExpr, selectedAltFt - bandFt],
+            ["<=", altExpr, selectedAltFt + bandFt],
+          ]
+        : null;
+
+      // Aircraft size filter (matches AircraftPicker values: "l" | "m" | "h").
+      // Fail open for older GeoJSONs that don't include aircraft_class.
+      const aircraftExpr: any = [
+        "any",
+        ["!", ["has", "aircraft_class"]],
+        ["==", ["get", "aircraft_class"], sizeClass],
+      ];
+
+      const filterExpr: any =
+        altFilterExpr === null ? aircraftExpr : ["all", aircraftExpr, altFilterExpr];
+
+      if (map.getLayer("nexrad-preds-layer")) {
+        map.setFilter("nexrad-preds-layer", filterExpr);
+      }
+      if (map.getLayer("satellite-preds-layer")) {
+        map.setFilter("satellite-preds-layer", filterExpr);
+      }
     };
 
     if (!map.loaded()) {
@@ -258,7 +415,7 @@ function Map() {
       return;
     }
     applyFilter();
-  }, [selectedAltFt, altFilterEnabled]);
+  }, [selectedAltFt, altFilterEnabled, sizeClass]);
 
   // --- Toggle layer visibility based on source picker ---
   useEffect(() => {
@@ -302,7 +459,12 @@ function Map() {
         </div>
       </div>
       <div className="fixed bottom-0 mx-auto w-full max-w-xl p-4">
-        <TimeSlider timeOffset={timeOffset} setTimeOffset={setTimeOffset} />
+        <TimeSlider
+          timeOffset={timeOffset}
+          setTimeOffset={setTimeOffset}
+          numSteps={useMonthlyFiles ? Math.max(1, allDays.length) : NUM_STEPS}
+          labels={useMonthlyFiles ? dayLabels : undefined}
+        />
       </div>
       <div className="fixed top-0 right-0 p-4 flex flex-row-reverse gap-4">
         <SourcePicker sources={sources} setSources={setSources} />

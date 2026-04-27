@@ -3,20 +3,30 @@
 import { Card, CardTitle, CardContent, CardHeader } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 
-const NUM_STEPS = 16;
-const STEP_MINUTES = 30;
+const DEFAULT_NUM_STEPS = 16;
+const DEFAULT_STEP_MINUTES = 30;
 
 function TimeSlider({
   timeOffset,
   setTimeOffset,
+  numSteps = DEFAULT_NUM_STEPS,
+  labels,
 }: {
   timeOffset: number;
   setTimeOffset: (value: number) => void;
+  numSteps?: number;
+  labels?: string[];
 }) {
-  // Show labels at every 2-hour mark (every 4 steps)
-  const labelIndices = [0, 4, 8, 12, 15];
+  const effectiveNumSteps = labels?.length ? labels.length : numSteps;
+  const max = Math.max(0, effectiveNumSteps - 1);
+  const safeOffset = Math.min(Math.max(timeOffset, 0), max);
+
+  const rawLabelIndices = [0, Math.floor(max / 4), Math.floor(max / 2), Math.floor((3 * max) / 4), max];
+  const labelIndices = Array.from(new Set(rawLabelIndices)).sort((a, b) => a - b);
+
   const formatLabel = (step: number) => {
-    const hours = (step * STEP_MINUTES) / 60;
+    if (labels?.length) return labels[step] ?? "";
+    const hours = (step * DEFAULT_STEP_MINUTES) / 60;
     if (step === 0) return "T+0";
     return `+${hours}h`;
   };
@@ -28,16 +38,16 @@ function TimeSlider({
           <div className="mx-1.5 h-4">
             <Slider
               min={0}
-              max={NUM_STEPS - 1}
+              max={max}
               step={1}
               orientation="horizontal"
-              value={[timeOffset]}
-              onValueChange={(value) => setTimeOffset(value[0])}
+              value={[safeOffset]}
+              onValueChange={(value) => setTimeOffset(value[0] ?? 0)}
             />
           </div>
           <div className="flex flex-row justify-between font-mono text-sm h-0">
             {labelIndices.map((idx) => (
-              <div key={idx} className="w-8 text-center">
+              <div key={idx} className="w-12 text-center">
                 {formatLabel(idx)}
               </div>
             ))}
