@@ -239,7 +239,6 @@ function Map() {
           `<div style="font-size:12px; line-height:1.25;">`,
           `<div><b>NEXRAD Radar</b></div>`,
           `<div>Probability of Severe Turbluence: ${props?.severe_prob ? Number(props.severe_prob).toFixed(3) : "?"}</div>`,
-          `<div>pred_class: ${props?.pred_class ?? "?"}</div>`,
           `<div>Aircraft Size: ${aircraftClassLabel}</div>`,
           `<div>Flight Level: ${props?.flight_level_ft ?? "?"} ft</div>`,
           `<div>PIREP Time: ${timeStr}</div>`,
