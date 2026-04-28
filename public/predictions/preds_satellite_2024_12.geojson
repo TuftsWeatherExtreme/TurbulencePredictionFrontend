@@ -1,0 +1,4529 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.17463265858731,
+          33.7525939675535
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.28331243991851807,
+          0.7166875004768372
+        ],
+        "severe_prob": 0.7166875004768372,
+        "prob_max": 0.7166875004768372,
+        "true_class": 1.0,
+        "flight_level_ft": 600.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 02:55:00+00:00",
+        "patch_id": "0000001.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.68009774757827,
+          40.14768441546349
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6549783945083618,
+          0.34502163529396057
+        ],
+        "severe_prob": 0.34502163529396057,
+        "prob_max": 0.6549783945083618,
+        "true_class": 0.0,
+        "flight_level_ft": 28000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-03 18:14:00+00:00",
+        "patch_id": "0000003.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.78977380487754,
+          36.39500536187593
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.2739048898220062,
+          0.7260950803756714
+        ],
+        "severe_prob": 0.7260950803756714,
+        "prob_max": 0.7260950803756714,
+        "true_class": 0.0,
+        "flight_level_ft": 17000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 10:38:00+00:00",
+        "patch_id": "0000012.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.91592,
+          40.47711
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.8575894236564636,
+          0.14241057634353638
+        ],
+        "severe_prob": 0.14241057634353638,
+        "prob_max": 0.8575894236564636,
+        "true_class": 0.0,
+        "flight_level_ft": 36000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-18 23:31:00+00:00",
+        "patch_id": "0000013.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.37576421563097,
+          68.59839998489564
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6735591888427734,
+          0.32644081115722656
+        ],
+        "severe_prob": 0.32644081115722656,
+        "prob_max": 0.6735591888427734,
+        "true_class": 0.0,
+        "flight_level_ft": 37000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 01:59:00+00:00",
+        "patch_id": "0000016.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -172.9789322846603,
+          56.19864838103592
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.7656849026679993,
+          0.23431505262851715
+        ],
+        "severe_prob": 0.23431505262851715,
+        "prob_max": 0.7656849026679993,
+        "true_class": 1.0,
+        "flight_level_ft": 35000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 08:12:00+00:00",
+        "patch_id": "0000020.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.14503760025296,
+          40.40337187733928
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.7723531723022461,
+          0.2276468127965927
+        ],
+        "severe_prob": 0.2276468127965927,
+        "prob_max": 0.7723531723022461,
+        "true_class": 0.0,
+        "flight_level_ft": 29000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 00:26:00+00:00",
+        "patch_id": "0000024.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.53475,
+          33.82954636669637
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.21352234482765198,
+          0.7864776253700256
+        ],
+        "severe_prob": 0.7864776253700256,
+        "prob_max": 0.7864776253700256,
+        "true_class": 1.0,
+        "flight_level_ft": 11500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 15:15:00+00:00",
+        "patch_id": "0000025.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.48712181998944,
+          42.29704702480969
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7170435190200806,
+          0.28295648097991943
+        ],
+        "severe_prob": 0.28295648097991943,
+        "prob_max": 0.7170435190200806,
+        "true_class": 1.0,
+        "flight_level_ft": 25000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 01:06:00+00:00",
+        "patch_id": "0000026.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.44313337827184,
+          39.475762224043855
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5748286843299866,
+          0.42517128586769104
+        ],
+        "severe_prob": 0.42517128586769104,
+        "prob_max": 0.5748286843299866,
+        "true_class": 1.0,
+        "flight_level_ft": 43000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 21:25:00+00:00",
+        "patch_id": "0000028.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -174.02707955999898,
+          57.06183026271675
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 0,
+        "probs": [
+          0.804632306098938,
+          0.1953677088022232
+        ],
+        "severe_prob": 0.1953677088022232,
+        "prob_max": 0.804632306098938,
+        "true_class": 1.0,
+        "flight_level_ft": 33000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 07:10:00+00:00",
+        "patch_id": "0000029.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.25563757487618,
+          43.653759693348206
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7708128690719604,
+          0.22918707132339478
+        ],
+        "severe_prob": 0.22918707132339478,
+        "prob_max": 0.7708128690719604,
+        "true_class": 0.0,
+        "flight_level_ft": 35000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 23:23:00+00:00",
+        "patch_id": "0000030.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.55294,
+          44.07346
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6503721475601196,
+          0.3496277928352356
+        ],
+        "severe_prob": 0.3496277928352356,
+        "prob_max": 0.6503721475601196,
+        "true_class": 0.0,
+        "flight_level_ft": 9000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 14:37:00+00:00",
+        "patch_id": "0000032.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.71,
+          30.543360333360333
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.29735344648361206,
+          0.7026464939117432
+        ],
+        "severe_prob": 0.7026464939117432,
+        "prob_max": 0.7026464939117432,
+        "true_class": 1.0,
+        "flight_level_ft": 6500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 19:15:00+00:00",
+        "patch_id": "0000034.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.54548282942092,
+          36.05290991888375
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.4522393047809601,
+          0.5477607250213623
+        ],
+        "severe_prob": 0.5477607250213623,
+        "prob_max": 0.5477607250213623,
+        "true_class": 1.0,
+        "flight_level_ft": 4000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 20:13:00+00:00",
+        "patch_id": "0000035.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.5367071417325,
+          64.81
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.8565820455551147,
+          0.14341799914836884
+        ],
+        "severe_prob": 0.14341799914836884,
+        "prob_max": 0.8565820455551147,
+        "true_class": 0.0,
+        "flight_level_ft": 1300.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 01:19:00+00:00",
+        "patch_id": "0000041.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.04624393463958,
+          44.55200966663967
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 0,
+        "probs": [
+          0.833170473575592,
+          0.16682951152324677
+        ],
+        "severe_prob": 0.16682951152324677,
+        "prob_max": 0.833170473575592,
+        "true_class": 0.0,
+        "flight_level_ft": 36000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 18:06:00+00:00",
+        "patch_id": "0000049.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.9489199475358,
+          34.9630213522977
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7961507439613342,
+          0.20384924113750458
+        ],
+        "severe_prob": 0.20384924113750458,
+        "prob_max": 0.7961507439613342,
+        "true_class": 0.0,
+        "flight_level_ft": 37000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 15:22:00+00:00",
+        "patch_id": "0000050.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.67613236244574,
+          36.613187509357125
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.8017064929008484,
+          0.19829346239566803
+        ],
+        "severe_prob": 0.19829346239566803,
+        "prob_max": 0.8017064929008484,
+        "true_class": 1.0,
+        "flight_level_ft": 38000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 19:30:00+00:00",
+        "patch_id": "0000056.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.297535542195,
+          40.8656686477023
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6392243504524231,
+          0.3607756197452545
+        ],
+        "severe_prob": 0.3607756197452545,
+        "prob_max": 0.6392243504524231,
+        "true_class": 1.0,
+        "flight_level_ft": 28500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-01 23:07:00+00:00",
+        "patch_id": "0000061.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.92167,
+          40.35472
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5392075777053833,
+          0.4607923924922943
+        ],
+        "severe_prob": 0.4607923924922943,
+        "prob_max": 0.5392075777053833,
+        "true_class": 0.0,
+        "flight_level_ft": 3000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 15:40:00+00:00",
+        "patch_id": "0000062.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -124.5074238349711,
+          43.258752081116256
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.4133411645889282,
+          0.5866588354110718
+        ],
+        "severe_prob": 0.5866588354110718,
+        "prob_max": 0.5866588354110718,
+        "true_class": 1.0,
+        "flight_level_ft": 2000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 21:23:00+00:00",
+        "patch_id": "0000067.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.84528,
+          39.295
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.24630267918109894,
+          0.753697395324707
+        ],
+        "severe_prob": 0.753697395324707,
+        "prob_max": 0.753697395324707,
+        "true_class": 1.0,
+        "flight_level_ft": 11500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 00:00:00+00:00",
+        "patch_id": "0000068.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3953,
+          39.531
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5721061825752258,
+          0.427893728017807
+        ],
+        "severe_prob": 0.427893728017807,
+        "prob_max": 0.5721061825752258,
+        "true_class": 0.0,
+        "flight_level_ft": 16000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 00:30:00+00:00",
+        "patch_id": "0000070.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.6155,
+          35.0419
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.535393476486206,
+          0.46460655331611633
+        ],
+        "severe_prob": 0.46460655331611633,
+        "prob_max": 0.535393476486206,
+        "true_class": 0.0,
+        "flight_level_ft": 29000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 20:05:00+00:00",
+        "patch_id": "0000074.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.03073578196,
+          47.27661611202193
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5644236207008362,
+          0.4355764091014862
+        ],
+        "severe_prob": 0.4355764091014862,
+        "prob_max": 0.5644236207008362,
+        "true_class": 1.0,
+        "flight_level_ft": 2000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 18:56:00+00:00",
+        "patch_id": "0000078.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.15,
+          44.47
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.4244160056114197,
+          0.5755839943885803
+        ],
+        "severe_prob": 0.5755839943885803,
+        "prob_max": 0.5755839943885803,
+        "true_class": 0.0,
+        "flight_level_ft": 4000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 18:30:00+00:00",
+        "patch_id": "0000079.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.3897,
+          37.2397
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7641236782073975,
+          0.23587624728679657
+        ],
+        "severe_prob": 0.23587624728679657,
+        "prob_max": 0.7641236782073975,
+        "true_class": 1.0,
+        "flight_level_ft": 33000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 18:35:00+00:00",
+        "patch_id": "0000083.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.91669422294005,
+          29.059035442939965
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7542004585266113,
+          0.24579955637454987
+        ],
+        "severe_prob": 0.24579955637454987,
+        "prob_max": 0.7542004585266113,
+        "true_class": 0.0,
+        "flight_level_ft": 32000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-03 02:25:00+00:00",
+        "patch_id": "0000085.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.74944,
+          42.96667
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.7639453411102295,
+          0.2360546588897705
+        ],
+        "severe_prob": 0.2360546588897705,
+        "prob_max": 0.7639453411102295,
+        "true_class": 0.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 12:54:00+00:00",
+        "patch_id": "0000089.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.25316,
+          43.93924
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6786249279975891,
+          0.3213750720024109
+        ],
+        "severe_prob": 0.3213750720024109,
+        "prob_max": 0.6786249279975891,
+        "true_class": 0.0,
+        "flight_level_ft": 6000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 01:19:00+00:00",
+        "patch_id": "0000092.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.59,
+          41.16
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.855863094329834,
+          0.14413684606552124
+        ],
+        "severe_prob": 0.14413684606552124,
+        "prob_max": 0.855863094329834,
+        "true_class": 0.0,
+        "flight_level_ft": 36000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 13:13:00+00:00",
+        "patch_id": "0000093.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.93193,
+          42.23756025002025
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6507258415222168,
+          0.34927424788475037
+        ],
+        "severe_prob": 0.34927424788475037,
+        "prob_max": 0.6507258415222168,
+        "true_class": 0.0,
+        "flight_level_ft": 6000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 23:04:00+00:00",
+        "patch_id": "0000094.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.74,
+          41.17
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5159027576446533,
+          0.4840972125530243
+        ],
+        "severe_prob": 0.4840972125530243,
+        "prob_max": 0.5159027576446533,
+        "true_class": 1.0,
+        "flight_level_ft": 14000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 19:40:00+00:00",
+        "patch_id": "0000101.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.32028621736156,
+          33.362509217380754
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.3181765675544739,
+          0.6818233728408813
+        ],
+        "severe_prob": 0.6818233728408813,
+        "prob_max": 0.6818233728408813,
+        "true_class": 1.0,
+        "flight_level_ft": 21000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 16:24:00+00:00",
+        "patch_id": "0000102.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.7615,
+          40.8095
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.4406698942184448,
+          0.5593301653862
+        ],
+        "severe_prob": 0.5593301653862,
+        "prob_max": 0.5593301653862,
+        "true_class": 1.0,
+        "flight_level_ft": 11500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 15:15:00+00:00",
+        "patch_id": "0000110.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.07511660188639,
+          27.412089857767253
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6037948131561279,
+          0.39620521664619446
+        ],
+        "severe_prob": 0.39620521664619446,
+        "prob_max": 0.6037948131561279,
+        "true_class": 1.0,
+        "flight_level_ft": 27000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 09:26:00+00:00",
+        "patch_id": "0000111.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.2237635878622,
+          41.85
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6632630228996277,
+          0.3367369472980499
+        ],
+        "severe_prob": 0.3367369472980499,
+        "prob_max": 0.6632630228996277,
+        "true_class": 0.0,
+        "flight_level_ft": 41000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 02:25:00+00:00",
+        "patch_id": "0000112.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.93,
+          33.68
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.4740850329399109,
+          0.5259149670600891
+        ],
+        "severe_prob": 0.5259149670600891,
+        "prob_max": 0.5259149670600891,
+        "true_class": 0.0,
+        "flight_level_ft": 2300.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 17:28:00+00:00",
+        "patch_id": "0000113.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.87,
+          38.64
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.4696984589099884,
+          0.530301570892334
+        ],
+        "severe_prob": 0.530301570892334,
+        "prob_max": 0.530301570892334,
+        "true_class": 1.0,
+        "flight_level_ft": 7000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 19:16:00+00:00",
+        "patch_id": "0000114.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.05,
+          41.33
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.10406745225191116,
+          0.8959324955940247
+        ],
+        "severe_prob": 0.8959324955940247,
+        "prob_max": 0.8959324955940247,
+        "true_class": 1.0,
+        "flight_level_ft": 8000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 01:46:00+00:00",
+        "patch_id": "0000116.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.93155246029026,
+          39.327465128951495
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6029775738716125,
+          0.39702242612838745
+        ],
+        "severe_prob": 0.39702242612838745,
+        "prob_max": 0.6029775738716125,
+        "true_class": 1.0,
+        "flight_level_ft": 30000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 22:38:00+00:00",
+        "patch_id": "0000118.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.80094479609889,
+          41.00940012501013
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6592033505439758,
+          0.3407965898513794
+        ],
+        "severe_prob": 0.3407965898513794,
+        "prob_max": 0.6592033505439758,
+        "true_class": 0.0,
+        "flight_level_ft": 32000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 00:08:00+00:00",
+        "patch_id": "0000122.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.58,
+          38.43336033336033
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5549556016921997,
+          0.44504445791244507
+        ],
+        "severe_prob": 0.44504445791244507,
+        "prob_max": 0.5549556016921997,
+        "true_class": 0.0,
+        "flight_level_ft": 9000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 20:51:00+00:00",
+        "patch_id": "0000123.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -133.22736157106385,
+          56.23360120932987
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6367521286010742,
+          0.36324793100357056
+        ],
+        "severe_prob": 0.36324793100357056,
+        "prob_max": 0.6367521286010742,
+        "true_class": 0.0,
+        "flight_level_ft": 35000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 17:43:00+00:00",
+        "patch_id": "0000127.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -153.23811450919695,
+          60.59992025502503
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 0,
+        "probs": [
+          0.7606204748153687,
+          0.23937948048114777
+        ],
+        "severe_prob": 0.23937948048114777,
+        "prob_max": 0.7606204748153687,
+        "true_class": 0.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 17:50:00+00:00",
+        "patch_id": "0000128.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.5,
+          0.7166
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.86504727602005,
+          0.13495279848575592
+        ],
+        "severe_prob": 0.13495279848575592,
+        "prob_max": 0.86504727602005,
+        "true_class": 1.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-01 06:05:00+00:00",
+        "patch_id": "0000130.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.71521493456837,
+          39.32288932227346
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.25006240606307983,
+          0.7499375343322754
+        ],
+        "severe_prob": 0.7499375343322754,
+        "prob_max": 0.7499375343322754,
+        "true_class": 1.0,
+        "flight_level_ft": 11500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 03:50:00+00:00",
+        "patch_id": "0000137.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.76548452823589,
+          22.513390184199128
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.7815204858779907,
+          0.2184794694185257
+        ],
+        "severe_prob": 0.2184794694185257,
+        "prob_max": 0.7815204858779907,
+        "true_class": 0.0,
+        "flight_level_ft": 37000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 14:01:00+00:00",
+        "patch_id": "0000139.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.5375,
+          35.1319156999757
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.46453920006752014,
+          0.5354607701301575
+        ],
+        "severe_prob": 0.5354607701301575,
+        "prob_max": 0.5354607701301575,
+        "true_class": 1.0,
+        "flight_level_ft": 6000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 17:18:00+00:00",
+        "patch_id": "0000144.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.3077254387755,
+          29.60929320925576
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.21345937252044678,
+          0.7865405678749084
+        ],
+        "severe_prob": 0.7865405678749084,
+        "prob_max": 0.7865405678749084,
+        "true_class": 1.0,
+        "flight_level_ft": 36000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 02:08:00+00:00",
+        "patch_id": "0000146.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.2258217,
+          40.0394297
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.3311048448085785,
+          0.6688951253890991
+        ],
+        "severe_prob": 0.6688951253890991,
+        "prob_max": 0.6688951253890991,
+        "true_class": 1.0,
+        "flight_level_ft": 6000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 19:40:00+00:00",
+        "patch_id": "0000151.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.8428,
+          39.7572
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 0,
+        "probs": [
+          0.8495486378669739,
+          0.15045134723186493
+        ],
+        "severe_prob": 0.15045134723186493,
+        "prob_max": 0.8495486378669739,
+        "true_class": 0.0,
+        "flight_level_ft": 37000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 09:16:00+00:00",
+        "patch_id": "0000152.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.88811,
+          36.19839
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5507758855819702,
+          0.4492240846157074
+        ],
+        "severe_prob": 0.4492240846157074,
+        "prob_max": 0.5507758855819702,
+        "true_class": 1.0,
+        "flight_level_ft": 25000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 02:49:00+00:00",
+        "patch_id": "0000157.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.9,
+          32.93655866655867
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7534021735191345,
+          0.24659784138202667
+        ],
+        "severe_prob": 0.24659784138202667,
+        "prob_max": 0.7534021735191345,
+        "true_class": 0.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 18:05:00+00:00",
+        "patch_id": "0000159.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.08229836056597,
+          31.83679101422328
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7958055138587952,
+          0.20419448614120483
+        ],
+        "severe_prob": 0.20419448614120483,
+        "prob_max": 0.7958055138587952,
+        "true_class": 0.0,
+        "flight_level_ft": 40000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-21 02:14:00+00:00",
+        "patch_id": "0000166.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.35972701885603,
+          40.07231558453652
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.43639475107192993,
+          0.5636052489280701
+        ],
+        "severe_prob": 0.5636052489280701,
+        "prob_max": 0.5636052489280701,
+        "true_class": 1.0,
+        "flight_level_ft": 6000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 19:30:00+00:00",
+        "patch_id": "0000167.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.98,
+          35.44663966663967
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7809582352638245,
+          0.21904179453849792
+        ],
+        "severe_prob": 0.21904179453849792,
+        "prob_max": 0.7809582352638245,
+        "true_class": 0.0,
+        "flight_level_ft": 32000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 13:07:00+00:00",
+        "patch_id": "0000177.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6759240345397,
+          40.58112227853002
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.47865357995033264,
+          0.521346390247345
+        ],
+        "severe_prob": 0.521346390247345,
+        "prob_max": 0.521346390247345,
+        "true_class": 0.0,
+        "flight_level_ft": 22000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 20:19:00+00:00",
+        "patch_id": "0000179.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.90468577371824,
+          47.09005643785628
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.4986463487148285,
+          0.5013536810874939
+        ],
+        "severe_prob": 0.5013536810874939,
+        "prob_max": 0.5013536810874939,
+        "true_class": 1.0,
+        "flight_level_ft": 8000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 01:51:00+00:00",
+        "patch_id": "0000184.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.05736,
+          44.04533
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.7811523675918579,
+          0.21884755790233612
+        ],
+        "severe_prob": 0.21884755790233612,
+        "prob_max": 0.7811523675918579,
+        "true_class": 0.0,
+        "flight_level_ft": 36000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 17:12:00+00:00",
+        "patch_id": "0000185.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.94164133309262,
+          38.43683019895001
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.44340112805366516,
+          0.5565989017486572
+        ],
+        "severe_prob": 0.5565989017486572,
+        "prob_max": 0.5565989017486572,
+        "true_class": 1.0,
+        "flight_level_ft": 12000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 20:15:00+00:00",
+        "patch_id": "0000191.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.16111,
+          34.34778
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5092796683311462,
+          0.49072039127349854
+        ],
+        "severe_prob": 0.49072039127349854,
+        "prob_max": 0.5092796683311462,
+        "true_class": 0.0,
+        "flight_level_ft": 17000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 14:36:00+00:00",
+        "patch_id": "0000198.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.62564716077888,
+          25.902813562309973
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5583717823028564,
+          0.44162818789482117
+        ],
+        "severe_prob": 0.44162818789482117,
+        "prob_max": 0.5583717823028564,
+        "true_class": 0.0,
+        "flight_level_ft": 13000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 20:53:00+00:00",
+        "patch_id": "0000201.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.77111,
+          39.35054586665587
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.25315243005752563,
+          0.7468475103378296
+        ],
+        "severe_prob": 0.7468475103378296,
+        "prob_max": 0.7468475103378296,
+        "true_class": 1.0,
+        "flight_level_ft": 8000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 06:14:00+00:00",
+        "patch_id": "0000205.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.83433561498812,
+          43.53536883092698
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7971294522285461,
+          0.2028704732656479
+        ],
+        "severe_prob": 0.2028704732656479,
+        "prob_max": 0.7971294522285461,
+        "true_class": 0.0,
+        "flight_level_ft": 31000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 11:26:00+00:00",
+        "patch_id": "0000206.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.47,
+          37.97
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.8530464768409729,
+          0.14695359766483307
+        ],
+        "severe_prob": 0.14695359766483307,
+        "prob_max": 0.8530464768409729,
+        "true_class": 0.0,
+        "flight_level_ft": 37000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 22:25:00+00:00",
+        "patch_id": "0000207.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.8137454879978,
+          35.4117259431069
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7756340503692627,
+          0.2243659645318985
+        ],
+        "severe_prob": 0.2243659645318985,
+        "prob_max": 0.7756340503692627,
+        "true_class": 0.0,
+        "flight_level_ft": 32000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 15:01:00+00:00",
+        "patch_id": "0000213.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.28,
+          43.12
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.8292248845100403,
+          0.1707751750946045
+        ],
+        "severe_prob": 0.1707751750946045,
+        "prob_max": 0.8292248845100403,
+        "true_class": 0.0,
+        "flight_level_ft": 35000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-03 16:13:00+00:00",
+        "patch_id": "0000217.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.27559304038928,
+          40.02904980396831
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 0,
+        "probs": [
+          0.650522768497467,
+          0.34947726130485535
+        ],
+        "severe_prob": 0.34947726130485535,
+        "prob_max": 0.650522768497467,
+        "true_class": 1.0,
+        "flight_level_ft": 39000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 06:13:00+00:00",
+        "patch_id": "0000220.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.59,
+          35.22
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.4397934079170227,
+          0.5602065324783325
+        ],
+        "severe_prob": 0.5602065324783325,
+        "prob_max": 0.5602065324783325,
+        "true_class": 1.0,
+        "flight_level_ft": 9000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 20:20:00+00:00",
+        "patch_id": "0000221.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.40659595845592,
+          44.9757211215917
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.30423295497894287,
+          0.6957670450210571
+        ],
+        "severe_prob": 0.6957670450210571,
+        "prob_max": 0.6957670450210571,
+        "true_class": 1.0,
+        "flight_level_ft": 33000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 00:39:00+00:00",
+        "patch_id": "0000223.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.83389,
+          37.95144
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5187853574752808,
+          0.4812146723270416
+        ],
+        "severe_prob": 0.4812146723270416,
+        "prob_max": 0.5187853574752808,
+        "true_class": 1.0,
+        "flight_level_ft": 1000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 14:52:00+00:00",
+        "patch_id": "0000227.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1,
+          28.263259083259083
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.21998319029808044,
+          0.7800167798995972
+        ],
+        "severe_prob": 0.7800167798995972,
+        "prob_max": 0.7800167798995972,
+        "true_class": 1.0,
+        "flight_level_ft": 35000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 06:04:00+00:00",
+        "patch_id": "0000239.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.5043097089477,
+          30.600403066517945
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 0,
+        "probs": [
+          0.7701295018196106,
+          0.2298705279827118
+        ],
+        "severe_prob": 0.2298705279827118,
+        "prob_max": 0.7701295018196106,
+        "true_class": 0.0,
+        "flight_level_ft": 41000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-01 18:54:00+00:00",
+        "patch_id": "0000243.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.80572947991124,
+          36.769571663934215
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6224244236946106,
+          0.377575546503067
+        ],
+        "severe_prob": 0.377575546503067,
+        "prob_max": 0.6224244236946106,
+        "true_class": 0.0,
+        "flight_level_ft": 39000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-03 01:35:00+00:00",
+        "patch_id": "0000245.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72985846121225,
+          39.30332728753801
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.24754533171653748,
+          0.7524546384811401
+        ],
+        "severe_prob": 0.7524546384811401,
+        "prob_max": 0.7524546384811401,
+        "true_class": 1.0,
+        "flight_level_ft": 11000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 00:27:00+00:00",
+        "patch_id": "0000250.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.46131274927036,
+          37.95790820335234
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6874950528144836,
+          0.31250491738319397
+        ],
+        "severe_prob": 0.31250491738319397,
+        "prob_max": 0.6874950528144836,
+        "true_class": 0.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-01 19:19:00+00:00",
+        "patch_id": "0000252.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.91667,
+          30.91194
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5331250429153442,
+          0.46687498688697815
+        ],
+        "severe_prob": 0.46687498688697815,
+        "prob_max": 0.5331250429153442,
+        "true_class": 0.0,
+        "flight_level_ft": 29000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 19:51:00+00:00",
+        "patch_id": "0000256.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.06031,
+          41.25311
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.41358789801597595,
+          0.5864120721817017
+        ],
+        "severe_prob": 0.5864120721817017,
+        "prob_max": 0.5864120721817017,
+        "true_class": 0.0,
+        "flight_level_ft": 1000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 14:45:00+00:00",
+        "patch_id": "0000257.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -30.0,
+          53.0
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.01612812653183937,
+          0.9838719367980957
+        ],
+        "severe_prob": 0.9838719367980957,
+        "prob_max": 0.9838719367980957,
+        "true_class": 1.0,
+        "flight_level_ft": 43000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 04:03:00+00:00",
+        "patch_id": "0000258.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.24,
+          60.57
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.8375881910324097,
+          0.16241177916526794
+        ],
+        "severe_prob": 0.16241177916526794,
+        "prob_max": 0.8375881910324097,
+        "true_class": 0.0,
+        "flight_level_ft": 1000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 07:02:00+00:00",
+        "patch_id": "0000260.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.9753280237341,
+          37.241499843369965
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6420633792877197,
+          0.35793665051460266
+        ],
+        "severe_prob": 0.35793665051460266,
+        "prob_max": 0.6420633792877197,
+        "true_class": 1.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 04:00:00+00:00",
+        "patch_id": "0000261.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.77111,
+          39.23386974997975
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.24657751619815826,
+          0.7534225583076477
+        ],
+        "severe_prob": 0.7534225583076477,
+        "prob_max": 0.7534225583076477,
+        "true_class": 1.0,
+        "flight_level_ft": 9000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 08:35:00+00:00",
+        "patch_id": "0000265.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0195,
+          34.3032
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.372897207736969,
+          0.6271027326583862
+        ],
+        "severe_prob": 0.6271027326583862,
+        "prob_max": 0.6271027326583862,
+        "true_class": 1.0,
+        "flight_level_ft": 19000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 21:00:00+00:00",
+        "patch_id": "0000268.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.23286,
+          40.49147
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5410642623901367,
+          0.45893582701683044
+        ],
+        "severe_prob": 0.45893582701683044,
+        "prob_max": 0.5410642623901367,
+        "true_class": 0.0,
+        "flight_level_ft": 4000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-21 00:35:00+00:00",
+        "patch_id": "0000272.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.05717,
+          34.98783
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.49604523181915283,
+          0.5039547681808472
+        ],
+        "severe_prob": 0.5039547681808472,
+        "prob_max": 0.5039547681808472,
+        "true_class": 1.0,
+        "flight_level_ft": 15500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 18:54:00+00:00",
+        "patch_id": "0000275.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.95549278749856,
+          39.94285
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.7533918619155884,
+          0.24660810828208923
+        ],
+        "severe_prob": 0.24660810828208923,
+        "prob_max": 0.7533918619155884,
+        "true_class": 0.0,
+        "flight_level_ft": 29000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 23:40:00+00:00",
+        "patch_id": "0000282.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43754925555875,
+          39.51683112159169
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.8282297849655151,
+          0.17177022993564606
+        ],
+        "severe_prob": 0.17177022993564606,
+        "prob_max": 0.8282297849655151,
+        "true_class": 0.0,
+        "flight_level_ft": 35000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-21 01:19:00+00:00",
+        "patch_id": "0000284.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.709143,
+          42.39835
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7626116275787354,
+          0.23738837242126465
+        ],
+        "severe_prob": 0.23738837242126465,
+        "prob_max": 0.7626116275787354,
+        "true_class": 0.0,
+        "flight_level_ft": 28000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 05:06:00+00:00",
+        "patch_id": "0000285.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -168.36889495620812,
+          53.162990342416414
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.7167705297470093,
+          0.28322941064834595
+        ],
+        "severe_prob": 0.28322941064834595,
+        "prob_max": 0.7167705297470093,
+        "true_class": 1.0,
+        "flight_level_ft": 35000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 08:42:00+00:00",
+        "patch_id": "0000288.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.96549076252603,
+          39.64963207958001
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5446493625640869,
+          0.4553506374359131
+        ],
+        "severe_prob": 0.4553506374359131,
+        "prob_max": 0.5446493625640869,
+        "true_class": 0.0,
+        "flight_level_ft": 13000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 22:34:00+00:00",
+        "patch_id": "0000300.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.90183618105932,
+          37.22294597035516
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.2655077874660492,
+          0.7344922423362732
+        ],
+        "severe_prob": 0.7344922423362732,
+        "prob_max": 0.7344922423362732,
+        "true_class": 1.0,
+        "flight_level_ft": 12500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 17:37:00+00:00",
+        "patch_id": "0000302.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.87,
+          38.4399837999838
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.45766520500183105,
+          0.542334794998169
+        ],
+        "severe_prob": 0.542334794998169,
+        "prob_max": 0.542334794998169,
+        "true_class": 1.0,
+        "flight_level_ft": 11000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 21:06:00+00:00",
+        "patch_id": "0000306.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.68592890422724,
+          38.31186230502851
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6239901781082153,
+          0.37600982189178467
+        ],
+        "severe_prob": 0.37600982189178467,
+        "prob_max": 0.6239901781082153,
+        "true_class": 0.0,
+        "flight_level_ft": 30000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 01:35:00+00:00",
+        "patch_id": "0000311.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.58236,
+          44.74164
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6431120038032532,
+          0.35688790678977966
+        ],
+        "severe_prob": 0.35688790678977966,
+        "prob_max": 0.6431120038032532,
+        "true_class": 0.0,
+        "flight_level_ft": 3200.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 14:10:00+00:00",
+        "patch_id": "0000312.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.00745801631452,
+          43.27941521298729
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6740788817405701,
+          0.32592111825942993
+        ],
+        "severe_prob": 0.32592111825942993,
+        "prob_max": 0.6740788817405701,
+        "true_class": 0.0,
+        "flight_level_ft": 39000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-03 01:08:00+00:00",
+        "patch_id": "0000317.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.72120131837437,
+          27.48473008334008
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6727902293205261,
+          0.32720983028411865
+        ],
+        "severe_prob": 0.32720983028411865,
+        "prob_max": 0.6727902293205261,
+        "true_class": 0.0,
+        "flight_level_ft": 28000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-01 12:23:00+00:00",
+        "patch_id": "0000318.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.53,
+          33.83
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5001004934310913,
+          0.4998995065689087
+        ],
+        "severe_prob": 0.4998995065689087,
+        "prob_max": 0.5001004934310913,
+        "true_class": 0.0,
+        "flight_level_ft": 16000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-01 12:44:00+00:00",
+        "patch_id": "0000320.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.94222,
+          32.51611
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5271795392036438,
+          0.4728204607963562
+        ],
+        "severe_prob": 0.4728204607963562,
+        "prob_max": 0.5271795392036438,
+        "true_class": 1.0,
+        "flight_level_ft": 1200.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 19:35:00+00:00",
+        "patch_id": "0000321.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.30964,
+          40.96754
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.4627375304698944,
+          0.537262499332428
+        ],
+        "severe_prob": 0.537262499332428,
+        "prob_max": 0.537262499332428,
+        "true_class": 0.0,
+        "flight_level_ft": 9000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 14:46:00+00:00",
+        "patch_id": "0000322.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.28157,
+          47.90699
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.585146963596344,
+          0.4148530662059784
+        ],
+        "severe_prob": 0.4148530662059784,
+        "prob_max": 0.585146963596344,
+        "true_class": 1.0,
+        "flight_level_ft": 2000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 20:35:00+00:00",
+        "patch_id": "0000323.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.24,
+          60.57
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.8335027098655701,
+          0.16649731993675232
+        ],
+        "severe_prob": 0.16649731993675232,
+        "prob_max": 0.8335027098655701,
+        "true_class": 0.0,
+        "flight_level_ft": 3000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 07:25:00+00:00",
+        "patch_id": "0000325.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.08698782644021,
+          42.81787293398639
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7994011044502258,
+          0.20059897005558014
+        ],
+        "severe_prob": 0.20059897005558014,
+        "prob_max": 0.7994011044502258,
+        "true_class": 0.0,
+        "flight_level_ft": 32000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 01:30:00+00:00",
+        "patch_id": "0000326.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.97367916,
+          37.31724016
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7964954376220703,
+          0.2035045325756073
+        ],
+        "severe_prob": 0.2035045325756073,
+        "prob_max": 0.7964954376220703,
+        "true_class": 1.0,
+        "flight_level_ft": 38000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 15:57:00+00:00",
+        "patch_id": "0000330.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.62,
+          39.89
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6945725083351135,
+          0.3054274916648865
+        ],
+        "severe_prob": 0.3054274916648865,
+        "prob_max": 0.6945725083351135,
+        "true_class": 1.0,
+        "flight_level_ft": 33000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 21:52:00+00:00",
+        "patch_id": "0000331.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.8975,
+          38.505
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.3267369270324707,
+          0.6732630729675293
+        ],
+        "severe_prob": 0.6732630729675293,
+        "prob_max": 0.6732630729675293,
+        "true_class": 0.0,
+        "flight_level_ft": 18000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 14:59:00+00:00",
+        "patch_id": "0000332.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.544535,
+          41.63939
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 0,
+        "probs": [
+          0.8136422038078308,
+          0.18635782599449158
+        ],
+        "severe_prob": 0.18635782599449158,
+        "prob_max": 0.8136422038078308,
+        "true_class": 0.0,
+        "flight_level_ft": 32000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 13:04:00+00:00",
+        "patch_id": "0000334.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.84723338781393,
+          39.45147
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5738195776939392,
+          0.4261804521083832
+        ],
+        "severe_prob": 0.4261804521083832,
+        "prob_max": 0.5738195776939392,
+        "true_class": 0.0,
+        "flight_level_ft": 8000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-03 00:09:00+00:00",
+        "patch_id": "0000335.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.203203,
+          42.549741
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.4062926471233368,
+          0.5937073230743408
+        ],
+        "severe_prob": 0.5937073230743408,
+        "prob_max": 0.5937073230743408,
+        "true_class": 0.0,
+        "flight_level_ft": 36000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 15:49:00+00:00",
+        "patch_id": "0000337.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.02613689,
+          29.95206372
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7302650809288025,
+          0.2697349190711975
+        ],
+        "severe_prob": 0.2697349190711975,
+        "prob_max": 0.7302650809288025,
+        "true_class": 1.0,
+        "flight_level_ft": 36000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 02:13:00+00:00",
+        "patch_id": "0000342.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.05736,
+          44.04533
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6739145517349243,
+          0.3260854184627533
+        ],
+        "severe_prob": 0.3260854184627533,
+        "prob_max": 0.6739145517349243,
+        "true_class": 0.0,
+        "flight_level_ft": 43000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-21 02:27:00+00:00",
+        "patch_id": "0000344.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.6825,
+          41.9381
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5544520616531372,
+          0.4455479383468628
+        ],
+        "severe_prob": 0.4455479383468628,
+        "prob_max": 0.5544520616531372,
+        "true_class": 0.0,
+        "flight_level_ft": 40000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 20:32:00+00:00",
+        "patch_id": "0000345.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.31639,
+          41.70722
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6417797803878784,
+          0.3582202196121216
+        ],
+        "severe_prob": 0.3582202196121216,
+        "prob_max": 0.6417797803878784,
+        "true_class": 0.0,
+        "flight_level_ft": 2500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 16:00:00+00:00",
+        "patch_id": "0000347.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.94247695981647,
+          38.742679921587325
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6127294301986694,
+          0.3872705399990082
+        ],
+        "severe_prob": 0.3872705399990082,
+        "prob_max": 0.6127294301986694,
+        "true_class": 0.0,
+        "flight_level_ft": 20000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 22:44:00+00:00",
+        "patch_id": "0000350.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.35185272829746,
+          43.71731091995538
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6586906909942627,
+          0.3413093090057373
+        ],
+        "severe_prob": 0.3413093090057373,
+        "prob_max": 0.6586906909942627,
+        "true_class": 1.0,
+        "flight_level_ft": 33000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 01:17:00+00:00",
+        "patch_id": "0000351.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.31068284676016,
+          34.65482101422327
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.3314867615699768,
+          0.6685131788253784
+        ],
+        "severe_prob": 0.6685131788253784,
+        "prob_max": 0.6685131788253784,
+        "true_class": 1.0,
+        "flight_level_ft": 6000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 19:36:00+00:00",
+        "patch_id": "0000353.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.83234941758477,
+          45.95159588523873
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 0,
+        "probs": [
+          0.666170060634613,
+          0.33382996916770935
+        ],
+        "severe_prob": 0.33382996916770935,
+        "prob_max": 0.666170060634613,
+        "true_class": 1.0,
+        "flight_level_ft": 38000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 00:03:00+00:00",
+        "patch_id": "0000354.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9372873996192,
+          39.28134099819622
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5114876627922058,
+          0.48851239681243896
+        ],
+        "severe_prob": 0.48851239681243896,
+        "prob_max": 0.5114876627922058,
+        "true_class": 0.0,
+        "flight_level_ft": 45000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 19:55:00+00:00",
+        "patch_id": "0000361.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -132.02345004756765,
+          55.44080545460136
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7511542439460754,
+          0.24884580075740814
+        ],
+        "severe_prob": 0.24884580075740814,
+        "prob_max": 0.7511542439460754,
+        "true_class": 0.0,
+        "flight_level_ft": 900.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-03 17:05:00+00:00",
+        "patch_id": "0000371.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.30519996990856,
+          31.439626957330173
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.2106747180223465,
+          0.7893252968788147
+        ],
+        "severe_prob": 0.7893252968788147,
+        "prob_max": 0.7893252968788147,
+        "true_class": 1.0,
+        "flight_level_ft": 29000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 19:00:00+00:00",
+        "patch_id": "0000375.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.05869062718936,
+          32.692183643141945
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6541452407836914,
+          0.34585481882095337
+        ],
+        "severe_prob": 0.34585481882095337,
+        "prob_max": 0.6541452407836914,
+        "true_class": 0.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-01 14:36:00+00:00",
+        "patch_id": "0000382.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.29537821027036,
+          36.10856718862138
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.7865209579467773,
+          0.21347902715206146
+        ],
+        "severe_prob": 0.21347902715206146,
+        "prob_max": 0.7865209579467773,
+        "true_class": 1.0,
+        "flight_level_ft": 36000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 18:51:00+00:00",
+        "patch_id": "0000384.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.04156,
+          42.62025
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.640862226486206,
+          0.35913774371147156
+        ],
+        "severe_prob": 0.35913774371147156,
+        "prob_max": 0.640862226486206,
+        "true_class": 0.0,
+        "flight_level_ft": 17000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 14:59:00+00:00",
+        "patch_id": "0000389.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.1613291446978,
+          39.723185948995
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.41228288412094116,
+          0.5877171754837036
+        ],
+        "severe_prob": 0.5877171754837036,
+        "prob_max": 0.5877171754837036,
+        "true_class": 1.0,
+        "flight_level_ft": 22000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 01:28:00+00:00",
+        "patch_id": "0000390.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5229853,
+          42.88210929
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7680987119674683,
+          0.23190128803253174
+        ],
+        "severe_prob": 0.23190128803253174,
+        "prob_max": 0.7680987119674683,
+        "true_class": 0.0,
+        "flight_level_ft": 32000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 22:32:00+00:00",
+        "patch_id": "0000391.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.76891187101859,
+          23.023024981285744
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.7515526413917542,
+          0.24844737350940704
+        ],
+        "severe_prob": 0.24844737350940704,
+        "prob_max": 0.7515526413917542,
+        "true_class": 0.0,
+        "flight_level_ft": 32000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 11:18:00+00:00",
+        "patch_id": "0000401.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8815956754699,
+          39.58703448129872
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.3180010914802551,
+          0.6819989085197449
+        ],
+        "severe_prob": 0.6819989085197449,
+        "prob_max": 0.6819989085197449,
+        "true_class": 1.0,
+        "flight_level_ft": 8000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 02:26:00+00:00",
+        "patch_id": "0000406.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.1274377245017,
+          39.62444979164979
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.32041412591934204,
+          0.679585874080658
+        ],
+        "severe_prob": 0.679585874080658,
+        "prob_max": 0.679585874080658,
+        "true_class": 1.0,
+        "flight_level_ft": 11000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 23:40:00+00:00",
+        "patch_id": "0000409.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.97367916,
+          36.98387982663967
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7965655326843262,
+          0.20343439280986786
+        ],
+        "severe_prob": 0.20343439280986786,
+        "prob_max": 0.7965655326843262,
+        "true_class": 1.0,
+        "flight_level_ft": 38000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 15:56:00+00:00",
+        "patch_id": "0000417.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.79,
+          39.06
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6316894888877869,
+          0.36831045150756836
+        ],
+        "severe_prob": 0.36831045150756836,
+        "prob_max": 0.6316894888877869,
+        "true_class": 0.0,
+        "flight_level_ft": 40000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 17:12:00+00:00",
+        "patch_id": "0000418.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.203203,
+          42.549741
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.39213502407073975,
+          0.6078649759292603
+        ],
+        "severe_prob": 0.6078649759292603,
+        "prob_max": 0.6078649759292603,
+        "true_class": 0.0,
+        "flight_level_ft": 29000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 16:08:00+00:00",
+        "patch_id": "0000419.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.98,
+          35.94668016668017
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.8294280171394348,
+          0.1705719381570816
+        ],
+        "severe_prob": 0.1705719381570816,
+        "prob_max": 0.8294280171394348,
+        "true_class": 0.0,
+        "flight_level_ft": 35000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 15:16:00+00:00",
+        "patch_id": "0000420.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.40659595845592,
+          44.9757211215917
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.2964457869529724,
+          0.7035541534423828
+        ],
+        "severe_prob": 0.7035541534423828,
+        "prob_max": 0.7035541534423828,
+        "true_class": 1.0,
+        "flight_level_ft": 31000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 00:39:00+00:00",
+        "patch_id": "0000421.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.95986,
+          37.04422
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.46678322553634644,
+          0.5332167744636536
+        ],
+        "severe_prob": 0.5332167744636536,
+        "prob_max": 0.5332167744636536,
+        "true_class": 1.0,
+        "flight_level_ft": 23000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 22:24:00+00:00",
+        "patch_id": "0000425.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.20230227,
+          32.13136751
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.8030679225921631,
+          0.1969321072101593
+        ],
+        "severe_prob": 0.1969321072101593,
+        "prob_max": 0.8030679225921631,
+        "true_class": 0.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 02:57:00+00:00",
+        "patch_id": "0000428.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.56220175956578,
+          43.19208802715051
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6843474507331848,
+          0.3156524896621704
+        ],
+        "severe_prob": 0.3156524896621704,
+        "prob_max": 0.6843474507331848,
+        "true_class": 0.0,
+        "flight_level_ft": 35000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 00:14:00+00:00",
+        "patch_id": "0000435.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.56817307995824,
+          33.872525978369
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.21814915537834167,
+          0.7818508744239807
+        ],
+        "severe_prob": 0.7818508744239807,
+        "prob_max": 0.7818508744239807,
+        "true_class": 1.0,
+        "flight_level_ft": 4000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-27 23:57:00+00:00",
+        "patch_id": "0000440.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.1833,
+          49.1
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 1,
+        "probs": [
+          0.05127803236246109,
+          0.9487219452857971
+        ],
+        "severe_prob": 0.9487219452857971,
+        "prob_max": 0.9487219452857971,
+        "true_class": 1.0,
+        "flight_level_ft": 37000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 04:42:00+00:00",
+        "patch_id": "0000441.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.01,
+          42.54
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.36980122327804565,
+          0.6301988363265991
+        ],
+        "severe_prob": 0.6301988363265991,
+        "prob_max": 0.6301988363265991,
+        "true_class": 0.0,
+        "flight_level_ft": 15000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-03 19:08:00+00:00",
+        "patch_id": "0000444.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.27743322075072,
+          40.81032624692706
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6362658143043518,
+          0.3637341856956482
+        ],
+        "severe_prob": 0.3637341856956482,
+        "prob_max": 0.6362658143043518,
+        "true_class": 1.0,
+        "flight_level_ft": 38000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 04:18:00+00:00",
+        "patch_id": "0000446.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.47248581422052,
+          34.36154013519376
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.16267424821853638,
+          0.8373257517814636
+        ],
+        "severe_prob": 0.8373257517814636,
+        "prob_max": 0.8373257517814636,
+        "true_class": 1.0,
+        "flight_level_ft": 8500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-27 23:45:00+00:00",
+        "patch_id": "0000453.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.37847656924475,
+          41.813778119370006
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 1,
+        "probs": [
+          0.4315115511417389,
+          0.5684884190559387
+        ],
+        "severe_prob": 0.5684884190559387,
+        "prob_max": 0.5684884190559387,
+        "true_class": 1.0,
+        "flight_level_ft": 14000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 00:26:00+00:00",
+        "patch_id": "0000454.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -150.6165434904469,
+          61.02911583538196
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.8313069343566895,
+          0.16869302093982697
+        ],
+        "severe_prob": 0.16869302093982697,
+        "prob_max": 0.8313069343566895,
+        "true_class": 0.0,
+        "flight_level_ft": 6500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 07:20:00+00:00",
+        "patch_id": "0000458.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.5843592428304,
+          38.00120763202962
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6941301822662354,
+          0.30586978793144226
+        ],
+        "severe_prob": 0.30586978793144226,
+        "prob_max": 0.6941301822662354,
+        "true_class": 0.0,
+        "flight_level_ft": 37000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 19:12:00+00:00",
+        "patch_id": "0000460.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.9102670646318,
+          35.37526033336033
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.65398108959198,
+          0.3460189402103424
+        ],
+        "severe_prob": 0.3460189402103424,
+        "prob_max": 0.65398108959198,
+        "true_class": 1.0,
+        "flight_level_ft": 39000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 13:27:00+00:00",
+        "patch_id": "0000465.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.04,
+          38.70002025002025
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.4654153287410736,
+          0.534584641456604
+        ],
+        "severe_prob": 0.534584641456604,
+        "prob_max": 0.534584641456604,
+        "true_class": 0.0,
+        "flight_level_ft": 24000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 15:42:00+00:00",
+        "patch_id": "0000469.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.94222,
+          32.51611
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5628119707107544,
+          0.4371879994869232
+        ],
+        "severe_prob": 0.4371879994869232,
+        "prob_max": 0.5628119707107544,
+        "true_class": 0.0,
+        "flight_level_ft": 22000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-20 11:51:00+00:00",
+        "patch_id": "0000471.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.35358472939828,
+          47.58907482878893
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.48309090733528137,
+          0.516909122467041
+        ],
+        "severe_prob": 0.516909122467041,
+        "prob_max": 0.516909122467041,
+        "true_class": 1.0,
+        "flight_level_ft": 14000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-19 01:55:00+00:00",
+        "patch_id": "0000473.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.05616,
+          40.94233008334008
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.4157301187515259,
+          0.5842698812484741
+        ],
+        "severe_prob": 0.5842698812484741,
+        "prob_max": 0.5842698812484741,
+        "true_class": 1.0,
+        "flight_level_ft": 11000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 01:20:00+00:00",
+        "patch_id": "0000474.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.97979017238193,
+          38.730390802164536
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.6580893397331238,
+          0.3419106900691986
+        ],
+        "severe_prob": 0.3419106900691986,
+        "prob_max": 0.6580893397331238,
+        "true_class": 0.0,
+        "flight_level_ft": 23000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 21:07:00+00:00",
+        "patch_id": "0000475.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.25,
+          41.12668016668017
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.10498454421758652,
+          0.8950154185295105
+        ],
+        "severe_prob": 0.8950154185295105,
+        "prob_max": 0.8950154185295105,
+        "true_class": 1.0,
+        "flight_level_ft": 8000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-12 01:48:00+00:00",
+        "patch_id": "0000482.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.58887190062168,
+          33.87747190800741
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.21811863780021667,
+          0.7818813323974609
+        ],
+        "severe_prob": 0.7818813323974609,
+        "prob_max": 0.7818813323974609,
+        "true_class": 1.0,
+        "flight_level_ft": 4000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-27 23:55:00+00:00",
+        "patch_id": "0000490.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.27204,
+          42.49334
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5161242485046387,
+          0.48387575149536133
+        ],
+        "severe_prob": 0.48387575149536133,
+        "prob_max": 0.5161242485046387,
+        "true_class": 1.0,
+        "flight_level_ft": 22000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 19:28:00+00:00",
+        "patch_id": "0000493.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.25,
+          39.15663966663967
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.836122989654541,
+          0.16387702524662018
+        ],
+        "severe_prob": 0.16387702524662018,
+        "prob_max": 0.836122989654541,
+        "true_class": 0.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 01:08:00+00:00",
+        "patch_id": "0000495.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.9165,
+          36.33917
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5319101810455322,
+          0.46808984875679016
+        ],
+        "severe_prob": 0.46808984875679016,
+        "prob_max": 0.5319101810455322,
+        "true_class": 1.0,
+        "flight_level_ft": 25000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 20:03:00+00:00",
+        "patch_id": "0000496.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.38090777612554,
+          34.64389
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.5630183219909668,
+          0.4369817078113556
+        ],
+        "severe_prob": 0.4369817078113556,
+        "prob_max": 0.5630183219909668,
+        "true_class": 1.0,
+        "flight_level_ft": 22000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 14:21:00+00:00",
+        "patch_id": "0000501.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.93708445121689,
+          33.391043761259986
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.8047181963920593,
+          0.19528181850910187
+        ],
+        "severe_prob": 0.19528181850910187,
+        "prob_max": 0.8047181963920593,
+        "true_class": 0.0,
+        "flight_level_ft": 36000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 16:03:00+00:00",
+        "patch_id": "0000503.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.89,
+          35.9
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.28688374161720276,
+          0.7131162881851196
+        ],
+        "severe_prob": 0.7131162881851196,
+        "prob_max": 0.7131162881851196,
+        "true_class": 0.0,
+        "flight_level_ft": 31000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 13:58:00+00:00",
+        "patch_id": "0000504.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.10631,
+          42.94450983331984
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.46327418088912964,
+          0.5367258191108704
+        ],
+        "severe_prob": 0.5367258191108704,
+        "prob_max": 0.5367258191108704,
+        "true_class": 0.0,
+        "flight_level_ft": 8000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 16:44:00+00:00",
+        "patch_id": "0000514.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3,
+          25.836680166680168
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6042843461036682,
+          0.3957156538963318
+        ],
+        "severe_prob": 0.3957156538963318,
+        "prob_max": 0.6042843461036682,
+        "true_class": 1.0,
+        "flight_level_ft": 7000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-01 21:32:00+00:00",
+        "patch_id": "0000517.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.3,
+          34.7
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.553250253200531,
+          0.4467497169971466
+        ],
+        "severe_prob": 0.4467497169971466,
+        "prob_max": 0.553250253200531,
+        "true_class": 0.0,
+        "flight_level_ft": 19000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-01 15:42:00+00:00",
+        "patch_id": "0000518.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -134.84130985465384,
+          56.02915056846259
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6584743857383728,
+          0.3415256142616272
+        ],
+        "severe_prob": 0.3415256142616272,
+        "prob_max": 0.6584743857383728,
+        "true_class": 0.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-27 23:55:00+00:00",
+        "patch_id": "0000523.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.90045889740273,
+          42.61347611202193
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5517500638961792,
+          0.4482499659061432
+        ],
+        "severe_prob": 0.4482499659061432,
+        "prob_max": 0.5517500638961792,
+        "true_class": 0.0,
+        "flight_level_ft": 28000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 19:17:00+00:00",
+        "patch_id": "0000528.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.81975628183692,
+          33.48
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 1,
+        "probs": [
+          0.2756660580635071,
+          0.7243338823318481
+        ],
+        "severe_prob": 0.7243338823318481,
+        "prob_max": 0.7243338823318481,
+        "true_class": 1.0,
+        "flight_level_ft": 33000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-28 22:29:00+00:00",
+        "patch_id": "0000529.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.42,
+          36.43
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.7857028245925903,
+          0.21429723501205444
+        ],
+        "severe_prob": 0.21429723501205444,
+        "prob_max": 0.7857028245925903,
+        "true_class": 0.0,
+        "flight_level_ft": 34000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-03 13:46:00+00:00",
+        "patch_id": "0000531.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -131.71,
+          55.35
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.738899827003479,
+          0.2611001431941986
+        ],
+        "severe_prob": 0.2611001431941986,
+        "prob_max": 0.738899827003479,
+        "true_class": 0.0,
+        "flight_level_ft": 2000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-03 01:19:00+00:00",
+        "patch_id": "0000537.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.01537884087848,
+          34.68
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.4389330744743347,
+          0.5610669851303101
+        ],
+        "severe_prob": 0.5610669851303101,
+        "prob_max": 0.5610669851303101,
+        "true_class": 1.0,
+        "flight_level_ft": 21000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 00:21:00+00:00",
+        "patch_id": "0000539.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.23961229111443,
+          38.47331983331984
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 1,
+        "probs": [
+          0.47348636388778687,
+          0.5265136957168579
+        ],
+        "severe_prob": 0.5265136957168579,
+        "prob_max": 0.5265136957168579,
+        "true_class": 1.0,
+        "flight_level_ft": 16000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-11 21:04:00+00:00",
+        "patch_id": "0000543.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.93193,
+          42.1875562000162
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.6571067571640015,
+          0.34289318323135376
+        ],
+        "severe_prob": 0.34289318323135376,
+        "prob_max": 0.6571067571640015,
+        "true_class": 0.0,
+        "flight_level_ft": 2500.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-02 23:04:00+00:00",
+        "patch_id": "0000544.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -171.68161282869744,
+          54.992869095016026
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "h",
+        "pred_class": 0,
+        "probs": [
+          0.7857264280319214,
+          0.21427355706691742
+        ],
+        "severe_prob": 0.21427355706691742,
+        "prob_max": 0.7857264280319214,
+        "true_class": 1.0,
+        "flight_level_ft": 32000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-29 15:28:00+00:00",
+        "patch_id": "0000545.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.68806,
+          42.46972
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.5244234204292297,
+          0.4755765199661255
+        ],
+        "severe_prob": 0.4755765199661255,
+        "prob_max": 0.5244234204292297,
+        "true_class": 0.0,
+        "flight_level_ft": 18000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 22:07:00+00:00",
+        "patch_id": "0000553.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.544535,
+          41.63939
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "m",
+        "pred_class": 0,
+        "probs": [
+          0.855736255645752,
+          0.14426378905773163
+        ],
+        "severe_prob": 0.14426378905773163,
+        "prob_max": 0.855736255645752,
+        "true_class": 0.0,
+        "flight_level_ft": 37000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 16:44:00+00:00",
+        "patch_id": "0000556.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -176.6166,
+          56.6
+        ]
+      },
+      "properties": {
+        "source": "satellite",
+        "aircraft_class": "l",
+        "pred_class": 0,
+        "probs": [
+          0.760561466217041,
+          0.2394385039806366
+        ],
+        "severe_prob": 0.2394385039806366,
+        "prob_max": 0.760561466217041,
+        "true_class": 1.0,
+        "flight_level_ft": 36000.0,
+        "delta_t_seconds": 0.0,
+        "pirep_time": "2024-12-13 05:19:00+00:00",
+        "patch_id": "0000567.npz"
+      }
+    }
+  ]
+}

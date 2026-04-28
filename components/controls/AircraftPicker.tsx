@@ -23,6 +23,7 @@ function AircraftPicker({
           <SelectValue placeholder="Aircraft Size" />
         </SelectTrigger>
         <SelectContent align="end">
+          <SelectItem value="all">All</SelectItem>
           <SelectItem value="l">Light</SelectItem>
           <SelectItem value="m">Medium</SelectItem>
           <SelectItem value="h">Heavy</SelectItem>

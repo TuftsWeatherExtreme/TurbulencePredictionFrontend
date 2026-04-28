@@ -21,7 +21,7 @@ const RADAR_GEOJSON_PREFIX = "/predictions/radar/prediction_";
 const SATELLITE_GEOJSON_PREFIX = "/predictions/satellite/prediction_";
 
 const RADAR_MONTHLY_GEOJSON = "/predictions/preds_radar_2024_12.geojson";
-const SATELLITE_MONTHLY_GEOJSON = "/predictions/preds_2024_12_satellite.geojson";
+const SATELLITE_MONTHLY_GEOJSON = "/predictions/preds_satellite_2024_12.geojson";
 
 function getGeoJsonUrl(prefix: string, step: number): string {
   return `${prefix}${step.toString().padStart(2, "0")}.geojson`;
@@ -75,6 +75,7 @@ function Map() {
   const [sizeClass, setSizeClass] = useState<string>("l");
   const [sources, setSources] = useState<boolean[]>([true, true]);
   const [altFilterEnabled, setAltFilterEnabled] = useState<boolean>(true);
+  const [timeFilterEnabled, setTimeFilterEnabled] = useState<boolean>(true);
   const [useMonthlyFiles, setUseMonthlyFiles] = useState<boolean>(true);
 
   const [radarMonthly, setRadarMonthly] = useState<FeatureCollection | null>(null);
@@ -237,11 +238,11 @@ function Map() {
         const html = [
           `<div style="font-size:12px; line-height:1.25;">`,
           `<div><b>NEXRAD Radar</b></div>`,
-          `<div>p(severe): ${props?.severe_prob ? Number(props.severe_prob).toFixed(3) : "?"}</div>`,
+          `<div>Probability of Severe Turbluence: ${props?.severe_prob ? Number(props.severe_prob).toFixed(3) : "?"}</div>`,
           `<div>pred_class: ${props?.pred_class ?? "?"}</div>`,
-          `<div>aircraft: ${aircraftClassLabel}</div>`,
-          `<div>flight_level: ${props?.flight_level_ft ?? "?"} ft</div>`,
-          `<div>time: ${timeStr}</div>`,
+          `<div>Aircraft Size: ${aircraftClassLabel}</div>`,
+          `<div>Flight Level: ${props?.flight_level_ft ?? "?"} ft</div>`,
+          `<div>PIREP Time: ${timeStr}</div>`,
           `</div>`,
         ].join("");
         new mapboxgl.Popup().setLngLat(coordinates).setHTML(html).addTo(map);
@@ -265,10 +266,10 @@ function Map() {
         const html = [
           `<div style="font-size:12px; line-height:1.25;">`,
           `<div><b>Satellite</b></div>`,
-          `<div>p(severe): ${props?.severe_prob ? Number(props.severe_prob).toFixed(3) : "?"}</div>`,
-          `<div>pred_class: ${props?.pred_class ?? "?"}</div>`,
-          `<div>aircraft: ${aircraftClassLabel}</div>`,
-          `<div>time: ${timeStr}</div>`,
+          `<div>Probability of Severe Turbluence: ${props?.severe_prob ? Number(props.severe_prob).toFixed(3) : "?"}</div>`,
+          `<div>Aircraft Size: ${aircraftClassLabel}</div>`,
+          `<div>Flight Level: ${props?.flight_level_ft ?? "?"} ft</div>`,
+          `<div>PIREP Time: ${timeStr}</div>`,
           `</div>`,
         ].join("");
         new mapboxgl.Popup().setLngLat(coordinates).setHTML(html).addTo(map);
@@ -321,7 +322,7 @@ function Map() {
       if (useMonthlyFiles) {
         const dayKey = selectedDayKey;
         const fc = radarMonthly;
-        if (fc && !dayKey) {
+        if (fc && (!dayKey || !timeFilterEnabled)) {
           // Data not indexed yet (or no valid timestamps) — show everything rather than nothing.
           radarSource.setData(fc as any);
         } else if (dayKey && fc) {
@@ -351,7 +352,7 @@ function Map() {
       if (useMonthlyFiles) {
         const dayKey = selectedDayKey;
         const fc = satMonthly;
-        if (fc && !dayKey) {
+        if (fc && (!dayKey || !timeFilterEnabled)) {
           satSource.setData(fc as any);
         } else if (dayKey && fc) {
           const filtered: FeatureCollection = {
@@ -374,7 +375,14 @@ function Map() {
           .catch(() => {});
       }
     }
-  }, [timeOffset, radarMonthly, satMonthly, selectedDayKey, useMonthlyFiles]);
+  }, [
+    timeOffset,
+    radarMonthly,
+    satMonthly,
+    selectedDayKey,
+    useMonthlyFiles,
+    timeFilterEnabled,
+  ]);
 
   // --- Filter points by flight level (radar + satellite) ---
   useEffect(() => {
@@ -391,13 +399,16 @@ function Map() {
           ]
         : null;
 
-      // Aircraft size filter (matches AircraftPicker values: "l" | "m" | "h").
+      // Aircraft size filter (AircraftPicker values: "all" | "l" | "m" | "h").
       // Fail open for older GeoJSONs that don't include aircraft_class.
-      const aircraftExpr: any = [
-        "any",
-        ["!", ["has", "aircraft_class"]],
-        ["==", ["get", "aircraft_class"], sizeClass],
-      ];
+      const aircraftExpr: any =
+        sizeClass === "all"
+          ? true
+          : [
+              "any",
+              ["!", ["has", "aircraft_class"]],
+              ["==", ["get", "aircraft_class"], sizeClass],
+            ];
 
       const filterExpr: any =
         altFilterExpr === null ? aircraftExpr : ["all", aircraftExpr, altFilterExpr];
@@ -465,6 +476,17 @@ function Map() {
           numSteps={useMonthlyFiles ? Math.max(1, allDays.length) : NUM_STEPS}
           labels={useMonthlyFiles ? dayLabels : undefined}
         />
+        {useMonthlyFiles ? (
+          <div className="mt-2 flex justify-center">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setTimeFilterEnabled((v) => !v)}
+            >
+              Time filter: {timeFilterEnabled ? "On" : "Off"}
+            </Button>
+          </div>
+        ) : null}
       </div>
       <div className="fixed top-0 right-0 p-4 flex flex-row-reverse gap-4">
         <SourcePicker sources={sources} setSources={setSources} />
