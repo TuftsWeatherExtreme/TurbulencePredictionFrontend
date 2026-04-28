@@ -1,52 +1,39 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import {
-	DropdownMenu,
-	DropdownMenuCheckboxItem,
-	DropdownMenuContent,
-	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
-import { ChevronDownIcon } from "lucide-react";
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 function SourcePicker({
-	sources,
-	setSources,
+  source,
+  setSource,
 }: {
-	sources: boolean[];
-	setSources: (value: boolean[]) => void;
+  source: string;
+  setSource: (value: string) => void;
 }) {
-	return (
-		<DropdownMenu 
-      defaultOpen
-    >
-			<DropdownMenuTrigger asChild>
-				<Button variant="outline" size="sm">
-					<span>Sources</span>
-					<ChevronDownIcon />
-				</Button>
-			</DropdownMenuTrigger>
-			<DropdownMenuContent align="end" className="w-full">
-				<DropdownMenuCheckboxItem
-					key="sat"
-					className="capitalize"
-					checked={sources[0]}
-					onCheckedChange={(value) => setSources([!!value, sources[1]])}
-				>
-					Satellite
-				</DropdownMenuCheckboxItem>
-				<DropdownMenuCheckboxItem
-					key="rad"
-					className="capitalize"
-					checked={sources[1]}
-					onCheckedChange={(value) => setSources([sources[0], !!value])}
-				>
-					Radar
-				</DropdownMenuCheckboxItem>
-			</DropdownMenuContent>
-		</DropdownMenu>
-	);
+  return (
+    <div className="flex flex-col items-center">
+      <div className="text-sm font-semibold text-center w-full">
+        Data Source
+      </div>
+
+      <Select value={source} onValueChange={setSource}>
+        <SelectTrigger size="sm" className="bg-background w-full">
+          <SelectValue placeholder="Sources" />
+        </SelectTrigger>
+
+        <SelectContent align="end">
+          <SelectItem value="all">All</SelectItem>
+          <SelectItem value="sat">Satellite</SelectItem>
+          <SelectItem value="rad">Radar</SelectItem>
+        </SelectContent>
+      </Select>
+    </div>
+  );
 }
 
 export default SourcePicker;

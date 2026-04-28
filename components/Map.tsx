@@ -72,8 +72,13 @@ function Map() {
   // Default to a mid/high cruise level so the map isn't empty by default.
   const [flightLevel, setFlightLevel] = useState<number>(3);
   const [timeOffset, setTimeOffset] = useState<number>(0);
-  const [sizeClass, setSizeClass] = useState<string>("l");
-  const [sources, setSources] = useState<boolean[]>([true, true]);
+  const [sizeClass, setSizeClass] = useState<string>("all");
+  const [source, setSource] = useState<boolean[]>([true, true]);
+  const handleSourceChange = (value: string) => {
+    if (value === "all") setSource([true, true]);
+    else if (value === "sat") setSource([true, false]);
+    else if (value === "rad") setSource([false, true]);
+  };
   const [altFilterEnabled, setAltFilterEnabled] = useState<boolean>(true);
   const [timeFilterEnabled, setTimeFilterEnabled] = useState<boolean>(true);
   const [useMonthlyFiles, setUseMonthlyFiles] = useState<boolean>(true);
@@ -432,7 +437,7 @@ function Map() {
     const map = mapRef.current;
     if (!map || !map.loaded()) return;
 
-    const [satVisible, radarVisible] = sources;
+    const [satVisible, radarVisible] = source;
 
     if (map.getLayer("satellite-preds-layer")) {
       map.setLayoutProperty(
@@ -448,7 +453,16 @@ function Map() {
         radarVisible ? "visible" : "none",
       );
     }
-  }, [sources]);
+  }, [source]);
+
+  const derivedSource =
+  source[0] && source[1]
+    ? "all"
+    : source[0]
+    ? "sat"
+    : source[1]
+    ? "rad"
+    : "all"; // fallback safety
 
   return (
     <>
@@ -488,7 +502,7 @@ function Map() {
         ) : null}
       </div>
       <div className="fixed top-0 right-0 p-4 flex flex-row-reverse gap-4">
-        <SourcePicker sources={sources} setSources={setSources} />
+        <SourcePicker source={derivedSource} setSource={handleSourceChange} />
         <AircraftPicker sizeClass={sizeClass} setSizeClass={setSizeClass} />
       </div>
       <div className="fixed right-0 p-4">
