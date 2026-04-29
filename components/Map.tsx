@@ -70,7 +70,7 @@ mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
 function Map() {
   // Default to a mid/high cruise level so the map isn't empty by default.
-  const [flightLevel, setFlightLevel] = useState<number>(3);
+  const [flightLevel, setFlightLevel] = useState<number>(8);
   const [timeOffset, setTimeOffset] = useState<number>(0);
   const [sizeClass, setSizeClass] = useState<string>("all");
   const [source, setSource] = useState<boolean[]>([true, true]);
