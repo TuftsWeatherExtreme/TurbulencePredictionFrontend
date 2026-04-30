@@ -1,0 +1,6205 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.22072,
+          37.72128
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8498,
+        "nexrad_prob": 0.9997,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 3000.0,
+        "pirep_time": "2024-12-14T07:50:00+00:00",
+        "patch_id": "0000008_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.87244699262344,
+          39.483214354095495
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 20000.0,
+        "pirep_time": "2024-12-30T03:14:00+00:00",
+        "patch_id": "0000011_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.163,
+          36.3341
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.1536,
+        "nexrad_prob": 0.1808,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 16000.0,
+        "pirep_time": "2024-12-13T20:18:00+00:00",
+        "patch_id": "0000013_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.31437,
+          47.44469
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0,
+        "nexrad_prob": 0.0001,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-24T03:41:00+00:00",
+        "patch_id": "0000017_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.60028,
+          45.59083
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0044,
+        "nexrad_prob": 0.0051,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 16000.0,
+        "pirep_time": "2024-12-24T00:14:00+00:00",
+        "patch_id": "0000021_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.11,
+          42.47
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 24000.0,
+        "pirep_time": "2024-12-29T19:10:00+00:00",
+        "patch_id": "0000023_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.54548282942092,
+          36.05290991888375
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.7545,
+        "nexrad_prob": 0.9237,
+        "sat_prob": 0.5478,
+        "pred_class": 1,
+        "flight_level_ft": 4000.0,
+        "pirep_time": "2024-12-11T20:13:00+00:00",
+        "patch_id": "0000035_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.15,
+          44.47
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0013,
+        "nexrad_prob": 0.0015,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 19000.0,
+        "pirep_time": "2024-12-30T16:13:00+00:00",
+        "patch_id": "0000041_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.32259491457113,
+          39.40424021631001
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.6157,
+        "nexrad_prob": 0.7243,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-17T00:30:00+00:00",
+        "patch_id": "0000045_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.60107573519568,
+          39.422270041670046
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 18000.0,
+        "pirep_time": "2024-12-30T03:29:00+00:00",
+        "patch_id": "0000046_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.08277492662596,
+          47.38768202550251
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8494,
+        "nexrad_prob": 0.9993,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 5000.0,
+        "pirep_time": "2024-12-24T03:47:00+00:00",
+        "patch_id": "0000048_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.92442,
+          37.47607611667612
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8499,
+        "nexrad_prob": 0.9999,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 2000.0,
+        "pirep_time": "2024-12-10T02:58:00+00:00",
+        "patch_id": "0000051_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1457825737783,
+          47.13143375467857
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.6376,
+        "nexrad_prob": 0.7502,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 2500.0,
+        "pirep_time": "2024-12-22T21:42:00+00:00",
+        "patch_id": "0000052_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.93508,
+          35.42822
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8488,
+        "nexrad_prob": 0.9985,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 16000.0,
+        "pirep_time": "2024-12-29T18:09:00+00:00",
+        "patch_id": "0000054_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.39058387640692,
+          34.031117034608194
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-14T13:07:00+00:00",
+        "patch_id": "0000057_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.10961839733892,
+          39.78699796682039
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8497,
+        "nexrad_prob": 0.9996,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 22000.0,
+        "pirep_time": "2024-12-30T02:36:00+00:00",
+        "patch_id": "0000059_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.39453,
+          33.94227
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-14T05:59:00+00:00",
+        "patch_id": "0000060_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.4453170751482,
+          38.91462528346326
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.002,
+        "nexrad_prob": 0.0023,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 19000.0,
+        "pirep_time": "2024-12-09T23:33:00+00:00",
+        "patch_id": "0000063_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.07528752699749,
+          39.94711532463905
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8294,
+        "nexrad_prob": 0.9758,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 6500.0,
+        "pirep_time": "2024-12-29T17:31:00+00:00",
+        "patch_id": "0000069_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.93985976842175,
+          30.02641797155345
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0025,
+        "nexrad_prob": 0.003,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 17000.0,
+        "pirep_time": "2024-12-07T02:33:00+00:00",
+        "patch_id": "0000072_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2283,
+          31.284609666639668
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0,
+        "nexrad_prob": 0.0,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 19000.0,
+        "pirep_time": "2024-12-04T13:10:00+00:00",
+        "patch_id": "0000075_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.01860163447654,
+          28.21511010815501
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-29T21:37:00+00:00",
+        "patch_id": "0000076_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.24375929165004,
+          35.609737469083505
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8492,
+        "nexrad_prob": 0.9991,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 9500.0,
+        "pirep_time": "2024-12-14T22:42:00+00:00",
+        "patch_id": "0000082_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.65624454908367,
+          26.961951066442943
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8242,
+        "nexrad_prob": 0.9697,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 22000.0,
+        "pirep_time": "2024-12-27T15:38:00+00:00",
+        "patch_id": "0000084_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.77573167333179,
+          29.595211690372125
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-29T23:20:00+00:00",
+        "patch_id": "0000088_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.73115637550906,
+          30.1821
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.023,
+        "nexrad_prob": 0.0271,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-26T13:47:00+00:00",
+        "patch_id": "0000089_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.23541249122388,
+          37.85411671865906
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 4000.0,
+        "pirep_time": "2024-12-14T19:38:00+00:00",
+        "patch_id": "0000090_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.62,
+          39.49
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0028,
+        "nexrad_prob": 0.0033,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-17T03:12:00+00:00",
+        "patch_id": "0000095_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.36,
+          57.04
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8495,
+        "nexrad_prob": 0.9994,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-22T16:02:00+00:00",
+        "patch_id": "0000099_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.30505336327926,
+          47.694606067614885
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.1501,
+        "nexrad_prob": 0.1765,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 2500.0,
+        "pirep_time": "2024-12-18T15:52:00+00:00",
+        "patch_id": "0000106_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.53980780066588,
+          46.03808025002025
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0415,
+        "nexrad_prob": 0.0488,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 17000.0,
+        "pirep_time": "2024-12-26T19:46:00+00:00",
+        "patch_id": "0000115_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.05,
+          41.33
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.9531,
+        "nexrad_prob": 0.9999,
+        "sat_prob": 0.8959,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-12T01:46:00+00:00",
+        "patch_id": "0000116_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.54071227245078,
+          37.72158855732584
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-23T03:35:00+00:00",
+        "patch_id": "0000117_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.93155246029026,
+          39.327465128951495
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.6451,
+        "nexrad_prob": 0.848,
+        "sat_prob": 0.397,
+        "pred_class": 1,
+        "flight_level_ft": 30000.0,
+        "pirep_time": "2024-12-11T22:38:00+00:00",
+        "patch_id": "0000118_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.68802599071134,
+          33.9486
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 10000.0,
+        "pirep_time": "2024-12-18T23:10:00+00:00",
+        "patch_id": "0000121_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.4655,
+          44.68186
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.1037,
+        "nexrad_prob": 0.122,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 6000.0,
+        "pirep_time": "2024-12-11T21:43:00+00:00",
+        "patch_id": "0000127_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.48179673911666,
+          40.08374611227665
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.015,
+        "nexrad_prob": 0.0177,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 11500.0,
+        "pirep_time": "2024-12-27T03:47:00+00:00",
+        "patch_id": "0000136_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.71521493456837,
+          39.32288932227346
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.8875,
+        "nexrad_prob": 1.0,
+        "sat_prob": 0.7499,
+        "pred_class": 1,
+        "flight_level_ft": 11500.0,
+        "pirep_time": "2024-12-29T03:50:00+00:00",
+        "patch_id": "0000137_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5805998115102,
+          31.12
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 23000.0,
+        "pirep_time": "2024-12-26T19:16:00+00:00",
+        "patch_id": "0000140_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.85,
+          39.23663966663967
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 11500.0,
+        "pirep_time": "2024-12-29T21:03:00+00:00",
+        "patch_id": "0000142_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.5375,
+          35.1319156999757
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.7909,
+        "nexrad_prob": 1.0,
+        "sat_prob": 0.5355,
+        "pred_class": 1,
+        "flight_level_ft": 6000.0,
+        "pirep_time": "2024-12-20T17:18:00+00:00",
+        "patch_id": "0000144_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.2258217,
+          40.0394297
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.7725,
+        "nexrad_prob": 0.8572,
+        "sat_prob": 0.6689,
+        "pred_class": 1,
+        "flight_level_ft": 6000.0,
+        "pirep_time": "2024-12-11T19:40:00+00:00",
+        "patch_id": "0000151_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.40783,
+          37.04095983331983
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.7435,
+        "nexrad_prob": 0.8747,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 11500.0,
+        "pirep_time": "2024-12-11T14:53:00+00:00",
+        "patch_id": "0000153_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.72867810049398,
+          34.2375568747985
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8488,
+        "nexrad_prob": 0.9985,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 3000.0,
+        "pirep_time": "2024-12-15T20:00:00+00:00",
+        "patch_id": "0000154_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.89209,
+          39.94445
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0255,
+        "nexrad_prob": 0.03,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 15500.0,
+        "pirep_time": "2024-12-15T11:14:00+00:00",
+        "patch_id": "0000155_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.1246,
+          46.587991333360335
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0812,
+        "nexrad_prob": 0.0956,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-28T23:15:00+00:00",
+        "patch_id": "0000165_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.35972701885603,
+          40.07231558453652
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.7982,
+        "nexrad_prob": 0.9902,
+        "sat_prob": 0.5636,
+        "pred_class": 1,
+        "flight_level_ft": 6000.0,
+        "pirep_time": "2024-12-12T19:30:00+00:00",
+        "patch_id": "0000167_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.98237316167746,
+          29.983582200086754
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-26T15:16:00+00:00",
+        "patch_id": "0000169_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.29055262583647,
+          36.03260999684462
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8498,
+        "nexrad_prob": 0.9997,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 5000.0,
+        "pirep_time": "2024-12-18T14:58:00+00:00",
+        "patch_id": "0000173_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26646316604898,
+          44.46964622072404
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0066,
+        "nexrad_prob": 0.0078,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 20000.0,
+        "pirep_time": "2024-12-13T18:06:00+00:00",
+        "patch_id": "0000174_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6719754569043,
+          28.69723986480625
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8247,
+        "nexrad_prob": 0.9703,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 13000.0,
+        "pirep_time": "2024-12-29T20:52:00+00:00",
+        "patch_id": "0000176_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.1074843118899,
+          31.20566443920416
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0002,
+        "nexrad_prob": 0.0003,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 19000.0,
+        "pirep_time": "2024-12-11T12:32:00+00:00",
+        "patch_id": "0000178_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.23349566718686,
+          32.86788629280277
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0135,
+        "nexrad_prob": 0.0159,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-26T16:32:00+00:00",
+        "patch_id": "0000179_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.90468577371824,
+          47.09005643785628
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.5918,
+        "nexrad_prob": 0.6657,
+        "sat_prob": 0.5014,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-20T01:51:00+00:00",
+        "patch_id": "0000184_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.12929588455174,
+          39.68665586665587
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8499,
+        "nexrad_prob": 0.9999,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 16500.0,
+        "pirep_time": "2024-12-05T15:06:00+00:00",
+        "patch_id": "0000186_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.94164133309262,
+          38.43683019895001
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.795,
+        "nexrad_prob": 0.9901,
+        "sat_prob": 0.5566,
+        "pred_class": 1,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-11T20:15:00+00:00",
+        "patch_id": "0000191_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.12658023707282,
+          39.73869776350242
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.1141,
+        "nexrad_prob": 0.1343,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 22000.0,
+        "pirep_time": "2024-12-30T02:31:00+00:00",
+        "patch_id": "0000192_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.65966267476172,
+          28.84221244223251
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8499,
+        "nexrad_prob": 0.9999,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 21000.0,
+        "pirep_time": "2024-12-11T15:57:00+00:00",
+        "patch_id": "0000197_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6575,
+          39.8328
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.205,
+        "nexrad_prob": 0.2411,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 7000.0,
+        "pirep_time": "2024-12-09T04:15:00+00:00",
+        "patch_id": "0000199_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.37,
+          39.44
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 16000.0,
+        "pirep_time": "2024-12-11T14:18:00+00:00",
+        "patch_id": "0000203_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.77111,
+          39.35054586665587
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.8854,
+        "nexrad_prob": 0.9987,
+        "sat_prob": 0.7468,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-28T06:14:00+00:00",
+        "patch_id": "0000205_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.19089828229559,
+          36.01103999605578
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8324,
+        "nexrad_prob": 0.9793,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 5000.0,
+        "pirep_time": "2024-12-18T15:01:00+00:00",
+        "patch_id": "0000210_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.11719,
+          39.90881
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.7761,
+        "nexrad_prob": 0.913,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 6500.0,
+        "pirep_time": "2024-12-17T17:19:00+00:00",
+        "patch_id": "0000216_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.97813607776388,
+          39.78938443920415
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-29T23:45:00+00:00",
+        "patch_id": "0000226_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.97582912946838,
+          29.9844
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.004,
+        "nexrad_prob": 0.0048,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-26T19:43:00+00:00",
+        "patch_id": "0000233_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.64979768415516,
+          34.22134170698265
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 3600.0,
+        "pirep_time": "2024-12-15T20:11:00+00:00",
+        "patch_id": "0000237_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.27587683119023,
+          40.02
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.3994,
+        "nexrad_prob": 0.4699,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 13000.0,
+        "pirep_time": "2024-12-29T23:25:00+00:00",
+        "patch_id": "0000240_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.87373769240511,
+          37.99534830962787
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 11000.0,
+        "pirep_time": "2024-12-15T18:49:00+00:00",
+        "patch_id": "0000241_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.28554702324784,
+          47.38093118555162
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0887,
+        "nexrad_prob": 0.1043,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 4800.0,
+        "pirep_time": "2024-12-25T23:46:00+00:00",
+        "patch_id": "0000244_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.81873398319613,
+          27.75258244738784
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0213,
+        "nexrad_prob": 0.0251,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 6000.0,
+        "pirep_time": "2024-12-29T17:10:00+00:00",
+        "patch_id": "0000245_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.87,
+          38.72334008334008
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 7000.0,
+        "pirep_time": "2024-12-11T14:45:00+00:00",
+        "patch_id": "0000249_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72985846121225,
+          39.30332728753801
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.8886,
+        "nexrad_prob": 1.0,
+        "sat_prob": 0.7525,
+        "pred_class": 1,
+        "flight_level_ft": 11000.0,
+        "pirep_time": "2024-12-28T00:27:00+00:00",
+        "patch_id": "0000250_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.27980348491472,
+          40.16741335605183
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0001,
+        "nexrad_prob": 0.0001,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 17000.0,
+        "pirep_time": "2024-12-29T04:00:00+00:00",
+        "patch_id": "0000251_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.31639,
+          41.70722
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0099,
+        "nexrad_prob": 0.0116,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 10000.0,
+        "pirep_time": "2024-12-29T20:40:00+00:00",
+        "patch_id": "0000253_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.15887824347418,
+          33.86494545463573
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8496,
+        "nexrad_prob": 0.9995,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 27000.0,
+        "pirep_time": "2024-12-08T00:51:00+00:00",
+        "patch_id": "0000254_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.00556840879116,
+          29.777211961746247
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8478,
+        "nexrad_prob": 0.9974,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 22000.0,
+        "pirep_time": "2024-12-11T15:51:00+00:00",
+        "patch_id": "0000255_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.25327898326263,
+          27.91
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 30000.0,
+        "pirep_time": "2024-12-29T20:48:00+00:00",
+        "patch_id": "0000263_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.68426547793857,
+          38.93
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 10000.0,
+        "pirep_time": "2024-12-11T18:06:00+00:00",
+        "patch_id": "0000264_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.77111,
+          39.23386974997975
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.8841,
+        "nexrad_prob": 0.991,
+        "sat_prob": 0.7534,
+        "pred_class": 1,
+        "flight_level_ft": 9000.0,
+        "pirep_time": "2024-12-28T08:35:00+00:00",
+        "patch_id": "0000265_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.56774511380442,
+          61.095889633153256
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 9000.0,
+        "pirep_time": "2024-12-10T22:32:00+00:00",
+        "patch_id": "0000266_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.37489,
+          37.61897
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-23T03:35:00+00:00",
+        "patch_id": "0000267_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.544535,
+          41.63939
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.3152,
+        "nexrad_prob": 0.3708,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 11000.0,
+        "pirep_time": "2024-12-12T20:11:00+00:00",
+        "patch_id": "0000276_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8676357939515,
+          47.585574164618045
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.849,
+        "nexrad_prob": 0.9989,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 10000.0,
+        "pirep_time": "2024-12-24T03:51:00+00:00",
+        "patch_id": "0000277_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.36,
+          57.04
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8495,
+        "nexrad_prob": 0.9994,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-22T16:02:00+00:00",
+        "patch_id": "0000281_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.00974714694064,
+          31.739710173149263
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0006,
+        "nexrad_prob": 0.0007,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 22000.0,
+        "pirep_time": "2024-12-29T13:55:00+00:00",
+        "patch_id": "0000282_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.85,
+          39.57
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8101,
+        "nexrad_prob": 0.953,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 8400.0,
+        "pirep_time": "2024-12-18T00:50:00+00:00",
+        "patch_id": "0000291_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6575,
+          39.8328
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0879,
+        "nexrad_prob": 0.1034,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 7000.0,
+        "pirep_time": "2024-12-13T15:38:00+00:00",
+        "patch_id": "0000296_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.50562184585216,
+          47.80182580238371
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0035,
+        "nexrad_prob": 0.0042,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 25000.0,
+        "pirep_time": "2024-12-25T18:02:00+00:00",
+        "patch_id": "0000297_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6575,
+          39.8328
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.1055,
+        "nexrad_prob": 0.1241,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 7000.0,
+        "pirep_time": "2024-12-15T17:12:00+00:00",
+        "patch_id": "0000298_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.68786,
+          30.827420333360333
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8499,
+        "nexrad_prob": 0.9999,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 6000.0,
+        "pirep_time": "2024-12-29T15:45:00+00:00",
+        "patch_id": "0000303_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.5853039723146,
+          39.27908540108227
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0009,
+        "nexrad_prob": 0.0011,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 13000.0,
+        "pirep_time": "2024-12-30T02:20:00+00:00",
+        "patch_id": "0000304_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.87,
+          38.4399837999838
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.7938,
+        "nexrad_prob": 0.9996,
+        "sat_prob": 0.5423,
+        "pred_class": 1,
+        "flight_level_ft": 11000.0,
+        "pirep_time": "2024-12-11T21:06:00+00:00",
+        "patch_id": "0000306_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.17965360182666,
+          42.84229101422328
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0582,
+        "nexrad_prob": 0.0684,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 3000.0,
+        "pirep_time": "2024-12-06T00:01:00+00:00",
+        "patch_id": "0000309_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.24852930142741,
+          38.33016662319523
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8494,
+        "nexrad_prob": 0.9993,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 3500.0,
+        "pirep_time": "2024-12-29T19:37:00+00:00",
+        "patch_id": "0000310_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.5375,
+          35.43194
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0694,
+        "nexrad_prob": 0.0816,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-04T19:52:00+00:00",
+        "patch_id": "0000311_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.20917642240121,
+          29.30056
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8263,
+        "nexrad_prob": 0.9721,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 7000.0,
+        "pirep_time": "2024-12-29T21:32:00+00:00",
+        "patch_id": "0000314_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.28157,
+          47.90699
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.7367,
+        "nexrad_prob": 1.0,
+        "sat_prob": 0.4149,
+        "pred_class": 1,
+        "flight_level_ft": 2000.0,
+        "pirep_time": "2024-12-20T20:35:00+00:00",
+        "patch_id": "0000323_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.95,
+          42.22
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0217,
+        "nexrad_prob": 0.0255,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 5000.0,
+        "pirep_time": "2024-12-30T23:21:00+00:00",
+        "patch_id": "0000328_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.16223087,
+          25.695347376635617
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0173,
+        "nexrad_prob": 0.0203,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 1600.0,
+        "pirep_time": "2024-12-13T22:07:00+00:00",
+        "patch_id": "0000335_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.71628943772484,
+          39.283778119370005
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-27T05:45:00+00:00",
+        "patch_id": "0000340_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.86381185486177,
+          36.11889
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 5000.0,
+        "pirep_time": "2024-12-18T15:01:00+00:00",
+        "patch_id": "0000349_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.77866554525266,
+          39.92
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0019,
+        "nexrad_prob": 0.0022,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 13000.0,
+        "pirep_time": "2024-12-11T20:42:00+00:00",
+        "patch_id": "0000352_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.32256,
+          47.61614793332793
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8497,
+        "nexrad_prob": 0.9996,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 5000.0,
+        "pirep_time": "2024-12-18T16:42:00+00:00",
+        "patch_id": "0000355_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.43241172317272,
+          37.39962695733018
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0001,
+        "nexrad_prob": 0.0001,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 25000.0,
+        "pirep_time": "2024-12-08T23:03:00+00:00",
+        "patch_id": "0000356_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.11719,
+          39.90881
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0541,
+        "nexrad_prob": 0.0636,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-30T03:20:00+00:00",
+        "patch_id": "0000362_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66,
+          39.06329553329554
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 9000.0,
+        "pirep_time": "2024-12-21T22:50:00+00:00",
+        "patch_id": "0000373_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.30519996990856,
+          31.439626957330173
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.8965,
+        "nexrad_prob": 0.9841,
+        "sat_prob": 0.7893,
+        "pred_class": 1,
+        "flight_level_ft": 29000.0,
+        "pirep_time": "2024-12-28T19:00:00+00:00",
+        "patch_id": "0000375_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.93508,
+          35.42822
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8488,
+        "nexrad_prob": 0.9985,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 16000.0,
+        "pirep_time": "2024-12-29T18:09:00+00:00",
+        "patch_id": "0000383_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.60119,
+          34.056
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8497,
+        "nexrad_prob": 0.9996,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 5000.0,
+        "pirep_time": "2024-12-17T19:00:00+00:00",
+        "patch_id": "0000385_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.19089828229559,
+          36.01103999605578
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8324,
+        "nexrad_prob": 0.9793,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 5000.0,
+        "pirep_time": "2024-12-18T15:01:00+00:00",
+        "patch_id": "0000394_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.37,
+          39.44
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 18000.0,
+        "pirep_time": "2024-12-11T14:30:00+00:00",
+        "patch_id": "0000398_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.9863227987919,
+          33.41922980104999
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0012,
+        "nexrad_prob": 0.0014,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 18000.0,
+        "pirep_time": "2024-12-29T12:35:00+00:00",
+        "patch_id": "0000400_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.87,
+          38.72334008334008
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 7000.0,
+        "pirep_time": "2024-12-11T14:45:00+00:00",
+        "patch_id": "0000404_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8815956754699,
+          39.58703448129872
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.706,
+        "nexrad_prob": 0.7257,
+        "sat_prob": 0.682,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-12T02:26:00+00:00",
+        "patch_id": "0000406_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.7513202907481,
+          38.081981690372125
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8477,
+        "nexrad_prob": 0.9973,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-31T17:21:00+00:00",
+        "patch_id": "0000407_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.1274377245017,
+          39.62444979164979
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.8558,
+        "nexrad_prob": 1.0,
+        "sat_prob": 0.6796,
+        "pred_class": 1,
+        "flight_level_ft": 11000.0,
+        "pirep_time": "2024-12-28T23:40:00+00:00",
+        "patch_id": "0000409_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.60180026735436,
+          30.73146572402221
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 6000.0,
+        "pirep_time": "2024-12-26T22:00:00+00:00",
+        "patch_id": "0000410_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.37489,
+          37.61897
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-23T03:35:00+00:00",
+        "patch_id": "0000412_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.035,
+          33.9859918999919
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.7766,
+        "nexrad_prob": 0.9136,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 2100.0,
+        "pirep_time": "2024-12-10T17:59:00+00:00",
+        "patch_id": "0000414_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.41278,
+          41.61628
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0011,
+        "nexrad_prob": 0.0013,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 11000.0,
+        "pirep_time": "2024-12-27T18:04:00+00:00",
+        "patch_id": "0000418_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.11719,
+          39.65878974997975
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 11000.0,
+        "pirep_time": "2024-12-15T21:48:00+00:00",
+        "patch_id": "0000423_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.81553395328017,
+          35.81
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 11000.0,
+        "pirep_time": "2024-12-11T19:02:00+00:00",
+        "patch_id": "0000424_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.73360860110203,
+          39.31974207958001
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.829,
+        "nexrad_prob": 0.9753,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 5000.0,
+        "pirep_time": "2024-12-26T15:48:00+00:00",
+        "patch_id": "0000429_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.13,
+          35.77327933327933
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.6002,
+        "nexrad_prob": 0.7062,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 15000.0,
+        "pirep_time": "2024-12-11T13:59:00+00:00",
+        "patch_id": "0000431_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66,
+          39.53
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 11000.0,
+        "pirep_time": "2024-12-27T09:55:00+00:00",
+        "patch_id": "0000434_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.56995528290498,
+          32.5644167
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 7000.0,
+        "pirep_time": "2024-12-29T16:22:00+00:00",
+        "patch_id": "0000439_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.80303399540027,
+          25.713168878408307
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8499,
+        "nexrad_prob": 0.9999,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-29T17:21:00+00:00",
+        "patch_id": "0000442_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.27743322075072,
+          40.81032624692706
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.7137,
+        "nexrad_prob": 1.0,
+        "sat_prob": 0.3637,
+        "pred_class": 1,
+        "flight_level_ft": 38000.0,
+        "pirep_time": "2024-12-28T04:18:00+00:00",
+        "patch_id": "0000446_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.2056265438802,
+          33.15694675360954
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8499,
+        "nexrad_prob": 0.9999,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-24T06:13:00+00:00",
+        "patch_id": "0000450_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.2155808975145,
+          39.32206233814605
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8499,
+        "nexrad_prob": 0.9998,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-16T04:47:00+00:00",
+        "patch_id": "0000451_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.47248581422052,
+          34.36154013519376
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.4103,
+        "nexrad_prob": 0.0608,
+        "sat_prob": 0.8373,
+        "pred_class": 0,
+        "flight_level_ft": 8500.0,
+        "pirep_time": "2024-12-27T23:45:00+00:00",
+        "patch_id": "0000453_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.37847656924475,
+          41.813778119370006
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.8047,
+        "nexrad_prob": 0.9979,
+        "sat_prob": 0.5685,
+        "pred_class": 1,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-12T00:26:00+00:00",
+        "patch_id": "0000454_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.08414761873655,
+          29.6917
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.7889,
+        "nexrad_prob": 0.9281,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 23000.0,
+        "pirep_time": "2024-12-11T15:50:00+00:00",
+        "patch_id": "0000456_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.08256,
+          33.68831
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.574,
+        "nexrad_prob": 0.6753,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 4500.0,
+        "pirep_time": "2024-12-19T22:45:00+00:00",
+        "patch_id": "0000458_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.94600454309568,
+          28.16154013519376
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 21000.0,
+        "pirep_time": "2024-12-29T21:35:00+00:00",
+        "patch_id": "0000459_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.23286,
+          40.49147
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.2893,
+        "nexrad_prob": 0.3404,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 9000.0,
+        "pirep_time": "2024-12-19T15:07:00+00:00",
+        "patch_id": "0000467_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.22339012521051,
+          39.8328
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0204,
+        "nexrad_prob": 0.024,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 10500.0,
+        "pirep_time": "2024-12-19T20:15:00+00:00",
+        "patch_id": "0000468_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.05616,
+          40.94233008334008
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.7946,
+        "nexrad_prob": 0.9666,
+        "sat_prob": 0.5843,
+        "pred_class": 1,
+        "flight_level_ft": 11000.0,
+        "pirep_time": "2024-12-12T01:20:00+00:00",
+        "patch_id": "0000474_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.32256,
+          47.68282
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.7938,
+        "nexrad_prob": 0.9339,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 5000.0,
+        "pirep_time": "2024-12-18T16:40:00+00:00",
+        "patch_id": "0000477_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.55089251334148,
+          34.364722798556976
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-05T19:35:00+00:00",
+        "patch_id": "0000479_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.25,
+          41.12668016668017
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.9514,
+        "nexrad_prob": 0.9975,
+        "sat_prob": 0.895,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-12T01:48:00+00:00",
+        "patch_id": "0000482_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.33379897773936,
+          34.15271438960888
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.7573,
+        "nexrad_prob": 0.8909,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 2200.0,
+        "pirep_time": "2024-12-07T02:10:00+00:00",
+        "patch_id": "0000484_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.97492566045638,
+          38.15847337680477
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 20000.0,
+        "pirep_time": "2024-12-11T13:15:00+00:00",
+        "patch_id": "0000486_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.85,
+          33.92
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 8500.0,
+        "pirep_time": "2024-12-27T20:20:00+00:00",
+        "patch_id": "0000498_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.05806,
+          29.17992
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.725,
+        "nexrad_prob": 0.853,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 5400.0,
+        "pirep_time": "2024-12-29T21:54:00+00:00",
+        "patch_id": "0000508_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.70708619139549,
+          41.93668016668017
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0009,
+        "nexrad_prob": 0.001,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 19000.0,
+        "pirep_time": "2024-12-29T14:43:00+00:00",
+        "patch_id": "0000514_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.2155808975145,
+          40.34353766185394
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 8500.0,
+        "pirep_time": "2024-12-16T16:47:00+00:00",
+        "patch_id": "0000515_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3,
+          25.836680166680168
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.5803,
+        "nexrad_prob": 0.7313,
+        "sat_prob": 0.3957,
+        "pred_class": 1,
+        "flight_level_ft": 7000.0,
+        "pirep_time": "2024-12-01T21:32:00+00:00",
+        "patch_id": "0000517_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.06624964294596,
+          34.36163925016468
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8496,
+        "nexrad_prob": 0.9995,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-14T06:02:00+00:00",
+        "patch_id": "0000519_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.81975628183692,
+          33.48
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.8753,
+        "nexrad_prob": 0.9988,
+        "sat_prob": 0.7243,
+        "pred_class": 1,
+        "flight_level_ft": 33000.0,
+        "pirep_time": "2024-12-28T22:29:00+00:00",
+        "patch_id": "0000529_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.75361,
+          43.57694
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.2456,
+        "nexrad_prob": 0.289,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 100.0,
+        "pirep_time": "2024-12-09T06:53:00+00:00",
+        "patch_id": "0000531_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84237491594918,
+          47.712539864806246
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 10000.0,
+        "pirep_time": "2024-12-24T03:43:00+00:00",
+        "patch_id": "0000534_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -150.3148114509197,
+          61.11299202550251
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.1636,
+        "nexrad_prob": 0.1925,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 2000.0,
+        "pirep_time": "2024-12-21T17:55:00+00:00",
+        "patch_id": "0000535_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.01537884087848,
+          34.68
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.8025,
+        "nexrad_prob": 1.0,
+        "sat_prob": 0.5611,
+        "pred_class": 1,
+        "flight_level_ft": 21000.0,
+        "pirep_time": "2024-12-29T00:21:00+00:00",
+        "patch_id": "0000539_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.23961229111443,
+          38.47331983331984
+        ]
+      },
+      "properties": {
+        "source": "combined",
+        "severe_prob": 0.7865,
+        "nexrad_prob": 0.9993,
+        "sat_prob": 0.5265,
+        "pred_class": 1,
+        "flight_level_ft": 16000.0,
+        "pirep_time": "2024-12-11T21:04:00+00:00",
+        "patch_id": "0000543_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.69013596124432,
+          61.251670041670046
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.5976,
+        "nexrad_prob": 0.7031,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 2000.0,
+        "pirep_time": "2024-12-08T20:23:00+00:00",
+        "patch_id": "0000546_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.54071227245078,
+          37.72158855732584
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.85,
+        "nexrad_prob": 1.0,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-23T03:35:00+00:00",
+        "patch_id": "0000549_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6575,
+          39.81613198333199
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.0989,
+        "nexrad_prob": 0.1164,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 5400.0,
+        "pirep_time": "2024-12-18T04:22:00+00:00",
+        "patch_id": "0000554_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.22339012521051,
+          39.8328
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.002,
+        "nexrad_prob": 0.0023,
+        "sat_prob": null,
+        "pred_class": 0,
+        "flight_level_ft": 18000.0,
+        "pirep_time": "2024-12-23T13:53:00+00:00",
+        "patch_id": "0000562_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.64408212,
+          35.23809025
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.6191,
+        "nexrad_prob": 0.7283,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 3000.0,
+        "pirep_time": "2024-12-18T04:51:00+00:00",
+        "patch_id": "0000565_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.86729850063246,
+          37.4485078695789
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8491,
+        "nexrad_prob": 0.9989,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 2500.0,
+        "pirep_time": "2024-12-08T19:13:00+00:00",
+        "patch_id": "0000566_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.01907236292344,
+          39.26351766249651
+        ]
+      },
+      "properties": {
+        "source": "nexrad_only",
+        "severe_prob": 0.8496,
+        "nexrad_prob": 0.9995,
+        "sat_prob": null,
+        "pred_class": 1,
+        "flight_level_ft": 12000.0,
+        "pirep_time": "2024-12-29T22:00:00+00:00",
+        "patch_id": "0000569_2024_12_df_row.nc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.17463265858731,
+          33.7525939675535
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.6092,
+        "nexrad_prob": null,
+        "sat_prob": 0.7167,
+        "pred_class": 1,
+        "flight_level_ft": 600.0,
+        "pirep_time": "2024-12-13 02:55:00+00:00",
+        "patch_id": "0000001.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.68009774757827,
+          40.14768441546349
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2933,
+        "nexrad_prob": null,
+        "sat_prob": 0.345,
+        "pred_class": 0,
+        "flight_level_ft": 28000.0,
+        "pirep_time": "2024-12-03 18:14:00+00:00",
+        "patch_id": "0000003.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.78977380487754,
+          36.39500536187593
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.6172,
+        "nexrad_prob": null,
+        "sat_prob": 0.7261,
+        "pred_class": 1,
+        "flight_level_ft": 17000.0,
+        "pirep_time": "2024-12-13 10:38:00+00:00",
+        "patch_id": "0000012.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.91592,
+          40.47711
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.121,
+        "nexrad_prob": null,
+        "sat_prob": 0.1424,
+        "pred_class": 0,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-18 23:31:00+00:00",
+        "patch_id": "0000013.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.37576421563097,
+          68.59839998489564
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2775,
+        "nexrad_prob": null,
+        "sat_prob": 0.3264,
+        "pred_class": 0,
+        "flight_level_ft": 37000.0,
+        "pirep_time": "2024-12-28 01:59:00+00:00",
+        "patch_id": "0000016.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -172.9789322846603,
+          56.19864838103592
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1992,
+        "nexrad_prob": null,
+        "sat_prob": 0.2343,
+        "pred_class": 0,
+        "flight_level_ft": 35000.0,
+        "pirep_time": "2024-12-13 08:12:00+00:00",
+        "patch_id": "0000020.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.14503760025296,
+          40.40337187733928
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1935,
+        "nexrad_prob": null,
+        "sat_prob": 0.2276,
+        "pred_class": 0,
+        "flight_level_ft": 29000.0,
+        "pirep_time": "2024-12-29 00:26:00+00:00",
+        "patch_id": "0000024.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.53475,
+          33.82954636669637
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.6685,
+        "nexrad_prob": null,
+        "sat_prob": 0.7865,
+        "pred_class": 1,
+        "flight_level_ft": 11500.0,
+        "pirep_time": "2024-12-13 15:15:00+00:00",
+        "patch_id": "0000025.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.48712181998944,
+          42.29704702480969
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2405,
+        "nexrad_prob": null,
+        "sat_prob": 0.283,
+        "pred_class": 0,
+        "flight_level_ft": 25000.0,
+        "pirep_time": "2024-12-29 01:06:00+00:00",
+        "patch_id": "0000026.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.44313337827184,
+          39.475762224043855
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3614,
+        "nexrad_prob": null,
+        "sat_prob": 0.4252,
+        "pred_class": 0,
+        "flight_level_ft": 43000.0,
+        "pirep_time": "2024-12-28 21:25:00+00:00",
+        "patch_id": "0000028.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -174.02707955999898,
+          57.06183026271675
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1661,
+        "nexrad_prob": null,
+        "sat_prob": 0.1954,
+        "pred_class": 0,
+        "flight_level_ft": 33000.0,
+        "pirep_time": "2024-12-13 07:10:00+00:00",
+        "patch_id": "0000029.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.25563757487618,
+          43.653759693348206
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1948,
+        "nexrad_prob": null,
+        "sat_prob": 0.2292,
+        "pred_class": 0,
+        "flight_level_ft": 35000.0,
+        "pirep_time": "2024-12-20 23:23:00+00:00",
+        "patch_id": "0000030.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.55294,
+          44.07346
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2972,
+        "nexrad_prob": null,
+        "sat_prob": 0.3496,
+        "pred_class": 0,
+        "flight_level_ft": 9000.0,
+        "pirep_time": "2024-12-28 14:37:00+00:00",
+        "patch_id": "0000032.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.71,
+          30.543360333360333
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.5972,
+        "nexrad_prob": null,
+        "sat_prob": 0.7026,
+        "pred_class": 1,
+        "flight_level_ft": 6500.0,
+        "pirep_time": "2024-12-28 19:15:00+00:00",
+        "patch_id": "0000034.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.5367071417325,
+          64.81
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1219,
+        "nexrad_prob": null,
+        "sat_prob": 0.1434,
+        "pred_class": 0,
+        "flight_level_ft": 1300.0,
+        "pirep_time": "2024-12-28 01:19:00+00:00",
+        "patch_id": "0000041.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.04624393463958,
+          44.55200966663967
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1418,
+        "nexrad_prob": null,
+        "sat_prob": 0.1668,
+        "pred_class": 0,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-02 18:06:00+00:00",
+        "patch_id": "0000049.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.9489199475358,
+          34.9630213522977
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1733,
+        "nexrad_prob": null,
+        "sat_prob": 0.2038,
+        "pred_class": 0,
+        "flight_level_ft": 37000.0,
+        "pirep_time": "2024-12-12 15:22:00+00:00",
+        "patch_id": "0000050.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.67613236244574,
+          36.613187509357125
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1685,
+        "nexrad_prob": null,
+        "sat_prob": 0.1983,
+        "pred_class": 0,
+        "flight_level_ft": 38000.0,
+        "pirep_time": "2024-12-28 19:30:00+00:00",
+        "patch_id": "0000056.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.297535542195,
+          40.8656686477023
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3067,
+        "nexrad_prob": null,
+        "sat_prob": 0.3608,
+        "pred_class": 0,
+        "flight_level_ft": 28500.0,
+        "pirep_time": "2024-12-01 23:07:00+00:00",
+        "patch_id": "0000061.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.92167,
+          40.35472
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3917,
+        "nexrad_prob": null,
+        "sat_prob": 0.4608,
+        "pred_class": 0,
+        "flight_level_ft": 3000.0,
+        "pirep_time": "2024-12-12 15:40:00+00:00",
+        "patch_id": "0000062.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -124.5074238349711,
+          43.258752081116256
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4987,
+        "nexrad_prob": null,
+        "sat_prob": 0.5867,
+        "pred_class": 1,
+        "flight_level_ft": 2000.0,
+        "pirep_time": "2024-12-13 21:23:00+00:00",
+        "patch_id": "0000067.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.84528,
+          39.295
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.6406,
+        "nexrad_prob": null,
+        "sat_prob": 0.7537,
+        "pred_class": 1,
+        "flight_level_ft": 11500.0,
+        "pirep_time": "2024-12-28 00:00:00+00:00",
+        "patch_id": "0000068.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3953,
+          39.531
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3637,
+        "nexrad_prob": null,
+        "sat_prob": 0.4279,
+        "pred_class": 0,
+        "flight_level_ft": 16000.0,
+        "pirep_time": "2024-12-13 00:30:00+00:00",
+        "patch_id": "0000070.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.6155,
+          35.0419
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3949,
+        "nexrad_prob": null,
+        "sat_prob": 0.4646,
+        "pred_class": 0,
+        "flight_level_ft": 29000.0,
+        "pirep_time": "2024-12-13 20:05:00+00:00",
+        "patch_id": "0000074.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.03073578196,
+          47.27661611202193
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3702,
+        "nexrad_prob": null,
+        "sat_prob": 0.4356,
+        "pred_class": 0,
+        "flight_level_ft": 2000.0,
+        "pirep_time": "2024-12-20 18:56:00+00:00",
+        "patch_id": "0000078.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.15,
+          44.47
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4892,
+        "nexrad_prob": null,
+        "sat_prob": 0.5756,
+        "pred_class": 1,
+        "flight_level_ft": 4000.0,
+        "pirep_time": "2024-12-28 18:30:00+00:00",
+        "patch_id": "0000079.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.3897,
+          37.2397
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2005,
+        "nexrad_prob": null,
+        "sat_prob": 0.2359,
+        "pred_class": 0,
+        "flight_level_ft": 33000.0,
+        "pirep_time": "2024-12-28 18:35:00+00:00",
+        "patch_id": "0000083.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.91669422294005,
+          29.059035442939965
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2089,
+        "nexrad_prob": null,
+        "sat_prob": 0.2458,
+        "pred_class": 0,
+        "flight_level_ft": 32000.0,
+        "pirep_time": "2024-12-03 02:25:00+00:00",
+        "patch_id": "0000085.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.74944,
+          42.96667
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2006,
+        "nexrad_prob": null,
+        "sat_prob": 0.2361,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-13 12:54:00+00:00",
+        "patch_id": "0000089.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.25316,
+          43.93924
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2732,
+        "nexrad_prob": null,
+        "sat_prob": 0.3214,
+        "pred_class": 0,
+        "flight_level_ft": 6000.0,
+        "pirep_time": "2024-12-02 01:19:00+00:00",
+        "patch_id": "0000092.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.59,
+          41.16
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1225,
+        "nexrad_prob": null,
+        "sat_prob": 0.1441,
+        "pred_class": 0,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-28 13:13:00+00:00",
+        "patch_id": "0000093.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.93193,
+          42.23756025002025
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2969,
+        "nexrad_prob": null,
+        "sat_prob": 0.3493,
+        "pred_class": 0,
+        "flight_level_ft": 6000.0,
+        "pirep_time": "2024-12-20 23:04:00+00:00",
+        "patch_id": "0000094.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.74,
+          41.17
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4115,
+        "nexrad_prob": null,
+        "sat_prob": 0.4841,
+        "pred_class": 0,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-19 19:40:00+00:00",
+        "patch_id": "0000101.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.32028621736156,
+          33.362509217380754
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.5795,
+        "nexrad_prob": null,
+        "sat_prob": 0.6818,
+        "pred_class": 1,
+        "flight_level_ft": 21000.0,
+        "pirep_time": "2024-12-13 16:24:00+00:00",
+        "patch_id": "0000102.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.7615,
+          40.8095
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4754,
+        "nexrad_prob": null,
+        "sat_prob": 0.5593,
+        "pred_class": 1,
+        "flight_level_ft": 11500.0,
+        "pirep_time": "2024-12-13 15:15:00+00:00",
+        "patch_id": "0000110.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.07511660188639,
+          27.412089857767253
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3368,
+        "nexrad_prob": null,
+        "sat_prob": 0.3962,
+        "pred_class": 0,
+        "flight_level_ft": 27000.0,
+        "pirep_time": "2024-12-29 09:26:00+00:00",
+        "patch_id": "0000111.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.2237635878622,
+          41.85
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2862,
+        "nexrad_prob": null,
+        "sat_prob": 0.3367,
+        "pred_class": 0,
+        "flight_level_ft": 41000.0,
+        "pirep_time": "2024-12-13 02:25:00+00:00",
+        "patch_id": "0000112.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.93,
+          33.68
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.447,
+        "nexrad_prob": null,
+        "sat_prob": 0.5259,
+        "pred_class": 1,
+        "flight_level_ft": 2300.0,
+        "pirep_time": "2024-12-20 17:28:00+00:00",
+        "patch_id": "0000113.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.87,
+          38.64
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4508,
+        "nexrad_prob": null,
+        "sat_prob": 0.5303,
+        "pred_class": 1,
+        "flight_level_ft": 7000.0,
+        "pirep_time": "2024-12-12 19:16:00+00:00",
+        "patch_id": "0000114.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.80094479609889,
+          41.00940012501013
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2897,
+        "nexrad_prob": null,
+        "sat_prob": 0.3408,
+        "pred_class": 0,
+        "flight_level_ft": 32000.0,
+        "pirep_time": "2024-12-13 00:08:00+00:00",
+        "patch_id": "0000122.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.58,
+          38.43336033336033
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3783,
+        "nexrad_prob": null,
+        "sat_prob": 0.445,
+        "pred_class": 0,
+        "flight_level_ft": 9000.0,
+        "pirep_time": "2024-12-02 20:51:00+00:00",
+        "patch_id": "0000123.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -133.22736157106385,
+          56.23360120932987
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3088,
+        "nexrad_prob": null,
+        "sat_prob": 0.3632,
+        "pred_class": 0,
+        "flight_level_ft": 35000.0,
+        "pirep_time": "2024-12-02 17:43:00+00:00",
+        "patch_id": "0000127.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -153.23811450919695,
+          60.59992025502503
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2035,
+        "nexrad_prob": null,
+        "sat_prob": 0.2394,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-13 17:50:00+00:00",
+        "patch_id": "0000128.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.5,
+          0.7166
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1147,
+        "nexrad_prob": null,
+        "sat_prob": 0.135,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-01 06:05:00+00:00",
+        "patch_id": "0000130.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.76548452823589,
+          22.513390184199128
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1857,
+        "nexrad_prob": null,
+        "sat_prob": 0.2185,
+        "pred_class": 0,
+        "flight_level_ft": 37000.0,
+        "pirep_time": "2024-12-19 14:01:00+00:00",
+        "patch_id": "0000139.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.3077254387755,
+          29.60929320925576
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.6686,
+        "nexrad_prob": null,
+        "sat_prob": 0.7865,
+        "pred_class": 1,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-29 02:08:00+00:00",
+        "patch_id": "0000146.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.8428,
+          39.7572
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1279,
+        "nexrad_prob": null,
+        "sat_prob": 0.1505,
+        "pred_class": 0,
+        "flight_level_ft": 37000.0,
+        "pirep_time": "2024-12-19 09:16:00+00:00",
+        "patch_id": "0000152.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.88811,
+          36.19839
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3818,
+        "nexrad_prob": null,
+        "sat_prob": 0.4492,
+        "pred_class": 0,
+        "flight_level_ft": 25000.0,
+        "pirep_time": "2024-12-29 02:49:00+00:00",
+        "patch_id": "0000157.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.9,
+          32.93655866655867
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2096,
+        "nexrad_prob": null,
+        "sat_prob": 0.2466,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-20 18:05:00+00:00",
+        "patch_id": "0000159.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.08229836056597,
+          31.83679101422328
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1736,
+        "nexrad_prob": null,
+        "sat_prob": 0.2042,
+        "pred_class": 0,
+        "flight_level_ft": 40000.0,
+        "pirep_time": "2024-12-21 02:14:00+00:00",
+        "patch_id": "0000166.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.98,
+          35.44663966663967
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1862,
+        "nexrad_prob": null,
+        "sat_prob": 0.219,
+        "pred_class": 0,
+        "flight_level_ft": 32000.0,
+        "pirep_time": "2024-12-19 13:07:00+00:00",
+        "patch_id": "0000177.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6759240345397,
+          40.58112227853002
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4431,
+        "nexrad_prob": null,
+        "sat_prob": 0.5213,
+        "pred_class": 1,
+        "flight_level_ft": 22000.0,
+        "pirep_time": "2024-12-20 20:19:00+00:00",
+        "patch_id": "0000179.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.05736,
+          44.04533
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.186,
+        "nexrad_prob": null,
+        "sat_prob": 0.2188,
+        "pred_class": 0,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-28 17:12:00+00:00",
+        "patch_id": "0000185.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.16111,
+          34.34778
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4171,
+        "nexrad_prob": null,
+        "sat_prob": 0.4907,
+        "pred_class": 0,
+        "flight_level_ft": 17000.0,
+        "pirep_time": "2024-12-19 14:36:00+00:00",
+        "patch_id": "0000198.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.62564716077888,
+          25.902813562309973
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3754,
+        "nexrad_prob": null,
+        "sat_prob": 0.4416,
+        "pred_class": 0,
+        "flight_level_ft": 13000.0,
+        "pirep_time": "2024-12-28 20:53:00+00:00",
+        "patch_id": "0000201.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.83433561498812,
+          43.53536883092698
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1724,
+        "nexrad_prob": null,
+        "sat_prob": 0.2029,
+        "pred_class": 0,
+        "flight_level_ft": 31000.0,
+        "pirep_time": "2024-12-28 11:26:00+00:00",
+        "patch_id": "0000206.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.47,
+          37.97
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1249,
+        "nexrad_prob": null,
+        "sat_prob": 0.147,
+        "pred_class": 0,
+        "flight_level_ft": 37000.0,
+        "pirep_time": "2024-12-28 22:25:00+00:00",
+        "patch_id": "0000207.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.8137454879978,
+          35.4117259431069
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1907,
+        "nexrad_prob": null,
+        "sat_prob": 0.2244,
+        "pred_class": 0,
+        "flight_level_ft": 32000.0,
+        "pirep_time": "2024-12-02 15:01:00+00:00",
+        "patch_id": "0000213.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.28,
+          43.12
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1452,
+        "nexrad_prob": null,
+        "sat_prob": 0.1708,
+        "pred_class": 0,
+        "flight_level_ft": 35000.0,
+        "pirep_time": "2024-12-03 16:13:00+00:00",
+        "patch_id": "0000217.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.27559304038928,
+          40.02904980396831
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2971,
+        "nexrad_prob": null,
+        "sat_prob": 0.3495,
+        "pred_class": 0,
+        "flight_level_ft": 39000.0,
+        "pirep_time": "2024-12-28 06:13:00+00:00",
+        "patch_id": "0000220.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.59,
+          35.22
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4762,
+        "nexrad_prob": null,
+        "sat_prob": 0.5602,
+        "pred_class": 1,
+        "flight_level_ft": 9000.0,
+        "pirep_time": "2024-12-11 20:20:00+00:00",
+        "patch_id": "0000221.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.40659595845592,
+          44.9757211215917
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.5914,
+        "nexrad_prob": null,
+        "sat_prob": 0.6958,
+        "pred_class": 1,
+        "flight_level_ft": 33000.0,
+        "pirep_time": "2024-12-28 00:39:00+00:00",
+        "patch_id": "0000223.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.83389,
+          37.95144
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.409,
+        "nexrad_prob": null,
+        "sat_prob": 0.4812,
+        "pred_class": 0,
+        "flight_level_ft": 1000.0,
+        "pirep_time": "2024-12-12 14:52:00+00:00",
+        "patch_id": "0000227.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1,
+          28.263259083259083
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.663,
+        "nexrad_prob": null,
+        "sat_prob": 0.78,
+        "pred_class": 1,
+        "flight_level_ft": 35000.0,
+        "pirep_time": "2024-12-29 06:04:00+00:00",
+        "patch_id": "0000239.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.5043097089477,
+          30.600403066517945
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1954,
+        "nexrad_prob": null,
+        "sat_prob": 0.2299,
+        "pred_class": 0,
+        "flight_level_ft": 41000.0,
+        "pirep_time": "2024-12-01 18:54:00+00:00",
+        "patch_id": "0000243.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.80572947991124,
+          36.769571663934215
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3209,
+        "nexrad_prob": null,
+        "sat_prob": 0.3776,
+        "pred_class": 0,
+        "flight_level_ft": 39000.0,
+        "pirep_time": "2024-12-03 01:35:00+00:00",
+        "patch_id": "0000245.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.46131274927036,
+          37.95790820335234
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2656,
+        "nexrad_prob": null,
+        "sat_prob": 0.3125,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-01 19:19:00+00:00",
+        "patch_id": "0000252.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.91667,
+          30.91194
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3968,
+        "nexrad_prob": null,
+        "sat_prob": 0.4669,
+        "pred_class": 0,
+        "flight_level_ft": 29000.0,
+        "pirep_time": "2024-12-28 19:51:00+00:00",
+        "patch_id": "0000256.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.06031,
+          41.25311
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4985,
+        "nexrad_prob": null,
+        "sat_prob": 0.5864,
+        "pred_class": 1,
+        "flight_level_ft": 1000.0,
+        "pirep_time": "2024-12-20 14:45:00+00:00",
+        "patch_id": "0000257.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -30.0,
+          53.0
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.8363,
+        "nexrad_prob": null,
+        "sat_prob": 0.9839,
+        "pred_class": 1,
+        "flight_level_ft": 43000.0,
+        "pirep_time": "2024-12-02 04:03:00+00:00",
+        "patch_id": "0000258.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.24,
+          60.57
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1381,
+        "nexrad_prob": null,
+        "sat_prob": 0.1624,
+        "pred_class": 0,
+        "flight_level_ft": 1000.0,
+        "pirep_time": "2024-12-20 07:02:00+00:00",
+        "patch_id": "0000260.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.9753280237341,
+          37.241499843369965
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3042,
+        "nexrad_prob": null,
+        "sat_prob": 0.3579,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-28 04:00:00+00:00",
+        "patch_id": "0000261.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0195,
+          34.3032
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.533,
+        "nexrad_prob": null,
+        "sat_prob": 0.6271,
+        "pred_class": 1,
+        "flight_level_ft": 19000.0,
+        "pirep_time": "2024-12-28 21:00:00+00:00",
+        "patch_id": "0000268.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.23286,
+          40.49147
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3901,
+        "nexrad_prob": null,
+        "sat_prob": 0.4589,
+        "pred_class": 0,
+        "flight_level_ft": 4000.0,
+        "pirep_time": "2024-12-21 00:35:00+00:00",
+        "patch_id": "0000272.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.05717,
+          34.98783
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4284,
+        "nexrad_prob": null,
+        "sat_prob": 0.504,
+        "pred_class": 1,
+        "flight_level_ft": 15500.0,
+        "pirep_time": "2024-12-12 18:54:00+00:00",
+        "patch_id": "0000275.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.95549278749856,
+          39.94285
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2096,
+        "nexrad_prob": null,
+        "sat_prob": 0.2466,
+        "pred_class": 0,
+        "flight_level_ft": 29000.0,
+        "pirep_time": "2024-12-19 23:40:00+00:00",
+        "patch_id": "0000282.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43754925555875,
+          39.51683112159169
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.146,
+        "nexrad_prob": null,
+        "sat_prob": 0.1718,
+        "pred_class": 0,
+        "flight_level_ft": 35000.0,
+        "pirep_time": "2024-12-21 01:19:00+00:00",
+        "patch_id": "0000284.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.709143,
+          42.39835
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2018,
+        "nexrad_prob": null,
+        "sat_prob": 0.2374,
+        "pred_class": 0,
+        "flight_level_ft": 28000.0,
+        "pirep_time": "2024-12-20 05:06:00+00:00",
+        "patch_id": "0000285.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -168.36889495620812,
+          53.162990342416414
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2407,
+        "nexrad_prob": null,
+        "sat_prob": 0.2832,
+        "pred_class": 0,
+        "flight_level_ft": 35000.0,
+        "pirep_time": "2024-12-13 08:42:00+00:00",
+        "patch_id": "0000288.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.96549076252603,
+          39.64963207958001
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.387,
+        "nexrad_prob": null,
+        "sat_prob": 0.4554,
+        "pred_class": 0,
+        "flight_level_ft": 13000.0,
+        "pirep_time": "2024-12-02 22:34:00+00:00",
+        "patch_id": "0000300.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.90183618105932,
+          37.22294597035516
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.6243,
+        "nexrad_prob": null,
+        "sat_prob": 0.7345,
+        "pred_class": 1,
+        "flight_level_ft": 12500.0,
+        "pirep_time": "2024-12-19 17:37:00+00:00",
+        "patch_id": "0000302.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.68592890422724,
+          38.31186230502851
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3196,
+        "nexrad_prob": null,
+        "sat_prob": 0.376,
+        "pred_class": 0,
+        "flight_level_ft": 30000.0,
+        "pirep_time": "2024-12-19 01:35:00+00:00",
+        "patch_id": "0000311.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.58236,
+          44.74164
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3034,
+        "nexrad_prob": null,
+        "sat_prob": 0.3569,
+        "pred_class": 0,
+        "flight_level_ft": 3200.0,
+        "pirep_time": "2024-12-28 14:10:00+00:00",
+        "patch_id": "0000312.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.00745801631452,
+          43.27941521298729
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.277,
+        "nexrad_prob": null,
+        "sat_prob": 0.3259,
+        "pred_class": 0,
+        "flight_level_ft": 39000.0,
+        "pirep_time": "2024-12-03 01:08:00+00:00",
+        "patch_id": "0000317.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.72120131837437,
+          27.48473008334008
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2781,
+        "nexrad_prob": null,
+        "sat_prob": 0.3272,
+        "pred_class": 0,
+        "flight_level_ft": 28000.0,
+        "pirep_time": "2024-12-01 12:23:00+00:00",
+        "patch_id": "0000318.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.53,
+          33.83
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4249,
+        "nexrad_prob": null,
+        "sat_prob": 0.4999,
+        "pred_class": 0,
+        "flight_level_ft": 16000.0,
+        "pirep_time": "2024-12-01 12:44:00+00:00",
+        "patch_id": "0000320.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.94222,
+          32.51611
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4019,
+        "nexrad_prob": null,
+        "sat_prob": 0.4728,
+        "pred_class": 0,
+        "flight_level_ft": 1200.0,
+        "pirep_time": "2024-12-20 19:35:00+00:00",
+        "patch_id": "0000321.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.30964,
+          40.96754
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4567,
+        "nexrad_prob": null,
+        "sat_prob": 0.5373,
+        "pred_class": 1,
+        "flight_level_ft": 9000.0,
+        "pirep_time": "2024-12-28 14:46:00+00:00",
+        "patch_id": "0000322.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.24,
+          60.57
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1415,
+        "nexrad_prob": null,
+        "sat_prob": 0.1665,
+        "pred_class": 0,
+        "flight_level_ft": 3000.0,
+        "pirep_time": "2024-12-28 07:25:00+00:00",
+        "patch_id": "0000325.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.08698782644021,
+          42.81787293398639
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1705,
+        "nexrad_prob": null,
+        "sat_prob": 0.2006,
+        "pred_class": 0,
+        "flight_level_ft": 32000.0,
+        "pirep_time": "2024-12-29 01:30:00+00:00",
+        "patch_id": "0000326.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.97367916,
+          37.31724016
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.173,
+        "nexrad_prob": null,
+        "sat_prob": 0.2035,
+        "pred_class": 0,
+        "flight_level_ft": 38000.0,
+        "pirep_time": "2024-12-20 15:57:00+00:00",
+        "patch_id": "0000330.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.62,
+          39.89
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2596,
+        "nexrad_prob": null,
+        "sat_prob": 0.3054,
+        "pred_class": 0,
+        "flight_level_ft": 33000.0,
+        "pirep_time": "2024-12-28 21:52:00+00:00",
+        "patch_id": "0000331.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.8975,
+          38.505
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.5723,
+        "nexrad_prob": null,
+        "sat_prob": 0.6733,
+        "pred_class": 1,
+        "flight_level_ft": 18000.0,
+        "pirep_time": "2024-12-02 14:59:00+00:00",
+        "patch_id": "0000332.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.544535,
+          41.63939
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1584,
+        "nexrad_prob": null,
+        "sat_prob": 0.1864,
+        "pred_class": 0,
+        "flight_level_ft": 32000.0,
+        "pirep_time": "2024-12-28 13:04:00+00:00",
+        "patch_id": "0000334.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.84723338781393,
+          39.45147
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3623,
+        "nexrad_prob": null,
+        "sat_prob": 0.4262,
+        "pred_class": 0,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-03 00:09:00+00:00",
+        "patch_id": "0000335.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.203203,
+          42.549741
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.5047,
+        "nexrad_prob": null,
+        "sat_prob": 0.5937,
+        "pred_class": 1,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-19 15:49:00+00:00",
+        "patch_id": "0000337.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.02613689,
+          29.95206372
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2293,
+        "nexrad_prob": null,
+        "sat_prob": 0.2697,
+        "pred_class": 0,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-29 02:13:00+00:00",
+        "patch_id": "0000342.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.05736,
+          44.04533
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2772,
+        "nexrad_prob": null,
+        "sat_prob": 0.3261,
+        "pred_class": 0,
+        "flight_level_ft": 43000.0,
+        "pirep_time": "2024-12-21 02:27:00+00:00",
+        "patch_id": "0000344.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.6825,
+          41.9381
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3787,
+        "nexrad_prob": null,
+        "sat_prob": 0.4455,
+        "pred_class": 0,
+        "flight_level_ft": 40000.0,
+        "pirep_time": "2024-12-11 20:32:00+00:00",
+        "patch_id": "0000345.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.31639,
+          41.70722
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3045,
+        "nexrad_prob": null,
+        "sat_prob": 0.3582,
+        "pred_class": 0,
+        "flight_level_ft": 2500.0,
+        "pirep_time": "2024-12-28 16:00:00+00:00",
+        "patch_id": "0000347.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.94247695981647,
+          38.742679921587325
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3292,
+        "nexrad_prob": null,
+        "sat_prob": 0.3873,
+        "pred_class": 0,
+        "flight_level_ft": 20000.0,
+        "pirep_time": "2024-12-20 22:44:00+00:00",
+        "patch_id": "0000350.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.35185272829746,
+          43.71731091995538
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2901,
+        "nexrad_prob": null,
+        "sat_prob": 0.3413,
+        "pred_class": 0,
+        "flight_level_ft": 33000.0,
+        "pirep_time": "2024-12-28 01:17:00+00:00",
+        "patch_id": "0000351.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.31068284676016,
+          34.65482101422327
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.5682,
+        "nexrad_prob": null,
+        "sat_prob": 0.6685,
+        "pred_class": 1,
+        "flight_level_ft": 6000.0,
+        "pirep_time": "2024-12-11 19:36:00+00:00",
+        "patch_id": "0000353.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.83234941758477,
+          45.95159588523873
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2838,
+        "nexrad_prob": null,
+        "sat_prob": 0.3338,
+        "pred_class": 0,
+        "flight_level_ft": 38000.0,
+        "pirep_time": "2024-12-28 00:03:00+00:00",
+        "patch_id": "0000354.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9372873996192,
+          39.28134099819622
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4152,
+        "nexrad_prob": null,
+        "sat_prob": 0.4885,
+        "pred_class": 0,
+        "flight_level_ft": 45000.0,
+        "pirep_time": "2024-12-19 19:55:00+00:00",
+        "patch_id": "0000361.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -132.02345004756765,
+          55.44080545460136
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2115,
+        "nexrad_prob": null,
+        "sat_prob": 0.2488,
+        "pred_class": 0,
+        "flight_level_ft": 900.0,
+        "pirep_time": "2024-12-03 17:05:00+00:00",
+        "patch_id": "0000371.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.05869062718936,
+          32.692183643141945
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.294,
+        "nexrad_prob": null,
+        "sat_prob": 0.3459,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-01 14:36:00+00:00",
+        "patch_id": "0000382.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.29537821027036,
+          36.10856718862138
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1815,
+        "nexrad_prob": null,
+        "sat_prob": 0.2135,
+        "pred_class": 0,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-28 18:51:00+00:00",
+        "patch_id": "0000384.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.04156,
+          42.62025
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3053,
+        "nexrad_prob": null,
+        "sat_prob": 0.3591,
+        "pred_class": 0,
+        "flight_level_ft": 17000.0,
+        "pirep_time": "2024-12-20 14:59:00+00:00",
+        "patch_id": "0000389.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.1613291446978,
+          39.723185948995
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4996,
+        "nexrad_prob": null,
+        "sat_prob": 0.5877,
+        "pred_class": 1,
+        "flight_level_ft": 22000.0,
+        "pirep_time": "2024-12-28 01:28:00+00:00",
+        "patch_id": "0000390.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5229853,
+          42.88210929
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1971,
+        "nexrad_prob": null,
+        "sat_prob": 0.2319,
+        "pred_class": 0,
+        "flight_level_ft": 32000.0,
+        "pirep_time": "2024-12-11 22:32:00+00:00",
+        "patch_id": "0000391.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.76891187101859,
+          23.023024981285744
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2112,
+        "nexrad_prob": null,
+        "sat_prob": 0.2484,
+        "pred_class": 0,
+        "flight_level_ft": 32000.0,
+        "pirep_time": "2024-12-12 11:18:00+00:00",
+        "patch_id": "0000401.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.97367916,
+          36.98387982663967
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1729,
+        "nexrad_prob": null,
+        "sat_prob": 0.2034,
+        "pred_class": 0,
+        "flight_level_ft": 38000.0,
+        "pirep_time": "2024-12-20 15:56:00+00:00",
+        "patch_id": "0000417.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.79,
+          39.06
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3131,
+        "nexrad_prob": null,
+        "sat_prob": 0.3683,
+        "pred_class": 0,
+        "flight_level_ft": 40000.0,
+        "pirep_time": "2024-12-28 17:12:00+00:00",
+        "patch_id": "0000418.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.203203,
+          42.549741
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.5167,
+        "nexrad_prob": null,
+        "sat_prob": 0.6079,
+        "pred_class": 1,
+        "flight_level_ft": 29000.0,
+        "pirep_time": "2024-12-19 16:08:00+00:00",
+        "patch_id": "0000419.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.98,
+          35.94668016668017
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.145,
+        "nexrad_prob": null,
+        "sat_prob": 0.1706,
+        "pred_class": 0,
+        "flight_level_ft": 35000.0,
+        "pirep_time": "2024-12-20 15:16:00+00:00",
+        "patch_id": "0000420.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.40659595845592,
+          44.9757211215917
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.598,
+        "nexrad_prob": null,
+        "sat_prob": 0.7036,
+        "pred_class": 1,
+        "flight_level_ft": 31000.0,
+        "pirep_time": "2024-12-28 00:39:00+00:00",
+        "patch_id": "0000421.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.95986,
+          37.04422
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4532,
+        "nexrad_prob": null,
+        "sat_prob": 0.5332,
+        "pred_class": 1,
+        "flight_level_ft": 23000.0,
+        "pirep_time": "2024-12-28 22:24:00+00:00",
+        "patch_id": "0000425.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.20230227,
+          32.13136751
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1674,
+        "nexrad_prob": null,
+        "sat_prob": 0.1969,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-19 02:57:00+00:00",
+        "patch_id": "0000428.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.56220175956578,
+          43.19208802715051
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2683,
+        "nexrad_prob": null,
+        "sat_prob": 0.3157,
+        "pred_class": 0,
+        "flight_level_ft": 35000.0,
+        "pirep_time": "2024-12-29 00:14:00+00:00",
+        "patch_id": "0000435.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.56817307995824,
+          33.872525978369
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.6646,
+        "nexrad_prob": null,
+        "sat_prob": 0.7819,
+        "pred_class": 1,
+        "flight_level_ft": 4000.0,
+        "pirep_time": "2024-12-27 23:57:00+00:00",
+        "patch_id": "0000440.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.1833,
+          49.1
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.8064,
+        "nexrad_prob": null,
+        "sat_prob": 0.9487,
+        "pred_class": 1,
+        "flight_level_ft": 37000.0,
+        "pirep_time": "2024-12-02 04:42:00+00:00",
+        "patch_id": "0000441.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.01,
+          42.54
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.5357,
+        "nexrad_prob": null,
+        "sat_prob": 0.6302,
+        "pred_class": 1,
+        "flight_level_ft": 15000.0,
+        "pirep_time": "2024-12-03 19:08:00+00:00",
+        "patch_id": "0000444.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -150.6165434904469,
+          61.02911583538196
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1434,
+        "nexrad_prob": null,
+        "sat_prob": 0.1687,
+        "pred_class": 0,
+        "flight_level_ft": 6500.0,
+        "pirep_time": "2024-12-02 07:20:00+00:00",
+        "patch_id": "0000458.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.5843592428304,
+          38.00120763202962
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.26,
+        "nexrad_prob": null,
+        "sat_prob": 0.3059,
+        "pred_class": 0,
+        "flight_level_ft": 37000.0,
+        "pirep_time": "2024-12-19 19:12:00+00:00",
+        "patch_id": "0000460.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.9102670646318,
+          35.37526033336033
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2941,
+        "nexrad_prob": null,
+        "sat_prob": 0.346,
+        "pred_class": 0,
+        "flight_level_ft": 39000.0,
+        "pirep_time": "2024-12-28 13:27:00+00:00",
+        "patch_id": "0000465.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.04,
+          38.70002025002025
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4544,
+        "nexrad_prob": null,
+        "sat_prob": 0.5346,
+        "pred_class": 1,
+        "flight_level_ft": 24000.0,
+        "pirep_time": "2024-12-20 15:42:00+00:00",
+        "patch_id": "0000469.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.94222,
+          32.51611
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3716,
+        "nexrad_prob": null,
+        "sat_prob": 0.4372,
+        "pred_class": 0,
+        "flight_level_ft": 22000.0,
+        "pirep_time": "2024-12-20 11:51:00+00:00",
+        "patch_id": "0000471.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.35358472939828,
+          47.58907482878893
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4394,
+        "nexrad_prob": null,
+        "sat_prob": 0.5169,
+        "pred_class": 1,
+        "flight_level_ft": 14000.0,
+        "pirep_time": "2024-12-19 01:55:00+00:00",
+        "patch_id": "0000473.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.97979017238193,
+          38.730390802164536
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2906,
+        "nexrad_prob": null,
+        "sat_prob": 0.3419,
+        "pred_class": 0,
+        "flight_level_ft": 23000.0,
+        "pirep_time": "2024-12-12 21:07:00+00:00",
+        "patch_id": "0000475.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.58887190062168,
+          33.87747190800741
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.6646,
+        "nexrad_prob": null,
+        "sat_prob": 0.7819,
+        "pred_class": 1,
+        "flight_level_ft": 4000.0,
+        "pirep_time": "2024-12-27 23:55:00+00:00",
+        "patch_id": "0000490.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.27204,
+          42.49334
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4113,
+        "nexrad_prob": null,
+        "sat_prob": 0.4839,
+        "pred_class": 0,
+        "flight_level_ft": 22000.0,
+        "pirep_time": "2024-12-11 19:28:00+00:00",
+        "patch_id": "0000493.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.25,
+          39.15663966663967
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1393,
+        "nexrad_prob": null,
+        "sat_prob": 0.1639,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-29 01:08:00+00:00",
+        "patch_id": "0000495.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.9165,
+          36.33917
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3979,
+        "nexrad_prob": null,
+        "sat_prob": 0.4681,
+        "pred_class": 0,
+        "flight_level_ft": 25000.0,
+        "pirep_time": "2024-12-28 20:03:00+00:00",
+        "patch_id": "0000496.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.38090777612554,
+          34.64389
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3714,
+        "nexrad_prob": null,
+        "sat_prob": 0.437,
+        "pred_class": 0,
+        "flight_level_ft": 22000.0,
+        "pirep_time": "2024-12-29 14:21:00+00:00",
+        "patch_id": "0000501.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.93708445121689,
+          33.391043761259986
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.166,
+        "nexrad_prob": null,
+        "sat_prob": 0.1953,
+        "pred_class": 0,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-13 16:03:00+00:00",
+        "patch_id": "0000503.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.89,
+          35.9
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.6061,
+        "nexrad_prob": null,
+        "sat_prob": 0.7131,
+        "pred_class": 1,
+        "flight_level_ft": 31000.0,
+        "pirep_time": "2024-12-29 13:58:00+00:00",
+        "patch_id": "0000504.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.10631,
+          42.94450983331984
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4562,
+        "nexrad_prob": null,
+        "sat_prob": 0.5367,
+        "pred_class": 1,
+        "flight_level_ft": 8000.0,
+        "pirep_time": "2024-12-02 16:44:00+00:00",
+        "patch_id": "0000514.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.3,
+          34.7
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.3797,
+        "nexrad_prob": null,
+        "sat_prob": 0.4467,
+        "pred_class": 0,
+        "flight_level_ft": 19000.0,
+        "pirep_time": "2024-12-01 15:42:00+00:00",
+        "patch_id": "0000518.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -134.84130985465384,
+          56.02915056846259
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2903,
+        "nexrad_prob": null,
+        "sat_prob": 0.3415,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-27 23:55:00+00:00",
+        "patch_id": "0000523.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.90045889740273,
+          42.61347611202193
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.381,
+        "nexrad_prob": null,
+        "sat_prob": 0.4482,
+        "pred_class": 0,
+        "flight_level_ft": 28000.0,
+        "pirep_time": "2024-12-02 19:17:00+00:00",
+        "patch_id": "0000528.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.42,
+          36.43
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1822,
+        "nexrad_prob": null,
+        "sat_prob": 0.2143,
+        "pred_class": 0,
+        "flight_level_ft": 34000.0,
+        "pirep_time": "2024-12-03 13:46:00+00:00",
+        "patch_id": "0000531.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -131.71,
+          55.35
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2219,
+        "nexrad_prob": null,
+        "sat_prob": 0.2611,
+        "pred_class": 0,
+        "flight_level_ft": 2000.0,
+        "pirep_time": "2024-12-03 01:19:00+00:00",
+        "patch_id": "0000537.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.93193,
+          42.1875562000162
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2915,
+        "nexrad_prob": null,
+        "sat_prob": 0.3429,
+        "pred_class": 0,
+        "flight_level_ft": 2500.0,
+        "pirep_time": "2024-12-02 23:04:00+00:00",
+        "patch_id": "0000544.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -171.68161282869744,
+          54.992869095016026
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1821,
+        "nexrad_prob": null,
+        "sat_prob": 0.2143,
+        "pred_class": 0,
+        "flight_level_ft": 32000.0,
+        "pirep_time": "2024-12-29 15:28:00+00:00",
+        "patch_id": "0000545.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.68806,
+          42.46972
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.4042,
+        "nexrad_prob": null,
+        "sat_prob": 0.4756,
+        "pred_class": 0,
+        "flight_level_ft": 18000.0,
+        "pirep_time": "2024-12-13 22:07:00+00:00",
+        "patch_id": "0000553.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.544535,
+          41.63939
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.1226,
+        "nexrad_prob": null,
+        "sat_prob": 0.1443,
+        "pred_class": 0,
+        "flight_level_ft": 37000.0,
+        "pirep_time": "2024-12-13 16:44:00+00:00",
+        "patch_id": "0000556.npz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -176.6166,
+          56.6
+        ]
+      },
+      "properties": {
+        "source": "satellite_only",
+        "severe_prob": 0.2035,
+        "nexrad_prob": null,
+        "sat_prob": 0.2394,
+        "pred_class": 0,
+        "flight_level_ft": 36000.0,
+        "pirep_time": "2024-12-13 05:19:00+00:00",
+        "patch_id": "0000567.npz"
+      }
+    }
+  ]
+}
