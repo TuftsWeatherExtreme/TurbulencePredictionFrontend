@@ -22,6 +22,7 @@ const SATELLITE_GEOJSON_PREFIX = "/predictions/satellite/prediction_";
 
 const RADAR_MONTHLY_GEOJSON = "/predictions/preds_radar_2024_12.geojson";
 const SATELLITE_MONTHLY_GEOJSON = "/predictions/preds_satellite_2024_12.geojson";
+const COMBINED_MONTHLY_GEOJSON = "/predictions/preds_combined_2024_12.geojson";
 
 function getGeoJsonUrl(prefix: string, step: number): string {
   return `${prefix}${step.toString().padStart(2, "0")}.geojson`;
@@ -85,6 +86,8 @@ function Map() {
 
   const [radarMonthly, setRadarMonthly] = useState<FeatureCollection | null>(null);
   const [satMonthly, setSatMonthly] = useState<FeatureCollection | null>(null);
+  const [combinedMonthly, setCombinedMonthly] =
+    useState<FeatureCollection | null>(null);
 
   // Flight levels shown in the UI (x100 ft)
   const flightLevelsFl100: number[] = [
@@ -111,8 +114,9 @@ function Map() {
     };
     addFrom(radarMonthly);
     addFrom(satMonthly);
+    addFrom(combinedMonthly);
     return Array.from(days).sort();
-  }, [radarMonthly, satMonthly, useMonthlyFiles]);
+  }, [radarMonthly, satMonthly, combinedMonthly, useMonthlyFiles]);
 
   const dayLabels = useMemo(() => allDays.map(dayLabelFromDayKey), [allDays]);
   const selectedDayKey = useMemo(() => {
@@ -224,7 +228,68 @@ function Map() {
         },
       });
 
+      // --- Combined layer (used when Source = All) ---
+      map.addSource("combined-preds", {
+        type: "geojson",
+        data: COMBINED_MONTHLY_GEOJSON,
+      });
+
+      map.addLayer({
+        id: "combined-preds-layer",
+        type: "circle",
+        source: "combined-preds",
+        paint: {
+          "circle-opacity": [
+            "interpolate",
+            ["linear"],
+            severeProbExpr,
+            0, 0.0,
+            0.2, 0.25,
+            1, 0.95,
+          ],
+          "circle-radius": [
+            "interpolate",
+            ["linear"],
+            severeProbExpr,
+            0, 2,
+            1, 8,
+          ],
+          "circle-color": [
+            "interpolate",
+            ["linear"],
+            severeProbExpr,
+            0, "rgba(47, 157, 245, 0.8)",
+            0.5, "rgba(222, 221, 50, 0.9)",
+            1, "rgba(144, 12, 0, 0.95)",
+          ],
+          "circle-stroke-color": "rgba(0, 0, 0, 0.25)",
+          "circle-stroke-width": 1,
+        },
+      });
+
       // --- Click handlers ---
+      map.on("click", "combined-preds-layer", (e) => {
+        const feature = e.features?.[0];
+        if (!feature) return;
+        const coordinates = (feature.geometry as any).coordinates?.slice();
+        const props = feature.properties as any;
+        const timeStr = props?.pirep_time ?? props?.timestamp ?? "N/A";
+        const src = String(props?.source ?? "N/A");
+        const html = [
+          `<div style="font-size:12px; line-height:1.25;">`,
+          `<div><b>Combined</b></div>`,
+          `<div>Source: ${src} </div>`,
+          `<div>Probability of Severe Turbluence: ${props?.severe_prob != null ? Number(props.severe_prob).toFixed(3) : "N/A"}</div>`,
+          `<div>nexrad_prob: ${props?.nexrad_prob != null ? Number(props.nexrad_prob).toFixed(3) : "N/A"}</div>`,
+          `<div>sat_prob: ${props?.sat_prob != null ? Number(props.sat_prob).toFixed(3) : "N/A"}</div>`,
+          `<div>pred_class: ${props?.pred_class ?? "N/A"}</div>`,
+          `<div>Flight Level: ${props?.flight_level_ft ?? "N/A"} ft</div>`,
+          `<div>PIREP Time: ${timeStr}</div>`,
+          `</div>`,
+        ].join("");
+        new mapboxgl.Popup().setLngLat(coordinates).setHTML(html).addTo(map);
+      });
+
       map.on("click", "nexrad-preds-layer", (e) => {
         const feature = e.features?.[0];
         if (!feature) return;
@@ -280,7 +345,11 @@ function Map() {
       });
 
       // Cursor changes
-      for (const layer of ["nexrad-preds-layer", "satellite-preds-layer"]) {
+      for (const layer of [
+        "combined-preds-layer",
+        "nexrad-preds-layer",
+        "satellite-preds-layer",
+      ]) {
         map.on("mouseenter", layer, () => {
           map.getCanvas().style.cursor = "pointer";
         });
@@ -303,12 +372,14 @@ function Map() {
     if (!useMonthlyFiles) return;
     const load = async () => {
       try {
-        const [rad, sat] = await Promise.all([
+        const [rad, sat, comb] = await Promise.all([
           fetch(RADAR_MONTHLY_GEOJSON).then((r) => (r.ok ? r.json() : null)),
           fetch(SATELLITE_MONTHLY_GEOJSON).then((r) => (r.ok ? r.json() : null)),
+          fetch(COMBINED_MONTHLY_GEOJSON).then((r) => (r.ok ? r.json() : null)),
         ]);
         if (rad?.type === "FeatureCollection") setRadarMonthly(rad);
         if (sat?.type === "FeatureCollection") setSatMonthly(sat);
+        if (comb?.type === "FeatureCollection") setCombinedMonthly(comb);
       } catch {
         // ignore
       }
@@ -320,6 +391,25 @@ function Map() {
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !map.loaded()) return;
+
+    const combinedSource = map.getSource("combined-preds") as mapboxgl.GeoJSONSource;
+    if (combinedSource && useMonthlyFiles) {
+      const dayKey = selectedDayKey;
+      const fc = combinedMonthly;
+      if (fc && (!dayKey || !timeFilterEnabled)) {
+        combinedSource.setData(fc as any);
+      } else if (dayKey && fc) {
+        const filtered: FeatureCollection = {
+          type: "FeatureCollection",
+          features: (fc.features ?? []).filter((f: any) => {
+            const t = f?.properties?.pirep_time;
+            if (typeof t !== "string") return false;
+            return utcDayKeyFromIso(t) === dayKey;
+          }),
+        };
+        combinedSource.setData(filtered as any);
+      }
+    }
 
     const radarSource = map.getSource("nexrad-preds") as mapboxgl.GeoJSONSource;
     if (radarSource) {
@@ -383,6 +473,7 @@ function Map() {
     timeOffset,
     radarMonthly,
     satMonthly,
+    combinedMonthly,
     selectedDayKey,
     useMonthlyFiles,
     timeFilterEnabled,
@@ -423,6 +514,9 @@ function Map() {
       if (map.getLayer("satellite-preds-layer")) {
         map.setFilter("satellite-preds-layer", filterExpr);
       }
+      if (map.getLayer("combined-preds-layer")) {
+        map.setFilter("combined-preds-layer", filterExpr);
+      }
     };
 
     if (!map.loaded()) {
@@ -435,24 +529,40 @@ function Map() {
   // --- Toggle layer visibility based on source picker ---
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !map.loaded()) return;
+    if (!map) return;
 
-    const [satVisible, radarVisible] = source;
+    const applyVisibility = () => {
+      const [satVisible, radarVisible] = source;
+      const showCombined = satVisible && radarVisible;
 
-    if (map.getLayer("satellite-preds-layer")) {
-      map.setLayoutProperty(
-        "satellite-preds-layer",
-        "visibility",
-        satVisible ? "visible" : "none",
-      );
+      if (map.getLayer("satellite-preds-layer")) {
+        map.setLayoutProperty(
+          "satellite-preds-layer",
+          "visibility",
+          !showCombined && satVisible ? "visible" : "none",
+        );
+      }
+      if (map.getLayer("nexrad-preds-layer")) {
+        map.setLayoutProperty(
+          "nexrad-preds-layer",
+          "visibility",
+          !showCombined && radarVisible ? "visible" : "none",
+        );
+      }
+      if (map.getLayer("combined-preds-layer")) {
+        map.setLayoutProperty(
+          "combined-preds-layer",
+          "visibility",
+          showCombined ? "visible" : "none",
+        );
+      }
+    };
+
+    if (!map.loaded()) {
+      map.once("load", applyVisibility);
+      return;
     }
-    if (map.getLayer("nexrad-preds-layer")) {
-      map.setLayoutProperty(
-        "nexrad-preds-layer",
-        "visibility",
-        radarVisible ? "visible" : "none",
-      );
-    }
+    applyVisibility();
   }, [source]);
 
   const derivedSource =

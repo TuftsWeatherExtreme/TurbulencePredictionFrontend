@@ -27,7 +27,7 @@ function SourcePicker({
         </SelectTrigger>
 
         <SelectContent align="end">
-          <SelectItem value="all">All</SelectItem>
+          <SelectItem value="all">Combined</SelectItem>
           <SelectItem value="sat">Satellite</SelectItem>
           <SelectItem value="rad">Radar</SelectItem>
         </SelectContent>
