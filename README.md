@@ -85,7 +85,7 @@ Deployment of this Next.js app can be done using the [Vercel Platform](https://v
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
--------------------------------------- WORK DONE BY RAZZLE DAZZLE ROSE TEAM FA25/SP26 ------------------------------
+# WORK DONE BY RAZZLE DAZZLE ROSE TEAM FA25/SP26 
 ## Capstone Backend-to-Frontend Prediction Pipeline Guide
 
 This section explains the final backend-to-frontend pipeline used in our Senior Capstone project to generate and visualize turbulence predictions from both **NEXRAD radar data** and **GOES-18 satellite data**. These commands correspond to the exact workflow used to create the predictions shown in our final presentation demo. Our demo displayed **severe turbulence predictions for December 2024**.
