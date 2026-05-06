@@ -1,3 +1,5 @@
+/** Edited by Razzle Dazzle Rose Capstone team (FA25/SP26) */
+
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
 

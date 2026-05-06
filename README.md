@@ -84,3 +84,190 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 Deployment of this Next.js app can be done using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+-------------------------------------- WORK DONE BY RAZZLE DAZZLE ROSE TEAM FA25/SP26 --------------------------------------
+## Capstone Backend-to-Frontend Prediction Pipeline Guide
+
+This section explains the final backend-to-frontend pipeline used in our Senior Capstone project to generate and visualize turbulence predictions from both **NEXRAD radar data** and **GOES-18 satellite data**. These commands correspond to the exact workflow used to create the predictions shown in our final presentation demo. Our demo displayed **severe turbulence predictions for December 2024**.
+
+### Overview
+Our system predicts turbulence events using two independent machine learning pipelines:
+
+#### Radar-Based Pipeline
+- Uses NEXRAD Level-II radar data
+- Processes radar scans into model-ready inputs
+- Runs a trained ResNet model
+- Exports predictions into GeoJSON format
+
+#### Satellite-Based Pipeline
+- Uses GOES-18 satellite imagery
+- Processes temporal image sequences
+- Runs a trained 3D CNN model
+- Exports predictions into GeoJSON format
+
+Both pipelines ultimately generate `.geojson` prediction files which are (currently) copied into the frontend application and rendered visually on an interactive map.
+
+### Overall Data Flow
+
+Raw Weather Data  
+↓  
+Preprocessed Model Inputs  
+↓  
+Trained ML Model Inference  
+↓  
+GeoJSON Prediction Export  
+↓  
+Transfer GeoJSON to Frontend  
+↓  
+Frontend Map Visualization  
+
+### How to get from RADAR predictions to frontend output
+
+#### Step 1 — Extract compressed radar inputs
+The radar model inputs were stored as compressed archives to reduce storage usage on the HPC system.
+
+Run this command on HPC:
+
+```bash
+TMP_DIR="$(mktemp -d)" && \
+tar -xJf "/cluster/tufts/capstone25skyblue/UTLN/NEXRADTurbulencePrediction/model_inputs/compressed/2024_12.tar.xz" \
+  -C "$TMP_DIR"
+```
+
+What this does:
+- Creates a temporary directory
+- Extracts the compressed radar model inputs for December 2024
+- Places extracted files into the temporary directory
+
+Why this is necessary:
+- Radar model inputs are large, so compressing them:
+  - saves storage space
+  - improves organization
+  - reduces long-term disk usage
+- The temporary directory ensures files are cleaned up after prediction generation.
+
+#### Step 2 — Run radar model inference
+Run this command on HPC:
+
+```bash
+python -u "/cluster/tufts/capstone25skyblue/UTLN/NEXRADTurbulencePrediction/model_training/export_predictions_geojson.py" \
+  --model-type resnet \
+  --weights "/cluster/tufts/capstone25skyblue/UTLN/NEXRADTurbulencePrediction/model_training/trained_model_outputs/2026-04-17T14:42:23.042415_best_resnet_model_w_seed_42.pth" \
+  --input-dir "$TMP_DIR/2024_12" \
+  --recursive \
+  --pireps-csv "/cluster/tufts/capstone25skyblue/UTLN/NEXRADTurbulencePrediction/radars/pirep_with_radar_data/2024/12.csv" \
+  --output "/tmp/preds_radar_2024_12.geojson"
+```
+
+Explanation of parameters:
+- `--model-type resnet`: Uses the ResNet-based radar classifier
+- `--weights`: Path to trained model weights
+- `--input-dir`: Directory containing processed radar inputs
+- `--recursive`: Searches through nested directories
+- `--pireps-csv`: Pilot report metadata used for alignment/evaluation
+- `--output`: Output GeoJSON prediction file
+
+#### Step 3 — Clean up temporary files
+Run this command on HPC:
+
+```bash
+rm -rf "$TMP_DIR"
+```
+
+Radar data flow (conceptual):
+
+Compressed Radar Inputs (`.tar.xz`)  
+↓  
+Temporary Extraction  
+↓  
+Processed Radar Arrays  
+↓  
+ResNet Inference  
+↓  
+Prediction Probabilities  
+↓  
+GeoJSON Export  
+
+#### Copy radar predictions to the frontend
+Run this command on your local terminal:
+
+```bash
+scp <yourUTLN>@login-p03.pax.tufts.edu:/tmp/preds_radar_2024_12.geojson \
+  "path/to/TurbulencePredictionFrontend/public/predictions/preds_radar_2024_12.geojson"
+```
+
+Note: For the `login-p03.pax.tufts.edu` part, ensure it is correct by running `hostname` on HPC (use that value in place of `login-p03.pax.tufts.edu`).
+
+What this does:
+- Securely copies the generated GeoJSON file from the Tufts HPC cluster
+- Places it directly into the frontend application's public predictions directory
+
+### How to get from SATELLITE predictions to frontend output
+
+#### Step 1 — Run satellite model inference
+Run this command on HPC:
+
+```bash
+python -u export_predictions_geojson.py \
+  --model-type cnn \
+  --weights "/cluster/tufts/capstone25skyblue/UTLN/SatelliteTurbulencePrediction/src/trained_model_outputs/2026_04_18_01_00_conv3d_seed_42.pth" \
+  --input-dir "/cluster/tufts/capstone25skyblue/UTLN/SatelliteTurbulencePrediction/model_inputs" \
+  --year 2024 --month 12 \
+  --output "/tmp/preds_satellite_2024_12.geojson"
+```
+
+Explanation of parameters:
+- `--model-type cnn`: Uses the satellite CNN model
+- `--weights`: Trained 3D CNN weights
+- `--input-dir`: Satellite model input directory
+- `--year / --month`: Selects dataset timeframe
+- `--output`: Output GeoJSON predictions
+
+Satellite data flow (conceptual):
+
+GOES-18 Satellite Imagery  
+↓  
+Preprocessed Image Sequences  
+↓  
+3D CNN Inference  
+↓  
+Prediction Probabilities  
+↓  
+GeoJSON Export  
+
+#### Copy satellite predictions to the frontend
+Run this command on your local terminal:
+
+```bash
+scp <yourUTLN>@login-p03.pax.tufts.edu:/tmp/preds_satellite_2024_12.geojson \
+  "path/to/TurbulencePredictionFrontend/public/predictions/preds_satellite_2024_12.geojson"
+```
+
+This transfers the satellite prediction GeoJSON file into the frontend visualization directory.
+
+### Frontend integration
+The frontend application reads prediction files from:
+- `/public/predictions/`
+
+Examples:
+- `preds_radar_2024_12.geojson`
+- `preds_satellite_2024_12.geojson`
+- `preds_combined_2024_12.geojson`
+
+These GeoJSON files are loaded into the frontend map visualization system and displayed as prediction overlays.
+
+### Why GeoJSON was used
+GeoJSON was selected because it:
+- Integrates naturally with web mapping libraries
+- Stores geographic coordinates cleanly
+- Supports metadata for predictions/probabilities
+- Is lightweight and frontend-friendly
+- Works well with React/Next.js mapping frameworks
+
+### Notes on reproducibility
+Our pipeline was designed to support reproducibility by:
+- Using fixed trained model checkpoints
+- Keeping model weights versioned
+- Organizing data by year/month
+- Maintaining consistent GeoJSON export formatting
+- Separating backend inference from frontend visualization

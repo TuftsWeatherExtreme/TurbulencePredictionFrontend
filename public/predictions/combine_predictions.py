@@ -2,6 +2,7 @@
 # Purpose: Merge NEXRAD and satellite GeoJSON predictions into a single
 #          combined GeoJSON with a weighted ensemble severe_prob.
 # Usage: python combine_predictions.py <nexrad.geojson> <satellite.geojson> <output.geojson>
+# Authors: Razzle Dazzle Rose Capstone team (FA25/SP26)
 
 import json
 import sys

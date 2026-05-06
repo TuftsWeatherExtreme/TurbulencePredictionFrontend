@@ -1,3 +1,4 @@
+/** Edited by Razzle Dazzle Rose Capstone team (FA25/SP26) */
 "use client";
 
 import {
